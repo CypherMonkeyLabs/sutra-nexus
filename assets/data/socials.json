@@ -26,20 +26,6 @@
       "href": "https://linktr.ee/cyphermonkey"
     },
     {
-      "id": "x",
-      "icon": "x",
-      "class": "brand-x",
-      "label": "X",
-      "href": "https://x.com/Cypher0x9"
-    },
-    {
-      "id": "linkedin",
-      "icon": "linkedin",
-      "class": "brand-li",
-      "label": "LinkedIn",
-      "href": "https://www.linkedin.com/in/luckylakshmanucwebex"
-    },
-    {
       "id": "huggingface",
       "icon": "huggingface",
       "class": "brand-hf",

@@ -1539,8 +1539,6 @@ def socials_file():
             {"id": "web", "icon": "monkey", "class": "brand-web", "label": "CypherMonkey Labs", "href": "https://cyphermonkeylabs.com"},
             {"id": "github", "icon": "github", "class": "brand-gh", "label": "GitHub organization", "href": "https://github.com/CypherMonkeyLabs"},
             {"id": "linktree", "icon": "linktree", "class": "brand-lt", "label": "Linktree", "href": "https://linktr.ee/cyphermonkey"},
-            {"id": "x", "icon": "x", "class": "brand-x", "label": "X", "href": "https://x.com/Cypher0x9"},
-            {"id": "linkedin", "icon": "linkedin", "class": "brand-li", "label": "LinkedIn", "href": "https://www.linkedin.com/in/luckylakshmanucwebex"},
             {"id": "huggingface", "icon": "huggingface", "class": "brand-hf", "label": "Hugging Face", "href": "https://huggingface.co/Cypher0x9"},
         ],
     }

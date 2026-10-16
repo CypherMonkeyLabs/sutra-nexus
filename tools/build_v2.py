@@ -51,7 +51,17 @@ def write(path, text):
         handle.write(text)
 
 def socials():
-    return read_json("assets/data/socials.json")
+    data = read_json("assets/data/socials.json")
+    icons = []
+    for item in data.get("icons", []):
+        href = str(item.get("href", ""))
+        if item.get("id") in {"x", "linkedin"}:
+            continue
+        if "linkedin.com" in href or "://x.com" in href or "twitter.com" in href:
+            continue
+        icons.append(item)
+    data["icons"] = icons
+    return data
 
 def icon_svg(name):
     path = {
