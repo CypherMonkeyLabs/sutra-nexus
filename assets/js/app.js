@@ -102,21 +102,70 @@
   function bindFilters() {
     var bar = document.querySelector("[data-filters]");
     if (!bar) return;
-    bar.addEventListener("click", function (event) {
-      var btn = event.target.closest("[data-filter]");
-      if (!btn) return;
-      var kind = btn.getAttribute("data-filter");
+    if (!bar.querySelector("[data-dl-search]")) {
+      bar.insertAdjacentHTML("afterbegin", '<label class="sr" for="dl-q">Filter downloads</label><input id="dl-q" data-dl-search type="search" placeholder="Filter by name" autocomplete="off">');
+    }
+    if (!bar.querySelector("[data-dl-collapse]")) {
+      bar.insertAdjacentHTML("beforeend", '<button type="button" data-dl-collapse>Collapse</button><button type="button" data-dl-expand>Open matches</button>');
+    }
+    var kind = "all";
+    var query = "";
+    function apply(openMatches) {
+      var phone = window.matchMedia("(max-width: 720px)").matches;
+      var needle = query.trim().toLowerCase();
       document.querySelectorAll("details.dl-room").forEach(function (section) {
         var any = false;
         section.querySelectorAll("[data-dl]").forEach(function (card) {
-          var show = kind === "all" || card.getAttribute("data-kind") === kind || card.getAttribute("data-room") === kind;
+          var cardKind = card.getAttribute("data-kind") || "";
+          var room = card.getAttribute("data-room") || "";
+          var title = (card.textContent || "").toLowerCase();
+          var show = (kind === "all" || cardKind === kind || room === kind) && (!needle || title.indexOf(needle) !== -1);
           card.hidden = !show;
           if (show) any = true;
         });
         section.hidden = !any;
-        if (any && kind !== "all") section.open = true;
+        if (!any) section.open = false;
+        else if (openMatches === true) section.open = true;
+        else if (openMatches === false) section.open = false;
+        else if (kind !== "all" || needle) section.open = true;
+        else section.open = false;
       });
+      if (!phone && kind === "all" && !needle && openMatches !== false) {
+        var firstOpen = document.querySelector("details.dl-room:not(.visual-fold):not([hidden])");
+        if (firstOpen) firstOpen.open = true;
+      }
+      var visual = document.querySelector("#visual");
+      if (visual && phone && !visual.closest("details")) {
+        var box = document.createElement("details");
+        box.className = "visual-fold";
+        var summary = document.createElement("summary");
+        summary.textContent = "A visual";
+        visual.parentNode.insertBefore(box, visual);
+        box.appendChild(summary);
+        box.appendChild(visual);
+      }
+    }
+    bar.addEventListener("click", function (event) {
+      var btn = event.target.closest("[data-filter]");
+      if (btn) {
+        kind = btn.getAttribute("data-filter");
+        bar.querySelectorAll("[data-filter]").forEach(function (node) {
+          node.setAttribute("aria-pressed", node === btn ? "true" : "false");
+        });
+        apply(kind === "all" && !query ? false : true);
+        return;
+      }
+      if (event.target.closest("[data-dl-collapse]")) apply(false);
+      if (event.target.closest("[data-dl-expand]")) apply(true);
     });
+    var search = bar.querySelector("[data-dl-search]");
+    if (search) search.addEventListener("input", function () {
+      query = search.value || "";
+      apply(query ? true : null);
+    });
+    var first = bar.querySelector('[data-filter="all"]');
+    if (first) first.setAttribute("aria-pressed", "true");
+    apply(window.matchMedia("(max-width: 720px)").matches ? false : null);
   }
 
   function lines() {

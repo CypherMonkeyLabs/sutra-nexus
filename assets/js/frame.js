@@ -200,10 +200,56 @@
     var ink = ls("sutra-ink");
     if (ink && /^#[0-9a-f]{6}$/i.test(ink)) setInk(ink);
   }
+  var ICONS = {
+    "index.html": "M4 11 12 4l8 7v9h-5v-5H9v5H4z",
+    "foundations.html": "M5 4h9a3 3 0 0 1 3 3v13H8a3 3 0 0 0-3 3V4z",
+    "maheshvara.html": "M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 0h6v6h-6z",
+    "sandhi.html": "M3 15c2-4 4-4 6 0s4 4 6 0 4-4 6 0",
+    "ashtadhyayi.html": "M6 3h12v18H6zM9 7h6M9 11h6M9 15h4",
+    "anuvrtti.html": "M5 12h12M13 7l5 5-5 5",
+    "dhatu.html": "M12 21V9M12 9c-3-4-7-3-7 1 3 0 5 1 7 3 2-2 4-3 7-3 0-4-4-5-7-1z",
+    "shiva.html": "M12 3l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z",
+    "history.html": "M12 6v6l4 2M12 4a8 8 0 1 0 8 8",
+    "diagrams.html": "M4 6h16v12H4zM8 15l3-4 2 3 2-2 3 3",
+    "charts.html": "M5 19V9h3v10zm5 0V5h3v14zm5 0v-7h3v7z",
+    "play.html": "M7 5h4v14H7zm6 0h4v14h-4z",
+    "listen.html": "M5 10h3l4-4v12l-4-4H5zm10 2a3 3 0 0 0 0-4",
+    "ecosystem.html": "M6 8a3 3 0 1 0 0-0.1M18 8a3 3 0 1 0 0-0.1M12 18a3 3 0 1 0 0-0.1M8 8l3 8M16 8l-3 8",
+    "resources.html": "M8 7H5v12h10v-3M10 5h9v9M10 14 19 5",
+    "downloads.html": "M12 4v10M8 10l4 4 4-4M5 19h14",
+    "glossary.html": "M6 5h12v14H6zM9 9h6M9 13h6",
+    "credits.html": "M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z",
+    "about.html": "M12 18v-6M12 8h.01M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z",
+    menu: "M4 7h16M4 12h16M4 17h16",
+    guide: "M12 3l1.6 4.8L18 9.4l-4.4 1.6L12 16l-1.6-5L6 9.4l4.4-1.6z"
+  };
+
+  function iconSvg(name) {
+    var d = ICONS[name] || ICONS.book;
+    return '<svg class="menu-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="' + d + '"/></svg>';
+  }
+
+  function mountMenuIcons() {
+    document.querySelectorAll(".drawer-list a[href]").forEach(function (link) {
+      if (link.querySelector(".menu-ico")) return;
+      var file = (link.getAttribute("href") || "").split("#")[0];
+      link.classList.add("menu-link");
+      link.insertAdjacentHTML("afterbegin", iconSvg(file));
+    });
+    document.querySelectorAll(".menu-btn, .dock-item").forEach(function (node) {
+      if (node.querySelector(".menu-ico")) return;
+      var href = node.getAttribute("href") || "";
+      var file = href ? href.split("#")[0].split("/").pop() : "";
+      var name = file || (node.hasAttribute("data-open-guide") ? "guide" : "menu");
+      node.insertAdjacentHTML("afterbegin", iconSvg(ICONS[name] ? name : "menu"));
+    });
+  }
+
   bootPrefs();
   bindDrawer();
   bindBanner();
   bindDisplay();
+  mountMenuIcons();
   if (/[?&]menu=1(?:&|$)/.test(location.search)) setDrawer(true);
   window.SutraFrame = { setDrawer: setDrawer, setInk: setInk };
 })();
