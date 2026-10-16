@@ -1,16 +1,16 @@
-/* Guide bot shell. The study router is guide/engine.mjs, adapted from
-   Webex Lab guide/engine.mjs at commit 7631b317cbf2cad236403df960b5d5fac353a6de.
-   Voice is off until the reader turns it on. */
+/* Talking study guide. Layered glasses monkey, adapted from the BA lab
+   companion pattern. Facts come from guide/kb through the local engine.
+   Voice stays off until a reader turns it on. */
 import { createGuide, blankSession } from "../../guide/engine.mjs";
 
-var root = document.documentElement;
 var host = document.querySelector(".guide-root");
-if (host) boot();
+if (host) boot(host);
 
 function ls(key, value) {
   try {
     if (value === undefined) return localStorage.getItem(key);
-    localStorage.setItem(key, value);
+    if (value === null) localStorage.removeItem(key);
+    else localStorage.setItem(key, value);
   } catch (err) { /* storage off */ }
   return null;
 }
@@ -28,41 +28,126 @@ function prefix() {
   return at === -1 ? "" : src.slice(0, at);
 }
 
-function boot() {
-  host.innerHTML = '<button type="button" class="guide-fab" aria-expanded="false" aria-controls="guide-panel" aria-label="Open the Sūtra guide"><span class="sr">Guide</span></button><section id="guide-panel" class="guide-panel" hidden><header><div class="guide-face" aria-hidden="true"></div><strong>Sūtra guide</strong><button type="button" data-guide-close>Close</button></header><div class="guide-log" aria-live="polite"></div><div class="guide-cards"></div><p class="voice-note"></p><div class="voice-row"></div></section>';
-  var face = host.querySelector(".guide-face");
-  if (window.SUTRA_BRAND) {
-    face.innerHTML = window.SUTRA_BRAND.monkey("guide").replace("<svg", "<svg class=\"monkey-idle\"");
-  }
-  var fab = host.querySelector(".guide-fab");
-  var panel = host.querySelector(".guide-panel");
-  var log = host.querySelector(".guide-log");
-  var cards = host.querySelector(".guide-cards");
+function phone() {
+  return window.matchMedia("(max-width: 720px)").matches;
+}
+
+function motionOff() {
+  if (document.documentElement.dataset.motion === "reduce") return true;
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
+function monkeySvg() {
+  return '<span class="sb-soft" aria-hidden="true"></span>' +
+    '<span class="sb-float" aria-hidden="true"><svg viewBox="0 0 220 260" aria-hidden="true">' +
+    "<defs>" +
+    '<radialGradient id="sbfur" cx="38%" cy="30%" r="78%"><stop offset="0" stop-color="#ffe08a"/><stop offset=".48" stop-color="#f5a524"/><stop offset="1" stop-color="#c2410c"/></radialGradient>' +
+    '<radialGradient id="sbmuz" cx="50%" cy="28%" r="80%"><stop offset="0" stop-color="#fff7dc"/><stop offset="1" stop-color="#f0c27a"/></radialGradient>' +
+    '<radialGradient id="sbear" cx="40%" cy="35%" r="75%"><stop offset="0" stop-color="#fecdd3"/><stop offset="1" stop-color="#e11d48"/></radialGradient>' +
+    '<linearGradient id="sbglass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#7c3aed"/><stop offset="1" stop-color="#f472b6"/></linearGradient>' +
+    '<linearGradient id="sbscarf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset=".34" stop-color="#a78bfa"/><stop offset=".67" stop-color="#f472b6"/><stop offset="1" stop-color="#fbbf24"/></linearGradient>' +
+    "</defs>" +
+    '<ellipse cx="110" cy="248" rx="58" ry="8" fill="#1e1b4b" opacity=".2"/>' +
+    '<path class="sb-tail" d="M172 200c26 6 34 26 16 38-16 10-30-4-24-16" fill="none" stroke="#ea580c" stroke-width="12" stroke-linecap="round"/>' +
+    '<path d="M74 168c6 22 22 48 36 52s32-16 38-40c2 22-10 52-40 56s-46-20-34-68z" fill="url(#sbfur)"/>' +
+    '<path class="sb-scarf" d="M80 162h62c-2 16-16 24-32 24s-28-8-30-24z" fill="url(#sbscarf)"/>' +
+    '<g class="sb-head">' +
+    '<circle class="sb-ear" cx="46" cy="92" r="30" fill="url(#sbfur)"/><circle cx="46" cy="92" r="16" fill="url(#sbear)"/>' +
+    '<circle class="sb-ear" cx="174" cy="92" r="30" fill="url(#sbfur)"/><circle cx="174" cy="92" r="16" fill="url(#sbear)"/>' +
+    '<circle cx="110" cy="102" r="64" fill="url(#sbfur)"/>' +
+    '<ellipse cx="110" cy="122" rx="38" ry="30" fill="url(#sbmuz)"/>' +
+    '<ellipse cx="76" cy="116" rx="11" ry="7" fill="#fb7185" opacity=".7"/>' +
+    '<ellipse cx="144" cy="116" rx="11" ry="7" fill="#fb7185" opacity=".7"/>' +
+    '<g class="sb-eye"><ellipse cx="86" cy="96" rx="14" ry="16" fill="#fff"/><circle cx="90" cy="98" r="7" fill="#1c1917"/><circle cx="93" cy="95" r="2.6" fill="#fff"/></g>' +
+    '<g class="sb-eye"><ellipse cx="134" cy="96" rx="14" ry="16" fill="#fff"/><circle cx="138" cy="98" r="7" fill="#1c1917"/><circle cx="141" cy="95" r="2.6" fill="#fff"/></g>' +
+    '<g class="sb-glasses" fill="none" stroke="url(#sbglass)" stroke-width="5" stroke-linecap="round">' +
+    '<circle cx="86" cy="96" r="20"/><circle cx="134" cy="96" r="20"/><path d="M106 96h12"/>' +
+    '<path d="M66 92c-10-2-16 4-16 10M154 92c10-2 16 4 16 10"/>' +
+    "</g>" +
+    '<ellipse cx="110" cy="120" rx="8" ry="5.5" fill="#9a3412"/>' +
+    '<path class="sb-mouth" d="M90 136c8 12 32 12 40 0" fill="none" stroke="#7c2d12" stroke-width="4" stroke-linecap="round"/>' +
+    "</g>" +
+    '<g class="sb-arm sb-arm-left"><path d="M76 172v40" fill="none" stroke="#ea580c" stroke-width="16" stroke-linecap="round"/>' +
+    '<circle cx="76" cy="218" r="14" fill="url(#sbfur)"/><circle cx="76" cy="218" r="7" fill="url(#sbmuz)"/></g>' +
+    '<g class="sb-arm sb-arm-right"><path d="M146 172v40" fill="none" stroke="#ea580c" stroke-width="16" stroke-linecap="round"/>' +
+    '<circle cx="146" cy="218" r="14" fill="url(#sbfur)"/><circle cx="146" cy="218" r="7" fill="url(#sbmuz)"/></g>' +
+    '<g class="sb-pop" aria-hidden="true"><path d="M186 36l2.2 6.2 6.4.2-5 4 1.8 6.2-5.4-3.6-5.4 3.6 1.8-6.2-5-4 6.4-.2z" fill="#fde047"/>' +
+    '<path d="M34 40l1.6 4.4 4.6.2-3.6 2.8 1.3 4.4-3.9-2.6-3.9 2.6 1.3-4.4-3.6-2.8 4.6-.2z" fill="#22d3ee"/></g>' +
+    "</svg></span>";
+}
+
+function boot(root) {
+  root.innerHTML =
+    '<button type="button" class="sb-monkey" aria-expanded="false" aria-controls="sb-panel" aria-label="Sūtra guide. A student who has read these rooms.">' +
+    monkeySvg() + "</button>" +
+    '<section class="sb-panel" id="sb-panel" hidden role="dialog" aria-modal="false" aria-labelledby="sb-title">' +
+    '<header class="sb-bar"><div class="sb-who"><span class="sb-avatar" aria-hidden="true"></span>' +
+    '<div><h2 id="sb-title">Sūtra guide</h2><p class="sb-status">In the notes. Voice is off.</p></div></div>' +
+    '<button type="button" data-guide-close>Close</button></header>' +
+    '<div class="sb-along" role="group" aria-label="Read along">' +
+    '<button type="button" data-along-start>Read along</button>' +
+    '<button type="button" data-along-pause>Pause</button>' +
+    '<button type="button" data-along-next>Next</button>' +
+    '<button type="button" data-along-stop>Stop</button></div>' +
+    '<div class="sb-log" role="log" aria-live="polite"></div>' +
+    '<div class="sb-chips" role="group" aria-label="Commands"></div>' +
+    '<p class="sb-note"></p>' +
+    '<div class="sb-voice">' +
+    '<button type="button" data-voice aria-pressed="false">Voice off</button>' +
+    '<label>Voice <select data-voice-pick aria-label="Speaking voice"><option value="">Browser default</option></select></label>' +
+    '<button type="button" data-voice-stop>Stop voice</button></div>' +
+    '<form class="sb-form"><input type="text" aria-label="Ask about this page" placeholder="Ask, or say quiz me" autocomplete="off">' +
+    '<button type="submit">Send</button></form></section>';
+
+  var monkey = root.querySelector(".sb-monkey");
+  var panel = root.querySelector(".sb-panel");
+  var log = root.querySelector(".sb-log");
+  var chips = root.querySelector(".sb-chips");
+  var note = root.querySelector(".sb-note");
+  var input = root.querySelector(".sb-form input");
+  root.querySelector(".sb-avatar").innerHTML = monkeySvg();
   var session = blankSession();
   var guide = null;
-  var speaking = false;
+  var guideReady = null;
   var voiceOn = false;
+  var along = { items: [], index: 0, timer: 0, paused: false };
   var page = (location.pathname.split("/").pop() || "index.html");
+
+  function pose(name) {
+    monkey.dataset.pose = name;
+    root.dataset.pose = name;
+  }
+  pose("idle");
+
+  function context() {
+    return { page: page, room: document.body.dataset.room || "" };
+  }
+
+  function readRoot() {
+    return document.querySelector("[data-room-panel]:not([hidden])") || document.querySelector("main") || document.body;
+  }
 
   function place() {
     var disclaimer = document.querySelector(".disclaimer-panel");
-    if (!disclaimer) return;
-    var rect = disclaimer.getBoundingClientRect();
-    var overlap = rect.top < window.innerHeight - 8 && rect.bottom > 80;
-    host.style.bottom = "";
-    if (!overlap) return;
-    var lift = Math.max(16, window.innerHeight - rect.top + 12);
-    if (window.matchMedia("(max-width: 720px)").matches) {
-      host.style.bottom = "calc(" + lift + "px)";
-    } else {
-      host.style.bottom = lift + "px";
+    var lift = phone() ? 8 : 16;
+    if (phone()) {
+      var dock = document.querySelector(".phone-dock");
+      lift = (dock ? dock.offsetHeight : 72) + 8;
     }
+    if (disclaimer) {
+      var rect = disclaimer.getBoundingClientRect();
+      var overlap = rect.top < window.innerHeight - 8 && rect.bottom > window.innerHeight - 220;
+      if (overlap) lift = Math.max(lift, window.innerHeight - rect.top + 12);
+    }
+    root.style.bottom = lift + "px";
+    document.documentElement.style.setProperty("--guide-lift", lift + "px");
   }
   place();
   window.addEventListener("scroll", place, { passive: true });
   window.addEventListener("resize", place);
+  var scroller = document.querySelector(".page-scroll");
+  if (scroller) scroller.addEventListener("scroll", place, { passive: true });
 
-  var guideReady = null;
   function ensureGuide() {
     if (guideReady) return guideReady;
     var kbReady = (window.SUTRA_EMBED && window.SUTRA_EMBED.kb)
@@ -70,162 +155,268 @@ function boot() {
       : fetch(prefix() + "guide/kb/bundle.json").then(function (res) { return res.json(); });
     guideReady = kbReady.then(function (kb) {
       guide = createGuide(kb, { rng: Math.random });
-      welcome();
       return guide;
     }).catch(function () {
-      log.textContent = "I don't know yet, confirm before relying. The guide notes did not load.";
+      log.innerHTML = "<p>I don't know yet, confirm before relying. The guide notes did not load.</p>";
       return null;
     });
     return guideReady;
   }
+
   function open(next) {
-    if (next) panel.hidden = false;
-    else panel.hidden = true;
-    fab.setAttribute("aria-expanded", next ? "true" : "false");
-    fab.hidden = next;
+    panel.hidden = !next;
+    monkey.hidden = !!next;
+    monkey.setAttribute("aria-expanded", next ? "true" : "false");
     ls("sutra-guide-open", next ? "1" : "0");
-    if (next) ensureGuide();
+    if (next) {
+      pose("wave");
+      ensureGuide();
+    } else {
+      pose("idle");
+      stopAlong(false);
+    }
     place();
   }
-  var dragHeader = panel.querySelector("header");
-  dragHeader.addEventListener("pointerdown", function (event) {
-    if (window.matchMedia("(min-width: 721px)").matches) return;
-    if (event.target.closest("button")) return;
-    var startY = event.clientY;
-    function move(ev) {
-      var dy = Math.max(0, ev.clientY - startY);
-      panel.style.transform = "translateY(" + dy + "px)";
-    }
-    function up(ev) {
-      window.removeEventListener("pointermove", move);
-      window.removeEventListener("pointerup", up);
-      panel.style.transform = "";
-      if (ev.clientY - startY > 72) open(false);
-    }
-    window.addEventListener("pointermove", move);
-    window.addEventListener("pointerup", up);
-  });
-  fab.addEventListener("click", function () { open(true); });
-  host.querySelector("[data-guide-close]").addEventListener("click", function () { open(false); fab.focus(); });
-  document.addEventListener("sutra-guide-open", function () { open(true); });
-  if (ls("sutra-guide-open") === "1" && window.matchMedia("(min-width: 721px)").matches) open(true);
 
   function say(text) {
-    if (!voiceOn || !window.speechSynthesis) return;
+    if (!voiceOn || !window.speechSynthesis || !text) return;
     window.speechSynthesis.cancel();
     var utter = new SpeechSynthesisUtterance(text);
     var saved = ls("sutra-voice");
     var voices = window.speechSynthesis.getVoices();
     var pick = voices.filter(function (voice) { return saved && voice.name === saved; })[0];
-    if (!pick) {
-      pick = voices.filter(function (voice) { return /natural|enhanced|premium/i.test(voice.name); })[0] || voices[0];
-    }
+    if (!pick) pick = voices.filter(function (voice) { return /natural|enhanced|premium/i.test(voice.name); })[0] || voices[0];
     if (pick) utter.voice = pick;
-    var rate = host.querySelector("[data-rate]");
-    var pitch = host.querySelector("[data-pitch]");
-    utter.rate = rate ? Number(rate.value) : 1;
-    utter.pitch = pitch ? Number(pitch.value) : 1;
-    speaking = true;
-    utter.onend = function () { speaking = false; };
+    utter.rate = 0.92;
+    utter.pitch = 0.96;
     window.speechSynthesis.speak(utter);
   }
 
   function paint(reply) {
     var text = reply.text || "";
-    log.innerHTML = "<p>" + esc(text).replace(/\n/g, "<br>") + "</p>";
-    var chips = (reply.chips || []).concat(reply.extraChips || []);
-    cards.innerHTML = chips.map(function (chip) {
+    var links = reply.links || [];
+    if (reply.href && !links.some(function (link) { return link.href === reply.href; })) {
+      links = [{ href: reply.href, title: "Open the note" }].concat(links);
+    }
+    var linkHtml = links.filter(function (link) { return link && link.href; }).map(function (link) {
+      return '<a href="' + esc(link.href) + '">' + esc(link.title || link.href) + "</a>";
+    }).join(" ");
+    log.innerHTML = "<p>" + esc(text).replace(/\n/g, "<br>") + "</p>" + (linkHtml ? "<p class=\"sb-links\">" + linkHtml + "</p>" : "");
+    var list = (reply.chips || []).concat(reply.extraChips || []);
+    chips.innerHTML = list.map(function (chip) {
       return '<button type="button" data-chip="' + esc(chip) + '">' + esc(chip) + "</button>";
     }).join("");
+    pose("talk");
     if (voiceOn) say(text);
+    if (reply.kind === "tour" && window.SUTRA_SHOW_TOUR) window.SUTRA_SHOW_TOUR();
   }
 
   function welcome() {
-    log.innerHTML = "<p>Welcome to CypherMonkey Labs, I'm your Sūtra guide. I only repeat what is written in this app. If I don't know, I will say so.</p>";
+    log.innerHTML = "<p>Welcome to CypherMonkey Labs. I'm your Sūtra guide. I only repeat what is written in this app. If I don't know, I will say so.</p>";
     var items = [
-      ["1-minute clip", "1-minute clip"],
-      ["10-minute trailer", "10-minute trailer"],
-      ["1-hour guided walk", "Start the 1-hour course"],
-      ["Cheat codes", "cheat codes"],
       ["Quiz me", "Quiz me"],
       ["Teach me this room", "Teach me this room"],
-      ["Games", "Play a game"],
-      ["Mute me and just read", "Mute me and just read"]
+      ["Play a game", "Play a game"],
+      ["Flashcards", "Flashcards"],
+      ["How do I use this?", "How do I use this?"],
+      ["Tour this room", "Tour this room"],
+      ["1-hour course", "Start the 1-hour course"],
+      ["Read along", "Read along"],
+      ["Help", "Help"]
     ];
-    cards.innerHTML = items.map(function (item) {
+    chips.innerHTML = items.map(function (item) {
       return '<button type="button" data-chip="' + esc(item[1]) + '">' + esc(item[0]) + "</button>";
     }).join("");
+    note.textContent = "Voice is off. Browser voices may mispronounce Sanskrit. This is a reading aid, not a recitation.";
   }
 
-  cards.addEventListener("click", function (event) {
-    var btn = event.target.closest("[data-chip]");
-    if (!btn || !guide) return;
-    var chip = btn.getAttribute("data-chip");
-    if (chip === "Mute me and just read") {
-      voiceOn = false;
-      if (window.speechSynthesis) window.speechSynthesis.cancel();
-      host.querySelector(".voice-note").textContent = "Voice is off. You can read the answer on the page.";
-      return;
-    }
-    if (chip === "1-minute clip" || chip === "10-minute trailer" || chip === "cheat codes") {
-      var local = {
-        "1-minute clip": "The 1-minute clip is a scripted read on the Listen page. It is not a video and there is no audio file.",
-        "10-minute trailer": "The 10-minute trailer is a reading list on the Listen page. It is not a video.",
-        "cheat codes": "Cheat sheets are study files on the Downloads page: pratyāhāra, counts, how to read a number, and the Kashmir notes. They are not a hidden mode."
-      };
-      var href = chip === "cheat codes" ? "downloads.html" : (chip === "1-minute clip" ? "listen.html#minute" : "listen.html#trailer");
-      log.innerHTML = "<p>" + esc(local[chip]) + "</p><p><a href=\"" + href + "\">Open it</a></p>";
-      return;
-    }
+  function ask(text) {
+    if (!text) return;
     if (!guide) {
       ensureGuide().then(function () {
-        if (!guide) return;
-        var out = guide.route(chip, session, { page: page, room: document.body.dataset.room || "" });
-        session = out.session;
-        paint(out.reply);
+        if (guide) ask(text);
       });
       return;
     }
-    var out = guide.route(chip, session, { page: page, room: document.body.dataset.room || "" });
+    var out = guide.route(text, session, context());
     session = out.session;
     paint(out.reply);
+  }
+
+  function clearSpoken() {
+    document.querySelectorAll(".is-reading").forEach(function (node) { node.classList.remove("is-reading"); });
+  }
+
+  function alongItems() {
+    var scope = readRoot();
+    var nodes = scope.querySelectorAll("h1, h2, h3, p, li");
+    var items = [];
+    nodes.forEach(function (node) {
+      if (node.closest(".sb-panel, .ob-card, .sb-log")) return;
+      var text = (node.textContent || "").replace(/\s+/g, " ").trim();
+      if (text.length < 2) return;
+      items.push({ node: node, text: text });
+    });
+    return items;
+  }
+
+  function showAlong() {
+    clearSpoken();
+    var item = along.items[along.index];
+    if (!item) return;
+    item.node.classList.add("is-reading");
+    var scroller = document.querySelector(".page-scroll");
+    if (scroller) {
+      var nodeTop = item.node.getBoundingClientRect().top;
+      var boxTop = scroller.getBoundingClientRect().top;
+      scroller.scrollBy({ top: nodeTop - boxTop - 12, behavior: motionOff() ? "auto" : "smooth" });
+    } else {
+      item.node.scrollIntoView({ block: "center", behavior: motionOff() ? "auto" : "smooth" });
+    }
+    if (voiceOn && window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+      var utter = new SpeechSynthesisUtterance(item.text);
+      utter.rate = 0.92;
+      utter.onend = function () {
+        if (!along.paused && along.items.length) stepAlong(1);
+      };
+      window.speechSynthesis.speak(utter);
+      return;
+    }
+    window.clearTimeout(along.timer);
+    along.timer = window.setTimeout(function () {
+      if (!along.paused && along.items.length) stepAlong(1);
+    }, Math.min(4200, 900 + item.text.length * 28));
+  }
+
+  function stepAlong(dir) {
+    if (!along.items.length) return;
+    along.index += dir;
+    if (along.index >= along.items.length) {
+      stopAlong(true);
+      return;
+    }
+    if (along.index < 0) along.index = 0;
+    showAlong();
+  }
+
+  function startAlong() {
+    along.items = alongItems();
+    along.index = 0;
+    along.paused = false;
+    if (!along.items.length) {
+      note.textContent = "There is no readable text on this page yet.";
+      return;
+    }
+    note.textContent = voiceOn
+      ? "Read along is speaking this page. Sanskrit may be pronounced wrong."
+      : "Read along is highlighting this page. Turn voice on if you want to hear it.";
+    showAlong();
+  }
+
+  function stopAlong(done) {
+    along.paused = true;
+    along.items = [];
+    window.clearTimeout(along.timer);
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    clearSpoken();
+    if (done) note.textContent = "Read along finished. Voice stays where you left it.";
+  }
+
+  monkey.addEventListener("click", function () { open(true); });
+  root.querySelector("[data-guide-close]").addEventListener("click", function () { open(false); monkey.focus(); });
+  document.addEventListener("sutra-guide-open", function () { open(true); });
+  root.querySelector("[data-along-start]").addEventListener("click", startAlong);
+  root.querySelector("[data-along-pause]").addEventListener("click", function () {
+    along.paused = !along.paused;
+    this.textContent = along.paused ? "Resume" : "Pause";
+    if (along.paused) {
+      window.clearTimeout(along.timer);
+      if (window.speechSynthesis) window.speechSynthesis.cancel();
+    } else if (along.items.length) showAlong();
+  });
+  root.querySelector("[data-along-next]").addEventListener("click", function () {
+    along.paused = false;
+    if (!along.items.length) startAlong();
+    else stepAlong(1);
+  });
+  root.querySelector("[data-along-stop]").addEventListener("click", function () { stopAlong(false); });
+
+  chips.addEventListener("click", function (event) {
+    var btn = event.target.closest("[data-chip]");
+    if (!btn) return;
+    var chip = btn.getAttribute("data-chip");
+    if (chip === "Read along") {
+      startAlong();
+      return;
+    }
+    ask(chip);
+  });
+  root.querySelector(".sb-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    var text = input.value.trim();
+    input.value = "";
+    if (text.toLowerCase() === "read along") startAlong();
+    else ask(text);
   });
 
-  var voiceRow = host.querySelector(".voice-row");
-  voiceRow.innerHTML = '<button type="button" data-voice>Voice off</button><label>Voice <select data-voice-pick><option value="">Browser default</option></select></label><label>Rate <input data-rate type="range" min="0.7" max="1.2" step="0.1" value="1"></label><label>Pitch <input data-pitch type="range" min="0.8" max="1.2" step="0.1" value="1"></label><button type="button" data-voice-stop>Stop</button>';
-  host.querySelector(".voice-note").textContent = "Voice is off. Browser voices may mispronounce Sanskrit. This is a reading aid, not a recitation.";
   function fillVoices() {
-    var select = host.querySelector("[data-voice-pick]");
-    if (!window.speechSynthesis) return;
+    var select = root.querySelector("[data-voice-pick]");
+    if (!window.speechSynthesis || !select) return;
     var voices = window.speechSynthesis.getVoices();
-    var ranked = voices.slice().sort(function (a, b) {
-      function score(voice) { return (/natural/i.test(voice.name) ? 3 : 0) + (/enhanced|premium/i.test(voice.name) ? 2 : 0); }
-      return score(b) - score(a);
-    });
-    select.innerHTML = '<option value="">Browser default</option>' + ranked.map(function (voice) {
+    select.innerHTML = '<option value="">Browser default</option>' + voices.map(function (voice) {
       return '<option value="' + esc(voice.name) + '">' + esc(voice.name) + "</option>";
     }).join("");
+    var saved = ls("sutra-voice");
+    if (saved) select.value = saved;
   }
   if (window.speechSynthesis) {
     fillVoices();
     window.speechSynthesis.addEventListener("voiceschanged", fillVoices);
   }
-  host.querySelector("[data-voice]").addEventListener("click", function () {
+  root.querySelector("[data-voice]").addEventListener("click", function () {
     voiceOn = !voiceOn;
     this.textContent = voiceOn ? "Voice on" : "Voice off";
-    host.querySelector(".voice-note").textContent = voiceOn
+    this.setAttribute("aria-pressed", voiceOn ? "true" : "false");
+    note.textContent = voiceOn
       ? "Voice is on. Browser voices may mispronounce Sanskrit. This is a reading aid, not a recitation."
       : "Voice is off. Browser voices may mispronounce Sanskrit. This is a reading aid, not a recitation.";
   });
-  host.querySelector("[data-voice-pick]").addEventListener("change", function (event) {
+  root.querySelector("[data-voice-pick]").addEventListener("change", function (event) {
     ls("sutra-voice", event.target.value);
   });
-  host.querySelector("[data-voice-stop]").addEventListener("click", function () {
+  root.querySelector("[data-voice-stop]").addEventListener("click", function () {
     if (window.speechSynthesis) window.speechSynthesis.cancel();
-    speaking = false;
   });
 
+  var drag = null;
+  monkey.addEventListener("pointerdown", function (event) {
+    if (phone() || event.button !== 0) return;
+    drag = { x: event.clientX, y: event.clientY, left: root.offsetLeft, top: root.offsetTop, moved: false };
+    monkey.setPointerCapture(event.pointerId);
+  });
+  monkey.addEventListener("pointermove", function (event) {
+    if (!drag) return;
+    var dx = event.clientX - drag.x;
+    var dy = event.clientY - drag.y;
+    if (Math.abs(dx) + Math.abs(dy) > 6) drag.moved = true;
+    root.style.left = Math.max(8, drag.left + dx) + "px";
+    root.style.right = "auto";
+    root.style.top = Math.max(8, drag.top + dy) + "px";
+    root.style.bottom = "auto";
+  });
+  monkey.addEventListener("pointerup", function () {
+    if (drag && drag.moved) monkey.dataset.dragged = "1";
+    drag = null;
+  });
+  monkey.addEventListener("click", function (event) {
+    if (monkey.dataset.dragged === "1") {
+      event.stopImmediatePropagation();
+      delete monkey.dataset.dragged;
+    }
+  }, true);
+
   welcome();
-  if (ls("sutra-guide-open") === "1" && window.matchMedia("(min-width: 721px)").matches) ensureGuide();
+  if (ls("sutra-guide-open") === "1" && !phone()) open(true);
   if (/[?&]guide=1(?:&|$)/.test(location.search)) open(true);
 }

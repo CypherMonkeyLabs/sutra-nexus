@@ -40,7 +40,7 @@ DISCLAIMER = "Sūtra Nexus is an independent, free, learning-only student projec
 BLOCKS = ['id="learn"', 'id="visual"', 'id="example"', 'id="quiz"', 'id="sources"', 'id="ecosystem"', "data-canon-footer", DISCLAIMER]
 EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 ALLOWED = {
-    "cyphermonkeylabs.com", "github.com", "linktr.ee", "huggingface.co",
+    "cyphermonkeylabs.com", "github.com", "linktr.ee",
     "ashtadhyayi.com", "gretil.sub.uni-goettingen.de",
     "en.wikipedia.org", "animejs.com", "roughjs.com", "threejs.org",
     "d3js.org", "markmap.js.org",
@@ -70,7 +70,7 @@ for dirpath, dirnames, filenames in os.walk("."):
             mailto.append(rel)
         if re.search(r"(^|[^\w])dev\.to([^\w]|$)", text, re.I):
             devto.append(rel)
-        if "cipher0x9" in text:
+        if "cipher0x9" in text or "cypher0x9" in text.lower() or "huggingface.co" in text.lower():
             cipher.append(rel)
         if BANNED_SOCIAL.search(text):
             bad_hosts.append(rel + " banned social link")
@@ -81,11 +81,12 @@ for dirpath, dirnames, filenames in os.walk("."):
             linktree.add(url)
         if ext == ".html" and not rel.startswith("downloads/"):
             if rel == "offline.html":
-                check("offline footer", "data-canon-footer" in text and DISCLAIMER in text)
+                check("offline footer", "data-canon-footer" in text and DISCLAIMER in text and "Sources and go deeper" in text)
             else:
                 missing = [bit for bit in BLOCKS if bit not in text]
                 quizzes = text.count('class="quiz-q"')
                 check(rel, not missing and quizzes >= 5, f"missing={missing} quizzes={quizzes}")
+                check(rel + " sources block", "Sources and go deeper" in text and "last checked 2026-10" in text)
         if ext == ".html" and rel.startswith("downloads/") and rel != "downloads/sutra-nexus-single-file.html":
             check(rel + " standalone", "<style" in text and "sutra.css" not in text and "assets/" not in text)
         elif rel == "downloads/sutra-nexus-single-file.html":
@@ -109,7 +110,7 @@ if os.path.exists(zip_path):
 
 check("no mailto", not mailto, ", ".join(mailto[:5]))
 check("no dev.to", not devto, ", ".join(devto))
-check("no cipher0x9", not cipher, ", ".join(cipher[:8]))
+check("no cipher0x9 or huggingface brand", not cipher, ", ".join(cipher[:8]))
 check("no email-shaped text", not emails, ", ".join(emails[:4]))
 check("one optional zip", zips == ["downloads/sutra-nexus-all.zip"], ", ".join(zips))
 check("only linktr.ee/cyphermonkey", linktree == {"https://linktr.ee/cyphermonkey"}, ", ".join(sorted(linktree)))

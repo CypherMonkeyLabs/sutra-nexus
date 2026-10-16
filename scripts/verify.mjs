@@ -43,7 +43,6 @@ const allowedHost = [
   "cyphermonkeylabs.com",
   "github.com",
   "linktr.ee",
-  "huggingface.co",
   "ashtadhyayi.com",
   "www.ashtadhyayi.com",
   "gretil.sub.uni-goettingen.de",

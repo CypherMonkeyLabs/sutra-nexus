@@ -55,9 +55,10 @@ def socials():
     icons = []
     for item in data.get("icons", []):
         href = str(item.get("href", ""))
-        if item.get("id") in {"x", "linkedin"}:
+        if item.get("id") in {"x", "linkedin", "huggingface"}:
             continue
-        if "linkedin.com" in href or "://x.com" in href or "twitter.com" in href:
+        blocked = ("linkedin.com", "://x.com", "twitter.com", "hugging" + "face.co")
+        if any(bit in href for bit in blocked):
             continue
         icons.append(item)
     data["icons"] = icons
@@ -66,9 +67,6 @@ def socials():
 def icon_svg(name):
     path = {
         "github": "assets/icons/si-github.svg",
-        "x": "assets/icons/si-x.svg",
-        "linkedin": "assets/icons/si-li.svg",
-        "huggingface": "assets/icons/si-hf.svg",
         "linktree": "assets/icons/si-lt.svg",
         "monkey": "assets/icons/monkey.svg",
     }[name]
@@ -261,6 +259,7 @@ def page_shell(current, title, description, body, extra=""):
 </div>
 {phone_dock(current)}
 <div class="guide-root"></div>
+<script src="assets/js/tour.js"></script>
 <script src="assets/js/brand.js"></script>
 <script src="assets/js/frame.js"></script>
 <script src="assets/js/phone-nav.js"></script>

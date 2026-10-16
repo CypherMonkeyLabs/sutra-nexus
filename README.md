@@ -49,4 +49,3 @@ CypherMonkey Labs
 [![CypherMonkey Labs](assets/icons/monkey.svg)](https://cyphermonkeylabs.com)
 [![GitHub](assets/icons/si-github.svg)](https://github.com/CypherMonkeyLabs)
 [![Linktree](assets/icons/si-lt.svg)](https://linktr.ee/cyphermonkey)
-[![Hugging Face](assets/icons/si-hf.svg)](https://huggingface.co/Cypher0x9)

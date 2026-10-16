@@ -24,13 +24,6 @@
       "class": "brand-lt",
       "label": "Linktree",
       "href": "https://linktr.ee/cyphermonkey"
-    },
-    {
-      "id": "huggingface",
-      "icon": "huggingface",
-      "class": "brand-hf",
-      "label": "Hugging Face",
-      "href": "https://huggingface.co/Cypher0x9"
     }
   ]
 }

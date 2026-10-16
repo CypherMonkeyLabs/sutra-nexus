@@ -191,9 +191,13 @@ def sources_block(rows):
     lis = []
     for row in rows:
         name = b.E(row["name"])
-        head = f'<a href="{b.E(row["url"])}">{name}</a>' if row.get("url") else name
-        lis.append(f'<li>{head}. {b.E(row["detail"])} Checked {CHECKED}. Licence: {b.E(row["licence"])}.</li>')
-    return '<section class="sources" id="sources"><h2>Cited sources</h2><ul>' + "".join(lis) + "</ul></section>"
+        url = str(row.get("url") or "").strip()
+        if url and row.get("opened", True):
+            head = f'<a href="{b.E(url)}">{name}</a>'
+        else:
+            head = f"{name} — confirm"
+        lis.append(f'<li>{head}. {b.E(row["detail"])} last checked 2026-10. Licence: {b.E(row["licence"])}.</li>')
+    return '<section class="sources sources-deeper" id="sources"><h2>Sources and go deeper</h2><ul>' + "".join(lis) + "</ul></section>"
 
 def eco_block(glossary, sisters, bridges, hooks):
     terms = "".join(f"<li><b>{b.E(term)}</b> — {b.E(defn)}</li>" for term, defn in glossary)
@@ -623,8 +627,8 @@ def rooms(st, diagrams_by_room):
         if spec.get("extra_html"):
             body.append(spec["extra_html"])
         body.append(f'<section class="quiz" id="quiz"><h2>Quiz</h2>{quiz_html}</section>')
-        body.append(sources_block(spec["sources"]))
         body.append(eco_block(spec["glossary"], spec["sisters"], spec["bridges"], spec["hooks"]))
+        body.append(sources_block(spec["sources"]))
         pages.append({**spec, "html": "\n".join(body), "visual": visual})
     return pages
 
@@ -671,6 +675,10 @@ def standalone_html(title, inner):
 <body>
 <main class="main-wrap">
 {inner}
+<section class="sources sources-deeper" id="sources"><h2>Sources and go deeper</h2><ul>
+<li><a href="https://github.com/ashtadhyayi-com/data">ashtadhyayi-com/data</a>. The cached study files come from this open data. last checked 2026-10. Licence: credit required, no formal SPDX.</li>
+<li><a href="https://en.wikipedia.org/wiki/Aṣṭādhyāyī">English Wikipedia, Aṣṭādhyāyī</a>. Background for the grammar these files study. last checked 2026-10. Licence: CC BY-SA 4.0.</li>
+</ul></section>
 </main>
 {b.footer_html_fixed()}
 </body>
@@ -1089,7 +1097,7 @@ def downloads_page(rows, visual=None):
 <p>{b.E(row["kind"])} · {size}</p>
 <p><a href="{b.E(row["path"])}">Download</a></p>
 </article>''')
-        opened = " open" if index == 0 else ""
+        opened = ""
         label = titles.get(room, room)
         sections.append(f'<details class="dl-room"{opened}><summary>{b.E(label)} · {len(groups[room])} files</summary><div class="dl-grid">{"".join(cards)}</div></details>')
     filters = "".join(f'<button type="button" data-filter="{key}">{label}</button>' for key, label in [
@@ -1195,8 +1203,8 @@ def five_blocks(file, title, desc, paras, example, quizzes, visual, glossary, so
         + visual_block(visual)
         + example_block(example[0], example[1])
         + f'<section class="quiz" id="quiz"><h2>Quiz</h2>{qhtml}</section>'
-        + sources_block(sources if sources is not None else [DATA_CREDIT, WIKI_ASHTA])
         + eco_block(glossary, "Sister rooms are the chips in the section banner.", "Learner's note (not a translation): this page explains the app. It does not add a rule of the grammar.", "An open meaning, and a human check of the IAST. Confirm before relying.")
+        + sources_block(sources if sources is not None else [DATA_CREDIT, WIKI_ASHTA])
     )
 
 def other_pages(st, items, pages):
@@ -1242,7 +1250,7 @@ def other_pages(st, items, pages):
     resources = [
         DATA_CREDIT, WIKI_ASHTA, WIKI_PANINI, WIKI_SHIKSHA, WIKI_SANDHI, WIKI_IAST, WIKI_DEVA, WIKI_MAHA, WIKI_KASH, GRETIL,
         {"name": "ashtadhyayi.com", "url": "https://ashtadhyayi.com/", "detail": "The site that reads ashtadhyayi-com/data. Opened 2026-10-16. Commentaries on that site are not copied here.", "licence": "site content stays with its owners"},
-        {"name": "Simple Icons 13.21.0", "url": "", "detail": "Icons for GitHub, X, LinkedIn, Hugging Face, and Linktree. Named here without a link. The licence file was fetched the same day.", "licence": "CC0-1.0"},
+        {"name": "Simple Icons 13.21.0", "url": "", "opened": False, "detail": "Icons for the GitHub organization and Linktree marks. Named here without a link. The licence file was fetched the same day.", "licence": "CC0-1.0"},
         {"name": "Noto Sans Devanagari", "url": "", "detail": "Subset woff2 shipped for the Devanāgarī block. Named here without a link. The font's name table says SIL OFL 1.1.", "licence": "OFL-1.1"},
     ]
     b.write("resources.html", b.page_shell("resources.html", "Resources · Sūtra Nexus", "Pages opened on 2026-10-16.",
@@ -1494,6 +1502,7 @@ document.addEventListener("click", function (event) {
     guide = open("assets/js/guide.js", encoding="utf-8").read().replace(
         'import { createGuide, blankSession } from "../../guide/engine.mjs";\n', ""
     )
+    html = html.replace('<script src="assets/js/tour.js"></script>', inline_script("assets/js/tour.js"))
     html = html.replace(
         '<script src="assets/js/brand.js"></script>',
         "<script>window.SUTRA_EMBED=" + js_embed(embed) + ";</script>\n" + inline_script("assets/js/brand.js"),
@@ -1539,7 +1548,6 @@ def socials_file():
             {"id": "web", "icon": "monkey", "class": "brand-web", "label": "CypherMonkey Labs", "href": "https://cyphermonkeylabs.com"},
             {"id": "github", "icon": "github", "class": "brand-gh", "label": "GitHub organization", "href": "https://github.com/CypherMonkeyLabs"},
             {"id": "linktree", "icon": "linktree", "class": "brand-lt", "label": "Linktree", "href": "https://linktr.ee/cyphermonkey"},
-            {"id": "huggingface", "icon": "huggingface", "class": "brand-hf", "label": "Hugging Face", "href": "https://huggingface.co/Cypher0x9"},
         ],
     }
     b.write("assets/data/socials.json", json.dumps(payload, ensure_ascii=False, indent=2))
