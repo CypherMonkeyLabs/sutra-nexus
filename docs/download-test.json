@@ -5,6 +5,10 @@
       "kind": "text"
     },
     {
+      "path": "downloads/sutra-nexus-single-file.html",
+      "kind": "text"
+    },
+    {
       "path": "downloads/flashcards.html",
       "kind": "text"
     },
@@ -1370,6 +1374,10 @@
     },
     {
       "path": "downloads/sheets/read-a-number.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/sutra-nexus-single-file.html",
       "kind": "headless"
     },
     {

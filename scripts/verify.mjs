@@ -51,7 +51,6 @@ const allowedHost = [
   "www.ashtadhyayi.com",
   "gretil.sub.uni-goettingen.de",
   "en.wikipedia.org",
-  "simpleicons.org",
   "animejs.com",
   "roughjs.com",
   "threejs.org",
@@ -86,6 +85,12 @@ for (const full of files) {
   if (found) emails.push(rel + " " + found.slice(0, 2).join(","));
   const trees = text.match(/https?:\/\/linktr\.ee\/[A-Za-z0-9_.-]+/g) || [];
   trees.forEach((url) => linktree.add(url));
+  if (ext === ".html" && rel.startsWith("downloads" + path.sep) && rel !== "downloads/sutra-nexus-single-file.html") {
+    check(rel + " standalone", text.includes("<style") && !text.includes("sutra.css") && !text.includes("assets/"));
+  }
+  if (rel === "downloads/sutra-nexus-single-file.html") {
+    check("single-file app", text.includes("<style") && !text.includes("sutra.css") && !text.includes('src="assets/') && text.includes("SUTRA_EMBED"));
+  }
   if (ext === ".html" && !rel.startsWith("downloads" + path.sep)) pages.push(rel);
   let match;
   hrefRe.lastIndex = 0;
@@ -94,7 +99,8 @@ for (const full of files) {
     if (!/^https?:/i.test(url)) continue;
     let host = "";
     try { host = new URL(url).host; } catch (err) { badHosts.push(rel + " " + url); continue; }
-    if (host === "github.com" && !url.includes("github.com/CypherMonkeyLabs") && !url.includes("github.com/ashtadhyayi-com/") && !url.includes("github.com/notofonts/") && !url.includes("github.com/catdad/")) {
+    if (url.includes("simpleicons.org") || url.includes("notofonts")) badHosts.push(rel + " " + url);
+    if (host === "github.com" && !url.includes("github.com/CypherMonkeyLabs") && !url.includes("github.com/ashtadhyayi-com/") && !url.includes("github.com/catdad/")) {
       badHosts.push(rel + " " + url);
     }
     if (host !== "github.com" && allowedHost.indexOf(host) === -1) badHosts.push(rel + " " + url);

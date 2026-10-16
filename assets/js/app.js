@@ -65,7 +65,8 @@
   var indexPromise = null;
   function loadIndex() {
     if (!indexPromise) {
-      indexPromise = fetch(base + "assets/data/search-index.json").then(function (res) { return res.json(); });
+      if (window.SUTRA_EMBED && window.SUTRA_EMBED.search) indexPromise = Promise.resolve(window.SUTRA_EMBED.search);
+      else indexPromise = fetch(base + "assets/data/search-index.json").then(function (res) { return res.json(); });
     }
     return indexPromise;
   }
@@ -105,9 +106,15 @@
       var btn = event.target.closest("[data-filter]");
       if (!btn) return;
       var kind = btn.getAttribute("data-filter");
-      document.querySelectorAll("[data-dl]").forEach(function (card) {
-        var show = kind === "all" || card.getAttribute("data-kind") === kind || card.getAttribute("data-room") === kind;
-        card.hidden = !show;
+      document.querySelectorAll("details.dl-room").forEach(function (section) {
+        var any = false;
+        section.querySelectorAll("[data-dl]").forEach(function (card) {
+          var show = kind === "all" || card.getAttribute("data-kind") === kind || card.getAttribute("data-room") === kind;
+          card.hidden = !show;
+          if (show) any = true;
+        });
+        section.hidden = !any;
+        if (any && kind !== "all") section.open = true;
       });
     });
   }
@@ -166,7 +173,10 @@
   function bindCards() {
     var host = document.querySelector("[data-cards]");
     if (!host) return;
-    fetch(base + "downloads/flashcards.json").then(function (res) { return res.json(); }).then(function (data) {
+    var cardsReady = (window.SUTRA_EMBED && window.SUTRA_EMBED.cards)
+      ? Promise.resolve(window.SUTRA_EMBED.cards)
+      : fetch(base + "downloads/flashcards.json").then(function (res) { return res.json(); });
+    cardsReady.then(function (data) {
       var cards = data.cards || [];
       var state = ls("sutra-cards") || {};
       var cursor = 0;
@@ -232,7 +242,10 @@
       };
       if (cache) { run(); return; }
       out.textContent = "Loading the sūtra index…";
-      fetch(base + "assets/data/sutra-index.json").then(function (res) { return res.json(); }).then(function (data) {
+      var sutraReady = (window.SUTRA_EMBED && window.SUTRA_EMBED.sutras)
+        ? Promise.resolve(window.SUTRA_EMBED.sutras)
+        : fetch(base + "assets/data/sutra-index.json").then(function (res) { return res.json(); });
+      sutraReady.then(function (data) {
         cache = data.rows || [];
         run();
       }).catch(function () { out.textContent = "The sūtra index did not load. confirm before relying."; });

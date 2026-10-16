@@ -6,7 +6,7 @@
 <title>Downloads · Sūtra Nexus</title>
 <meta name="description" content="Individual study files and one optional zip.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<script>try{var t=localStorage.getItem("sutra-theme")||"bloom";if(["bloom","dark","light","contrast"].indexOf(t)<0)t="bloom";document.documentElement.dataset.theme=t;var f=parseFloat(localStorage.getItem("sutra-fscale")||"1");if(f)document.documentElement.style.setProperty("--fscale",String(f));var m=localStorage.getItem("sutra-motion");if(m==="reduce"||m==="full")document.documentElement.dataset.motion=m;var ink=localStorage.getItem("sutra-ink");if(ink&&/^#[0-9a-f]{6}$/i.test(ink))document.documentElement.style.setProperty("--ink",ink);}catch(e){}</script>
+<script>try{var t=localStorage.getItem("sutra-theme")||"bloom";if(["bloom","dark","light","contrast"].indexOf(t)<0)t="bloom";document.documentElement.dataset.theme=t;var f=parseFloat(localStorage.getItem("sutra-fscale")||"1");if(f)document.documentElement.style.setProperty("--fscale",String(f));var m=localStorage.getItem("sutra-motion");if(m==="reduce"||m==="full")document.documentElement.dataset.motion=m;var ink=localStorage.getItem("sutra-ink");if(ink&&/^#[0-9a-f]{6}$/i.test(ink))document.documentElement.style.setProperty("--ink",ink);if(matchMedia("(max-width:720px)").matches&&localStorage.getItem("sutra-nav-hint")!=="1"){document.documentElement.dataset.navHint="1";document.documentElement.style.setProperty("--dock-h","120px");}}catch(e){}</script>
 <link rel="stylesheet" href="assets/css/sutra.css">
 </head>
 <body data-room="downloads">
@@ -38,6 +38,7 @@
 <circle cx="48" cy="48" r="40" fill="none" stroke="#22d3ee" stroke-width="4"/>
 <g class="wheel-spin"><line x1="48" y1="12" x2="48" y2="28" transform="rotate(0 48 48)" stroke="#fde047" stroke-width="3" stroke-linecap="round"/><line x1="48" y1="12" x2="48" y2="28" transform="rotate(45 48 48)" stroke="#fde047" stroke-width="3" stroke-linecap="round"/><line x1="48" y1="12" x2="48" y2="28" transform="rotate(90 48 48)" stroke="#fde047" stroke-width="3" stroke-linecap="round"/><line x1="48" y1="12" x2="48" y2="28" transform="rotate(135 48 48)" stroke="#fde047" stroke-width="3" stroke-linecap="round"/><line x1="48" y1="12" x2="48" y2="28" transform="rotate(180 48 48)" stroke="#fde047" stroke-width="3" stroke-linecap="round"/><line x1="48" y1="12" x2="48" y2="28" transform="rotate(225 48 48)" stroke="#fde047" stroke-width="3" stroke-linecap="round"/><line x1="48" y1="12" x2="48" y2="28" transform="rotate(270 48 48)" stroke="#fde047" stroke-width="3" stroke-linecap="round"/><line x1="48" y1="12" x2="48" y2="28" transform="rotate(315 48 48)" stroke="#fde047" stroke-width="3" stroke-linecap="round"/><circle cx="48" cy="48" r="8" fill="#f472b6"/></g>
 </svg></div><div class="drawer-bar"><p>Menu</p><button type="button" data-close-menu>Close</button></div><div class="drawer-search"><label class="sr" for="q">Search</label><input id="q" data-search type="search" placeholder="Rooms, sūtra numbers, terms" autocomplete="off"><div class="search-hits" data-search-hits></div></div><div class="drawer-list"><p class="drawer-group">Start here</p><a href="index.html"><span><b>Start here</b><span>A six-step path and what this app will not invent.</span></span></a><p class="drawer-group">Learn</p><a href="foundations.html"><span><b>Foundations</b><span>Script, sounds, and the phonetic terms still unsourced.</span></span></a><a href="maheshvara.html"><span><b>Māheśvara</b><span>The 14 lines and a pratyāhāra you can compute.</span></span></a><a href="sandhi.html"><span><b>Sandhi</b><span>Sound-joining, without a fake rule walk.</span></span></a><a href="ashtadhyayi.html"><span><b>Aṣṭādhyāyī</b><span>3,983 lines, eight chapters, and the type letters in the file.</span></span></a><a href="anuvrtti.html"><span><b>Anuvṛtti</b><span>How the data file carries earlier words.</span></span></a><a href="dhatu.html"><span><b>Dhātu</b><span>Verb roots and word classes, with the gaps marked.</span></span></a><a href="shiva.html"><span><b>Śiva Sūtras</b><span>The 75-line Kashmir file, with no English added.</span></span></a><a href="history.html"><span><b>History</b><span>Dates only as the opened pages state them.</span></span></a><p class="drawer-group">Practice</p><a href="diagrams.html"><span><b>Diagrams</b><span>Every drawing, with a still PNG and a standalone page.</span></span></a><a href="charts.html"><span><b>Charts</b><span>Counts from this repository.</span></span></a><a href="play.html"><span><b>Play</b><span>Builders, drills, cards, and an interview bank.</span></span></a><a href="listen.html"><span><b>Listen</b><span>Scripted reads. No audio file is claimed.</span></span></a><p class="drawer-group">Library</p><a href="ecosystem.html"><span><b>Ecosystem</b><span>How the rooms connect, as a map not a claim of history.</span></span></a><a href="resources.html"><span><b>Resources</b><span>Pages opened on 2026-10-16.</span></span></a><a href="downloads.html" aria-current="page"><span><b>Downloads</b><span>Individual files, plus one optional zip.</span></span></a><a href="glossary.html"><span><b>Glossary</b><span>Terms used in these rooms.</span></span></a><p class="drawer-group">Project</p><a href="credits.html"><span><b>Credits</b><span>Libraries, icons, the font, and the data.</span></span></a><a href="about.html"><span><b>About</b><span>A short note and the same disclaimer.</span></span></a></div></nav></div>
+<div class="page-scroll">
 <main id="main" class="main-wrap" tabindex="-1">
 <h1 class="hero-title">Downloads</h1>
 <p class="lede">Every file is listed on its own. The zip is optional and is the only archive.</p>
@@ -68,188 +69,8 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 <h3>Bridges</h3><p>Learner&#x27;s note (not a translation): this page explains the app. It does not add a rule of the grammar.</p>
 <h3>Later hooks</h3><p>An open meaning, and a human check of the IAST. Confirm before relying.</p>
 </section>
-<div class="filter-bar" data-filters><button type="button" data-filter="all">All</button><button type="button" data-filter="diagram">Diagrams</button><button type="button" data-filter="sheet">Sheets</button><button type="button" data-filter="cards">Cards</button><button type="button" data-filter="template">Templates</button><button type="button" data-filter="deck">Deck</button><button type="button" data-filter="model">Models</button><button type="button" data-filter="bundle">Optional zip</button></div>
-<div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/01-pratyāhāra-ac.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ac SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/01-pratyāhāra-ac.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/01-pratyāhāra-ac.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ac PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/01-pratyāhāra-ac.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/01-pratyāhāra-ac.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ac HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/01-pratyāhāra-ac.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/02-pratyāhāra-ik.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ik SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/02-pratyāhāra-ik.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/02-pratyāhāra-ik.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ik PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/02-pratyāhāra-ik.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/02-pratyāhāra-ik.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ik HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/02-pratyāhāra-ik.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/03-pratyāhāra-yaṇ.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra yaṇ SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/03-pratyāhāra-yaṇ.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/03-pratyāhāra-yaṇ.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra yaṇ PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/03-pratyāhāra-yaṇ.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/03-pratyāhāra-yaṇ.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra yaṇ HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/03-pratyāhāra-yaṇ.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/04-pratyāhāra-śar.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra śar SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/04-pratyāhāra-śar.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/04-pratyāhāra-śar.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra śar PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/04-pratyāhāra-śar.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/04-pratyāhāra-śar.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra śar HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/04-pratyāhāra-śar.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/05-pratyāhāra-ak.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ak SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/05-pratyāhāra-ak.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/05-pratyāhāra-ak.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ak PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/05-pratyāhāra-ak.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/05-pratyāhāra-ak.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ak HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/05-pratyāhāra-ak.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/06-pratyāhāra-ec.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ec SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/06-pratyāhāra-ec.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/06-pratyāhāra-ec.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ec PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/06-pratyāhāra-ec.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/06-pratyāhāra-ec.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra ec HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/06-pratyāhāra-ec.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/07-pratyāhāra-hal.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra hal SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/07-pratyāhāra-hal.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/07-pratyāhāra-hal.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra hal PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/07-pratyāhāra-hal.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/07-pratyāhāra-hal.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra hal HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/07-pratyāhāra-hal.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/08-pratyāhāra-al.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra al SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/08-pratyāhāra-al.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/08-pratyāhāra-al.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra al PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/08-pratyāhāra-al.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/08-pratyāhāra-al.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Pratyāhāra al HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/08-pratyāhāra-al.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/09-it-marker-is-not-part-of-the-set.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>It marker is not part of the set SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/09-it-marker-is-not-part-of-the-set.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/09-it-marker-is-not-part-of-the-set.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>It marker is not part of the set PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/09-it-marker-is-not-part-of-the-set.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/09-it-marker-is-not-part-of-the-set.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>It marker is not part of the set HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/09-it-marker-is-not-part-of-the-set.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/10-read-a-sūtra-number.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Read a sūtra number SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/10-read-a-sūtra-number.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/10-read-a-sūtra-number.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Read a sūtra number PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/10-read-a-sūtra-number.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/10-read-a-sūtra-number.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Read a sūtra number HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/10-read-a-sūtra-number.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
-<img class="thumb" src="downloads/diagrams/11-anuvṛtti-on-1-1-3.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Anuvṛtti on 1.1.3 SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/11-anuvṛtti-on-1-1-3.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
-<img class="thumb" src="downloads/diagrams/11-anuvṛtti-on-1-1-3.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Anuvṛtti on 1.1.3 PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/11-anuvṛtti-on-1-1-3.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
-<img class="thumb" src="downloads/diagrams/11-anuvṛtti-on-1-1-3.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Anuvṛtti on 1.1.3 HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/11-anuvṛtti-on-1-1-3.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/12-no-invented-meaning.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>No invented meaning SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/12-no-invented-meaning.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/12-no-invented-meaning.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>No invented meaning PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/12-no-invented-meaning.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/12-no-invented-meaning.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>No invented meaning HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/12-no-invented-meaning.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
+<div class="filter-bar" data-filters><button type="button" data-filter="all">All</button><button type="button" data-filter="diagram">Diagrams</button><button type="button" data-filter="sheet">Sheets</button><button type="button" data-filter="cards">Cards</button><button type="button" data-filter="template">Templates</button><button type="button" data-filter="deck">Deck</button><button type="button" data-filter="model">Models</button><button type="button" data-filter="app">Single file</button><button type="button" data-filter="bundle">Optional zip</button></div>
+<details class="dl-room" open><summary>Start here · 18 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="index">
 <img class="thumb" src="downloads/diagrams/13-six-step-start-path.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Six-step start path SVG</h3>
 <p>diagram · 3 KB</p>
@@ -262,23 +83,8 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
 <img class="thumb" src="downloads/diagrams/13-six-step-start-path.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Six-step start path HTML</h3>
-<p>diagram · 10 KB</p>
+<p>diagram · 30 KB</p>
 <p><a href="downloads/diagrams/13-six-step-start-path.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="credits">
-<img class="thumb" src="downloads/diagrams/14-licence-gate.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Licence gate SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/14-licence-gate.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="credits">
-<img class="thumb" src="downloads/diagrams/14-licence-gate.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Licence gate PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/14-licence-gate.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="credits">
-<img class="thumb" src="downloads/diagrams/14-licence-gate.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Licence gate HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/14-licence-gate.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
 <img class="thumb" src="downloads/diagrams/15-offline-search.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Offline search SVG</h3>
@@ -292,173 +98,8 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
 <img class="thumb" src="downloads/diagrams/15-offline-search.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Offline search HTML</h3>
-<p>diagram · 10 KB</p>
+<p>diagram · 29 KB</p>
 <p><a href="downloads/diagrams/15-offline-search.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="play">
-<img class="thumb" src="downloads/diagrams/16-room-quiz.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Room quiz SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/16-room-quiz.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="play">
-<img class="thumb" src="downloads/diagrams/16-room-quiz.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Room quiz PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/16-room-quiz.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="play">
-<img class="thumb" src="downloads/diagrams/16-room-quiz.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Room quiz HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/16-room-quiz.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="play">
-<img class="thumb" src="downloads/diagrams/17-flashcard-ladder.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Flashcard ladder SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/17-flashcard-ladder.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="play">
-<img class="thumb" src="downloads/diagrams/17-flashcard-ladder.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Flashcard ladder PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/17-flashcard-ladder.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="play">
-<img class="thumb" src="downloads/diagrams/17-flashcard-ladder.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Flashcard ladder HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/17-flashcard-ladder.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/18-eight-chapters.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Eight chapters SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/18-eight-chapters.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/18-eight-chapters.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Eight chapters PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/18-eight-chapters.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/18-eight-chapters.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Eight chapters HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/18-eight-chapters.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/19-four-pādas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Four pādas SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/19-four-pādas.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/19-four-pādas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Four pādas PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/19-four-pādas.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/19-four-pādas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Four pādas HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/19-four-pādas.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/20-type-letters-in-the-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Type letters in the file SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/20-type-letters-in-the-file.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/20-type-letters-in-the-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Type letters in the file PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/20-type-letters-in-the-file.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/20-type-letters-in-the-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Type letters in the file HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/20-type-letters-in-the-file.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="dhatu">
-<img class="thumb" src="downloads/diagrams/21-dhātu-gap.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Dhātu gap SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/21-dhātu-gap.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="dhatu">
-<img class="thumb" src="downloads/diagrams/21-dhātu-gap.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Dhātu gap PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/21-dhātu-gap.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="dhatu">
-<img class="thumb" src="downloads/diagrams/21-dhātu-gap.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Dhātu gap HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/21-dhātu-gap.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/22-three-unmeshas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Three unmeshas SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/22-three-unmeshas.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/22-three-unmeshas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Three unmeshas PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/22-three-unmeshas.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/22-three-unmeshas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Three unmeshas HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/22-three-unmeshas.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/23-75-and-the-other-count.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>75 and the other count SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/23-75-and-the-other-count.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/23-75-and-the-other-count.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>75 and the other count PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/23-75-and-the-other-count.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/23-75-and-the-other-count.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>75 and the other count HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/23-75-and-the-other-count.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
-<img class="thumb" src="downloads/diagrams/24-guide-choices.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Guide choices SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/24-guide-choices.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
-<img class="thumb" src="downloads/diagrams/24-guide-choices.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Guide choices PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/24-guide-choices.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
-<img class="thumb" src="downloads/diagrams/24-guide-choices.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Guide choices HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/24-guide-choices.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
-<img class="thumb" src="downloads/diagrams/25-voice-stays-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Voice stays off SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/25-voice-stays-off.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
-<img class="thumb" src="downloads/diagrams/25-voice-stays-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Voice stays off PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/25-voice-stays-off.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
-<img class="thumb" src="downloads/diagrams/25-voice-stays-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Voice stays off HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/25-voice-stays-off.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
-<img class="thumb" src="downloads/diagrams/26-every-download.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Every download SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/26-every-download.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
-<img class="thumb" src="downloads/diagrams/26-every-download.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Every download PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/26-every-download.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
-<img class="thumb" src="downloads/diagrams/26-every-download.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Every download HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/26-every-download.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
 <img class="thumb" src="downloads/diagrams/27-phone-menu.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Phone menu SVG</h3>
@@ -472,128 +113,8 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
 <img class="thumb" src="downloads/diagrams/27-phone-menu.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Phone menu HTML</h3>
-<p>diagram · 10 KB</p>
+<p>diagram · 29 KB</p>
 <p><a href="downloads/diagrams/27-phone-menu.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="history">
-<img class="thumb" src="downloads/diagrams/28-history-stays-disputed.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>History stays disputed SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/28-history-stays-disputed.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="history">
-<img class="thumb" src="downloads/diagrams/28-history-stays-disputed.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>History stays disputed PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/28-history-stays-disputed.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="history">
-<img class="thumb" src="downloads/diagrams/28-history-stays-disputed.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>History stays disputed HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/28-history-stays-disputed.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/29-cache-skips-contact.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Cache skips contact SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/29-cache-skips-contact.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/29-cache-skips-contact.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Cache skips contact PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/29-cache-skips-contact.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/29-cache-skips-contact.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Cache skips contact HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/29-cache-skips-contact.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/30-report-a-correction.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Report a correction SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/30-report-a-correction.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/30-report-a-correction.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Report a correction PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/30-report-a-correction.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/30-report-a-correction.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Report a correction HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/30-report-a-correction.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="sandhi">
-<img class="thumb" src="downloads/diagrams/31-sandhi-without-a-fake-join.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Sandhi without a fake join SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/31-sandhi-without-a-fake-join.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="sandhi">
-<img class="thumb" src="downloads/diagrams/31-sandhi-without-a-fake-join.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Sandhi without a fake join PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/31-sandhi-without-a-fake-join.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="sandhi">
-<img class="thumb" src="downloads/diagrams/31-sandhi-without-a-fake-join.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Sandhi without a fake join HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/31-sandhi-without-a-fake-join.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
-<img class="thumb" src="downloads/diagrams/32-ecosystem-is-a-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Ecosystem is a map SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/32-ecosystem-is-a-map.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
-<img class="thumb" src="downloads/diagrams/32-ecosystem-is-a-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Ecosystem is a map PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/32-ecosystem-is-a-map.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
-<img class="thumb" src="downloads/diagrams/32-ecosystem-is-a-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Ecosystem is a map HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/32-ecosystem-is-a-map.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
-<img class="thumb" src="downloads/diagrams/33-sūtras-in-each-adhyāya.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Sūtras in each adhyāya SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/33-sūtras-in-each-adhyāya.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
-<img class="thumb" src="downloads/diagrams/33-sūtras-in-each-adhyāya.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Sūtras in each adhyāya PNG</h3>
-<p>diagram · 21 KB</p>
-<p><a href="downloads/diagrams/33-sūtras-in-each-adhyāya.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
-<img class="thumb" src="downloads/diagrams/33-sūtras-in-each-adhyāya.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Sūtras in each adhyāya HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/33-sūtras-in-each-adhyāya.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
-<img class="thumb" src="downloads/diagrams/34-type-letters-in-the-data-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Type letters in the data file SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/34-type-letters-in-the-data-file.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
-<img class="thumb" src="downloads/diagrams/34-type-letters-in-the-data-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Type letters in the data file PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/34-type-letters-in-the-data-file.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
-<img class="thumb" src="downloads/diagrams/34-type-letters-in-the-data-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Type letters in the data file HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/34-type-letters-in-the-data-file.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
-<img class="thumb" src="downloads/diagrams/35-lines-with-an-anuvṛtti-field.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Lines with an anuvṛtti field SVG</h3>
-<p>diagram · 2 KB</p>
-<p><a href="downloads/diagrams/35-lines-with-an-anuvṛtti-field.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
-<img class="thumb" src="downloads/diagrams/35-lines-with-an-anuvṛtti-field.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Lines with an anuvṛtti field PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/35-lines-with-an-anuvṛtti-field.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
-<img class="thumb" src="downloads/diagrams/35-lines-with-an-anuvṛtti-field.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Lines with an anuvṛtti field HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/35-lines-with-an-anuvṛtti-field.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
 <img class="thumb" src="downloads/diagrams/36-start-here-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Start here map SVG</h3>
@@ -607,9 +128,39 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
 <img class="thumb" src="downloads/diagrams/36-start-here-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Start here map HTML</h3>
-<p>diagram · 10 KB</p>
+<p>diagram · 29 KB</p>
 <p><a href="downloads/diagrams/36-start-here-map.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="foundations">
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
+<img class="thumb" src="downloads/diagrams/47-three-counts-you-can-check.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Three counts you can check SVG</h3>
+<p>diagram · 2 KB</p>
+<p><a href="downloads/diagrams/47-three-counts-you-can-check.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
+<img class="thumb" src="downloads/diagrams/47-three-counts-you-can-check.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Three counts you can check PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/47-three-counts-you-can-check.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
+<img class="thumb" src="downloads/diagrams/47-three-counts-you-can-check.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Three counts you can check HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/47-three-counts-you-can-check.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
+<img class="thumb" src="downloads/diagrams/53-five-parts-of-a-room.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Five parts of a room SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/53-five-parts-of-a-room.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
+<img class="thumb" src="downloads/diagrams/53-five-parts-of-a-room.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Five parts of a room PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/53-five-parts-of-a-room.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
+<img class="thumb" src="downloads/diagrams/53-five-parts-of-a-room.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Five parts of a room HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/53-five-parts-of-a-room.html">Download</a></p>
+</article></div></details><details class="dl-room"><summary>Foundations · 9 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="foundations">
 <img class="thumb" src="downloads/diagrams/37-foundations-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Foundations map SVG</h3>
 <p>diagram · 3 KB</p>
@@ -622,68 +173,8 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="foundations">
 <img class="thumb" src="downloads/diagrams/37-foundations-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Foundations map HTML</h3>
-<p>diagram · 10 KB</p>
+<p>diagram · 29 KB</p>
 <p><a href="downloads/diagrams/37-foundations-map.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/38-grammar-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Grammar map SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/38-grammar-map.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/38-grammar-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Grammar map PNG</h3>
-<p>diagram · 28 KB</p>
-<p><a href="downloads/diagrams/38-grammar-map.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/38-grammar-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Grammar map HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/38-grammar-map.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
-<img class="thumb" src="downloads/diagrams/39-ecosystem-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Ecosystem map SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/39-ecosystem-map.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
-<img class="thumb" src="downloads/diagrams/39-ecosystem-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Ecosystem map PNG</h3>
-<p>diagram · 27 KB</p>
-<p><a href="downloads/diagrams/39-ecosystem-map.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
-<img class="thumb" src="downloads/diagrams/39-ecosystem-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Ecosystem map HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/39-ecosystem-map.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
-<img class="thumb" src="downloads/diagrams/40-room-links.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Room links SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/40-room-links.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
-<img class="thumb" src="downloads/diagrams/40-room-links.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Room links PNG</h3>
-<p>diagram · 26 KB</p>
-<p><a href="downloads/diagrams/40-room-links.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
-<img class="thumb" src="downloads/diagrams/40-room-links.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Room links HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/40-room-links.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/41-the-fourteen-māheśvara-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>The fourteen Māheśvara lines SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/41-the-fourteen-māheśvara-lines.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/41-the-fourteen-māheśvara-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>The fourteen Māheśvara lines PNG</h3>
-<p>diagram · 38 KB</p>
-<p><a href="downloads/diagrams/41-the-fourteen-māheśvara-lines.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
-<img class="thumb" src="downloads/diagrams/41-the-fourteen-māheśvara-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>The fourteen Māheśvara lines HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/41-the-fourteen-māheśvara-lines.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="foundations">
 <img class="thumb" src="downloads/diagrams/42-sounds-on-lines-1-to-4.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Sounds on lines 1 to 4 SVG</h3>
@@ -697,7 +188,7 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="foundations">
 <img class="thumb" src="downloads/diagrams/42-sounds-on-lines-1-to-4.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Sounds on lines 1 to 4 HTML</h3>
-<p>diagram · 10 KB</p>
+<p>diagram · 29 KB</p>
 <p><a href="downloads/diagrams/42-sounds-on-lines-1-to-4.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="foundations">
 <img class="thumb" src="downloads/diagrams/43-sounds-on-lines-5-to-14.png" alt="" width="160" height="100" loading="lazy" decoding="async">
@@ -712,113 +203,158 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="foundations">
 <img class="thumb" src="downloads/diagrams/43-sounds-on-lines-5-to-14.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Sounds on lines 5 to 14 HTML</h3>
-<p>diagram · 10 KB</p>
+<p>diagram · 31 KB</p>
 <p><a href="downloads/diagrams/43-sounds-on-lines-5-to-14.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/44-this-file-has-75-kashmir-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>This file has 75 Kashmir lines SVG</h3>
-<p>diagram · 2 KB</p>
-<p><a href="downloads/diagrams/44-this-file-has-75-kashmir-lines.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/44-this-file-has-75-kashmir-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>This file has 75 Kashmir lines PNG</h3>
-<p>diagram · 13 KB</p>
-<p><a href="downloads/diagrams/44-this-file-has-75-kashmir-lines.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/44-this-file-has-75-kashmir-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>This file has 75 Kashmir lines HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/44-this-file-has-75-kashmir-lines.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="history">
-<img class="thumb" src="downloads/diagrams/45-dating-notes-that-were-actually-opened.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Dating notes that were actually opened SVG</h3>
+</article></div></details><details class="dl-room"><summary>Māheśvara · 36 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/01-pratyāhāra-ac.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ac SVG</h3>
 <p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/45-dating-notes-that-were-actually-opened.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="history">
-<img class="thumb" src="downloads/diagrams/45-dating-notes-that-were-actually-opened.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Dating notes that were actually opened PNG</h3>
-<p>diagram · 16 KB</p>
-<p><a href="downloads/diagrams/45-dating-notes-that-were-actually-opened.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="history">
-<img class="thumb" src="downloads/diagrams/45-dating-notes-that-were-actually-opened.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Dating notes that were actually opened HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/45-dating-notes-that-were-actually-opened.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/46-what-a-row-in-the-file-holds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>What a row in the file holds SVG</h3>
+<p><a href="downloads/diagrams/01-pratyāhāra-ac.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/01-pratyāhāra-ac.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ac PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/01-pratyāhāra-ac.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/01-pratyāhāra-ac.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ac HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/01-pratyāhāra-ac.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/02-pratyāhāra-ik.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ik SVG</h3>
 <p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/46-what-a-row-in-the-file-holds.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/46-what-a-row-in-the-file-holds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>What a row in the file holds PNG</h3>
+<p><a href="downloads/diagrams/02-pratyāhāra-ik.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/02-pratyāhāra-ik.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ik PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/02-pratyāhāra-ik.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/02-pratyāhāra-ik.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ik HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/02-pratyāhāra-ik.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/03-pratyāhāra-yaṇ.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra yaṇ SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/03-pratyāhāra-yaṇ.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/03-pratyāhāra-yaṇ.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra yaṇ PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/03-pratyāhāra-yaṇ.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/03-pratyāhāra-yaṇ.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra yaṇ HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/03-pratyāhāra-yaṇ.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/04-pratyāhāra-śar.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra śar SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/04-pratyāhāra-śar.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/04-pratyāhāra-śar.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra śar PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/04-pratyāhāra-śar.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/04-pratyāhāra-śar.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra śar HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/04-pratyāhāra-śar.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/05-pratyāhāra-ak.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ak SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/05-pratyāhāra-ak.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/05-pratyāhāra-ak.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ak PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/05-pratyāhāra-ak.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/05-pratyāhāra-ak.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ak HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/05-pratyāhāra-ak.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/06-pratyāhāra-ec.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ec SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/06-pratyāhāra-ec.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/06-pratyāhāra-ec.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ec PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/06-pratyāhāra-ec.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/06-pratyāhāra-ec.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra ec HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/06-pratyāhāra-ec.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/07-pratyāhāra-hal.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra hal SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/07-pratyāhāra-hal.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/07-pratyāhāra-hal.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra hal PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/07-pratyāhāra-hal.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/07-pratyāhāra-hal.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra hal HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/07-pratyāhāra-hal.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/08-pratyāhāra-al.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra al SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/08-pratyāhāra-al.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/08-pratyāhāra-al.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra al PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/08-pratyāhāra-al.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/08-pratyāhāra-al.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Pratyāhāra al HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/08-pratyāhāra-al.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/09-it-marker-is-not-part-of-the-set.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>It marker is not part of the set SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/09-it-marker-is-not-part-of-the-set.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/09-it-marker-is-not-part-of-the-set.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>It marker is not part of the set PNG</h3>
 <p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/46-what-a-row-in-the-file-holds.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/46-what-a-row-in-the-file-holds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>What a row in the file holds HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/46-what-a-row-in-the-file-holds.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
-<img class="thumb" src="downloads/diagrams/47-three-counts-you-can-check.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Three counts you can check SVG</h3>
-<p>diagram · 2 KB</p>
-<p><a href="downloads/diagrams/47-three-counts-you-can-check.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
-<img class="thumb" src="downloads/diagrams/47-three-counts-you-can-check.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Three counts you can check PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/47-three-counts-you-can-check.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
-<img class="thumb" src="downloads/diagrams/47-three-counts-you-can-check.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Three counts you can check HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/47-three-counts-you-can-check.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/48-chapter-1-by-pāda.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Chapter 1 by pāda SVG</h3>
-<p>diagram · 2 KB</p>
-<p><a href="downloads/diagrams/48-chapter-1-by-pāda.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/48-chapter-1-by-pāda.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Chapter 1 by pāda PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/48-chapter-1-by-pāda.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/48-chapter-1-by-pāda.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Chapter 1 by pāda HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/48-chapter-1-by-pāda.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/49-kashmir-unmeṣa-lengths.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Kashmir unmeṣa lengths SVG</h3>
-<p>diagram · 2 KB</p>
-<p><a href="downloads/diagrams/49-kashmir-unmeṣa-lengths.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/49-kashmir-unmeṣa-lengths.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Kashmir unmeṣa lengths PNG</h3>
-<p>diagram · 15 KB</p>
-<p><a href="downloads/diagrams/49-kashmir-unmeṣa-lengths.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
-<img class="thumb" src="downloads/diagrams/49-kashmir-unmeṣa-lengths.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Kashmir unmeṣa lengths HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/49-kashmir-unmeṣa-lengths.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/50-rows-that-carry-a-word-split.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Rows that carry a word split SVG</h3>
-<p>diagram · 2 KB</p>
-<p><a href="downloads/diagrams/50-rows-that-carry-a-word-split.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/50-rows-that-carry-a-word-split.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Rows that carry a word split PNG</h3>
-<p>diagram · 13 KB</p>
-<p><a href="downloads/diagrams/50-rows-that-carry-a-word-split.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/50-rows-that-carry-a-word-split.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Rows that carry a word split HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/50-rows-that-carry-a-word-split.html">Download</a></p>
+<p><a href="downloads/diagrams/09-it-marker-is-not-part-of-the-set.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/09-it-marker-is-not-part-of-the-set.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>It marker is not part of the set HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/09-it-marker-is-not-part-of-the-set.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/41-the-fourteen-māheśvara-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>The fourteen Māheśvara lines SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/41-the-fourteen-māheśvara-lines.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/41-the-fourteen-māheśvara-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>The fourteen Māheśvara lines PNG</h3>
+<p>diagram · 38 KB</p>
+<p><a href="downloads/diagrams/41-the-fourteen-māheśvara-lines.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
+<img class="thumb" src="downloads/diagrams/41-the-fourteen-māheśvara-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>The fourteen Māheśvara lines HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/41-the-fourteen-māheśvara-lines.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
 <img class="thumb" src="downloads/diagrams/51-compute-a-set-in-the-builder.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Compute a set in the builder SVG</h3>
@@ -832,83 +368,8 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
 <img class="thumb" src="downloads/diagrams/51-compute-a-set-in-the-builder.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Compute a set in the builder HTML</h3>
-<p>diagram · 10 KB</p>
+<p>diagram · 29 KB</p>
 <p><a href="downloads/diagrams/51-compute-a-set-in-the-builder.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/52-what-a-grammar-row-stores.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>What a grammar row stores SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/52-what-a-grammar-row-stores.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/52-what-a-grammar-row-stores.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>What a grammar row stores PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/52-what-a-grammar-row-stores.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
-<img class="thumb" src="downloads/diagrams/52-what-a-grammar-row-stores.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>What a grammar row stores HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/52-what-a-grammar-row-stores.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
-<img class="thumb" src="downloads/diagrams/53-five-parts-of-a-room.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Five parts of a room SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/53-five-parts-of-a-room.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
-<img class="thumb" src="downloads/diagrams/53-five-parts-of-a-room.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Five parts of a room PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/53-five-parts-of-a-room.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="index">
-<img class="thumb" src="downloads/diagrams/53-five-parts-of-a-room.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Five parts of a room HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/53-five-parts-of-a-room.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
-<img class="thumb" src="downloads/diagrams/54-leave-the-voice-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Leave the voice off SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/54-leave-the-voice-off.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
-<img class="thumb" src="downloads/diagrams/54-leave-the-voice-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Leave the voice off PNG</h3>
-<p>diagram · 14 KB</p>
-<p><a href="downloads/diagrams/54-leave-the-voice-off.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
-<img class="thumb" src="downloads/diagrams/54-leave-the-voice-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Leave the voice off HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/54-leave-the-voice-off.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
-<img class="thumb" src="downloads/diagrams/55-anuvṛtti-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Anuvṛtti map SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/55-anuvṛtti-map.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
-<img class="thumb" src="downloads/diagrams/55-anuvṛtti-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Anuvṛtti map PNG</h3>
-<p>diagram · 27 KB</p>
-<p><a href="downloads/diagrams/55-anuvṛtti-map.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
-<img class="thumb" src="downloads/diagrams/55-anuvṛtti-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Anuvṛtti map HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/55-anuvṛtti-map.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
-<img class="thumb" src="downloads/diagrams/56-download-kinds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Download kinds SVG</h3>
-<p>diagram · 3 KB</p>
-<p><a href="downloads/diagrams/56-download-kinds.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
-<img class="thumb" src="downloads/diagrams/56-download-kinds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Download kinds PNG</h3>
-<p>diagram · 27 KB</p>
-<p><a href="downloads/diagrams/56-download-kinds.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
-<img class="thumb" src="downloads/diagrams/56-download-kinds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Download kinds HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/56-download-kinds.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
 <img class="thumb" src="downloads/diagrams/57-markers-on-the-fourteen-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Markers on the fourteen lines SVG</h3>
@@ -922,27 +383,507 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="diagram" data-room="maheshvara">
 <img class="thumb" src="downloads/diagrams/57-markers-on-the-fourteen-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Markers on the fourteen lines HTML</h3>
-<p>diagram · 10 KB</p>
+<p>diagram · 29 KB</p>
 <p><a href="downloads/diagrams/57-markers-on-the-fourteen-lines.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/58-nothing-is-uploaded.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Nothing is uploaded SVG</h3>
+</article></div></details><details class="dl-room"><summary>Sandhi · 3 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="sandhi">
+<img class="thumb" src="downloads/diagrams/31-sandhi-without-a-fake-join.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Sandhi without a fake join SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/31-sandhi-without-a-fake-join.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="sandhi">
+<img class="thumb" src="downloads/diagrams/31-sandhi-without-a-fake-join.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Sandhi without a fake join PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/31-sandhi-without-a-fake-join.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="sandhi">
+<img class="thumb" src="downloads/diagrams/31-sandhi-without-a-fake-join.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Sandhi without a fake join HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/31-sandhi-without-a-fake-join.html">Download</a></p>
+</article></div></details><details class="dl-room"><summary>Aṣṭādhyāyī · 27 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/10-read-a-sūtra-number.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Read a sūtra number SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/10-read-a-sūtra-number.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/10-read-a-sūtra-number.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Read a sūtra number PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/10-read-a-sūtra-number.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/10-read-a-sūtra-number.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Read a sūtra number HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/10-read-a-sūtra-number.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/18-eight-chapters.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Eight chapters SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/18-eight-chapters.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/18-eight-chapters.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Eight chapters PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/18-eight-chapters.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/18-eight-chapters.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Eight chapters HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/18-eight-chapters.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/19-four-pādas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Four pādas SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/19-four-pādas.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/19-four-pādas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Four pādas PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/19-four-pādas.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/19-four-pādas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Four pādas HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/19-four-pādas.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/20-type-letters-in-the-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Type letters in the file SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/20-type-letters-in-the-file.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/20-type-letters-in-the-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Type letters in the file PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/20-type-letters-in-the-file.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/20-type-letters-in-the-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Type letters in the file HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/20-type-letters-in-the-file.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/38-grammar-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Grammar map SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/38-grammar-map.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/38-grammar-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Grammar map PNG</h3>
+<p>diagram · 28 KB</p>
+<p><a href="downloads/diagrams/38-grammar-map.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/38-grammar-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Grammar map HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/38-grammar-map.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/46-what-a-row-in-the-file-holds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>What a row in the file holds SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/46-what-a-row-in-the-file-holds.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/46-what-a-row-in-the-file-holds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>What a row in the file holds PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/46-what-a-row-in-the-file-holds.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/46-what-a-row-in-the-file-holds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>What a row in the file holds HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/46-what-a-row-in-the-file-holds.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/48-chapter-1-by-pāda.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Chapter 1 by pāda SVG</h3>
 <p>diagram · 2 KB</p>
-<p><a href="downloads/diagrams/58-nothing-is-uploaded.svg">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/58-nothing-is-uploaded.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Nothing is uploaded PNG</h3>
-<p>diagram · 12 KB</p>
-<p><a href="downloads/diagrams/58-nothing-is-uploaded.png">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
-<img class="thumb" src="downloads/diagrams/58-nothing-is-uploaded.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Nothing is uploaded HTML</h3>
-<p>diagram · 10 KB</p>
-<p><a href="downloads/diagrams/58-nothing-is-uploaded.html">Download</a></p>
+<p><a href="downloads/diagrams/48-chapter-1-by-pāda.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/48-chapter-1-by-pāda.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Chapter 1 by pāda PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/48-chapter-1-by-pāda.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/48-chapter-1-by-pāda.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Chapter 1 by pāda HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/48-chapter-1-by-pāda.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/50-rows-that-carry-a-word-split.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Rows that carry a word split SVG</h3>
+<p>diagram · 2 KB</p>
+<p><a href="downloads/diagrams/50-rows-that-carry-a-word-split.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/50-rows-that-carry-a-word-split.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Rows that carry a word split PNG</h3>
+<p>diagram · 13 KB</p>
+<p><a href="downloads/diagrams/50-rows-that-carry-a-word-split.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/50-rows-that-carry-a-word-split.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Rows that carry a word split HTML</h3>
+<p>diagram · 28 KB</p>
+<p><a href="downloads/diagrams/50-rows-that-carry-a-word-split.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/52-what-a-grammar-row-stores.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>What a grammar row stores SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/52-what-a-grammar-row-stores.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/52-what-a-grammar-row-stores.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>What a grammar row stores PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/52-what-a-grammar-row-stores.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ashtadhyayi">
+<img class="thumb" src="downloads/diagrams/52-what-a-grammar-row-stores.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>What a grammar row stores HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/52-what-a-grammar-row-stores.html">Download</a></p>
+</article></div></details><details class="dl-room"><summary>Anuvṛtti · 9 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
+<img class="thumb" src="downloads/diagrams/11-anuvṛtti-on-1-1-3.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Anuvṛtti on 1.1.3 SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/11-anuvṛtti-on-1-1-3.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
+<img class="thumb" src="downloads/diagrams/11-anuvṛtti-on-1-1-3.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Anuvṛtti on 1.1.3 PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/11-anuvṛtti-on-1-1-3.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
+<img class="thumb" src="downloads/diagrams/11-anuvṛtti-on-1-1-3.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Anuvṛtti on 1.1.3 HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/11-anuvṛtti-on-1-1-3.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
+<img class="thumb" src="downloads/diagrams/35-lines-with-an-anuvṛtti-field.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Lines with an anuvṛtti field SVG</h3>
+<p>diagram · 2 KB</p>
+<p><a href="downloads/diagrams/35-lines-with-an-anuvṛtti-field.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
+<img class="thumb" src="downloads/diagrams/35-lines-with-an-anuvṛtti-field.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Lines with an anuvṛtti field PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/35-lines-with-an-anuvṛtti-field.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
+<img class="thumb" src="downloads/diagrams/35-lines-with-an-anuvṛtti-field.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Lines with an anuvṛtti field HTML</h3>
+<p>diagram · 28 KB</p>
+<p><a href="downloads/diagrams/35-lines-with-an-anuvṛtti-field.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
+<img class="thumb" src="downloads/diagrams/55-anuvṛtti-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Anuvṛtti map SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/55-anuvṛtti-map.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
+<img class="thumb" src="downloads/diagrams/55-anuvṛtti-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Anuvṛtti map PNG</h3>
+<p>diagram · 27 KB</p>
+<p><a href="downloads/diagrams/55-anuvṛtti-map.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="anuvrtti">
+<img class="thumb" src="downloads/diagrams/55-anuvṛtti-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Anuvṛtti map HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/55-anuvṛtti-map.html">Download</a></p>
+</article></div></details><details class="dl-room"><summary>Dhātu · 3 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="dhatu">
+<img class="thumb" src="downloads/diagrams/21-dhātu-gap.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Dhātu gap SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/21-dhātu-gap.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="dhatu">
+<img class="thumb" src="downloads/diagrams/21-dhātu-gap.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Dhātu gap PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/21-dhātu-gap.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="dhatu">
+<img class="thumb" src="downloads/diagrams/21-dhātu-gap.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Dhātu gap HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/21-dhātu-gap.html">Download</a></p>
+</article></div></details><details class="dl-room"><summary>Śiva Sūtras · 12 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/22-three-unmeshas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Three unmeshas SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/22-three-unmeshas.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/22-three-unmeshas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Three unmeshas PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/22-three-unmeshas.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/22-three-unmeshas.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Three unmeshas HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/22-three-unmeshas.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/23-75-and-the-other-count.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>75 and the other count SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/23-75-and-the-other-count.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/23-75-and-the-other-count.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>75 and the other count PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/23-75-and-the-other-count.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/23-75-and-the-other-count.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>75 and the other count HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/23-75-and-the-other-count.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/44-this-file-has-75-kashmir-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>This file has 75 Kashmir lines SVG</h3>
+<p>diagram · 2 KB</p>
+<p><a href="downloads/diagrams/44-this-file-has-75-kashmir-lines.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/44-this-file-has-75-kashmir-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>This file has 75 Kashmir lines PNG</h3>
+<p>diagram · 13 KB</p>
+<p><a href="downloads/diagrams/44-this-file-has-75-kashmir-lines.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/44-this-file-has-75-kashmir-lines.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>This file has 75 Kashmir lines HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/44-this-file-has-75-kashmir-lines.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/49-kashmir-unmeṣa-lengths.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Kashmir unmeṣa lengths SVG</h3>
+<p>diagram · 2 KB</p>
+<p><a href="downloads/diagrams/49-kashmir-unmeṣa-lengths.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/49-kashmir-unmeṣa-lengths.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Kashmir unmeṣa lengths PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/49-kashmir-unmeṣa-lengths.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="shiva">
+<img class="thumb" src="downloads/diagrams/49-kashmir-unmeṣa-lengths.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Kashmir unmeṣa lengths HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/49-kashmir-unmeṣa-lengths.html">Download</a></p>
+</article></div></details><details class="dl-room"><summary>History · 6 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="history">
+<img class="thumb" src="downloads/diagrams/28-history-stays-disputed.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>History stays disputed SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/28-history-stays-disputed.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="history">
+<img class="thumb" src="downloads/diagrams/28-history-stays-disputed.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>History stays disputed PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/28-history-stays-disputed.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="history">
+<img class="thumb" src="downloads/diagrams/28-history-stays-disputed.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>History stays disputed HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/28-history-stays-disputed.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="history">
+<img class="thumb" src="downloads/diagrams/45-dating-notes-that-were-actually-opened.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Dating notes that were actually opened SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/45-dating-notes-that-were-actually-opened.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="history">
+<img class="thumb" src="downloads/diagrams/45-dating-notes-that-were-actually-opened.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Dating notes that were actually opened PNG</h3>
+<p>diagram · 16 KB</p>
+<p><a href="downloads/diagrams/45-dating-notes-that-were-actually-opened.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="history">
+<img class="thumb" src="downloads/diagrams/45-dating-notes-that-were-actually-opened.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Dating notes that were actually opened HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/45-dating-notes-that-were-actually-opened.html">Download</a></p>
+</article></div></details><details class="dl-room"><summary>Charts · 6 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
+<img class="thumb" src="downloads/diagrams/33-sūtras-in-each-adhyāya.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Sūtras in each adhyāya SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/33-sūtras-in-each-adhyāya.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
+<img class="thumb" src="downloads/diagrams/33-sūtras-in-each-adhyāya.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Sūtras in each adhyāya PNG</h3>
+<p>diagram · 21 KB</p>
+<p><a href="downloads/diagrams/33-sūtras-in-each-adhyāya.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
+<img class="thumb" src="downloads/diagrams/33-sūtras-in-each-adhyāya.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Sūtras in each adhyāya HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/33-sūtras-in-each-adhyāya.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
+<img class="thumb" src="downloads/diagrams/34-type-letters-in-the-data-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Type letters in the data file SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/34-type-letters-in-the-data-file.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
+<img class="thumb" src="downloads/diagrams/34-type-letters-in-the-data-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Type letters in the data file PNG</h3>
+<p>diagram · 15 KB</p>
+<p><a href="downloads/diagrams/34-type-letters-in-the-data-file.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="charts">
+<img class="thumb" src="downloads/diagrams/34-type-letters-in-the-data-file.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Type letters in the data file HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/34-type-letters-in-the-data-file.html">Download</a></p>
+</article></div></details><details class="dl-room"><summary>Play · 9 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="play">
+<img class="thumb" src="downloads/diagrams/16-room-quiz.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Room quiz SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/16-room-quiz.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="play">
+<img class="thumb" src="downloads/diagrams/16-room-quiz.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Room quiz PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/16-room-quiz.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="play">
+<img class="thumb" src="downloads/diagrams/16-room-quiz.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Room quiz HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/16-room-quiz.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="play">
+<img class="thumb" src="downloads/diagrams/17-flashcard-ladder.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Flashcard ladder SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/17-flashcard-ladder.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="play">
+<img class="thumb" src="downloads/diagrams/17-flashcard-ladder.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Flashcard ladder PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/17-flashcard-ladder.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="play">
+<img class="thumb" src="downloads/diagrams/17-flashcard-ladder.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Flashcard ladder HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/17-flashcard-ladder.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="cards" data-room="play">
+<img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Flashcards JSON</h3>
+<p>cards · 4 KB</p>
+<p><a href="downloads/flashcards.json">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="cards" data-room="play">
+<img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Flashcards HTML</h3>
+<p>cards · 27 KB</p>
+<p><a href="downloads/flashcards.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="cards" data-room="play">
+<img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Flashcards PDF</h3>
+<p>cards · 44 KB</p>
+<p><a href="downloads/flashcards.pdf">Download</a></p>
+</article></div></details><details class="dl-room"><summary>Listen · 9 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
+<img class="thumb" src="downloads/diagrams/24-guide-choices.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Guide choices SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/24-guide-choices.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
+<img class="thumb" src="downloads/diagrams/24-guide-choices.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Guide choices PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/24-guide-choices.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
+<img class="thumb" src="downloads/diagrams/24-guide-choices.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Guide choices HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/24-guide-choices.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
+<img class="thumb" src="downloads/diagrams/25-voice-stays-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Voice stays off SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/25-voice-stays-off.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
+<img class="thumb" src="downloads/diagrams/25-voice-stays-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Voice stays off PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/25-voice-stays-off.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
+<img class="thumb" src="downloads/diagrams/25-voice-stays-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Voice stays off HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/25-voice-stays-off.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
+<img class="thumb" src="downloads/diagrams/54-leave-the-voice-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Leave the voice off SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/54-leave-the-voice-off.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
+<img class="thumb" src="downloads/diagrams/54-leave-the-voice-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Leave the voice off PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/54-leave-the-voice-off.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="listen">
+<img class="thumb" src="downloads/diagrams/54-leave-the-voice-off.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Leave the voice off HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/54-leave-the-voice-off.html">Download</a></p>
+</article></div></details><details class="dl-room"><summary>Ecosystem · 9 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
+<img class="thumb" src="downloads/diagrams/32-ecosystem-is-a-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Ecosystem is a map SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/32-ecosystem-is-a-map.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
+<img class="thumb" src="downloads/diagrams/32-ecosystem-is-a-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Ecosystem is a map PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/32-ecosystem-is-a-map.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
+<img class="thumb" src="downloads/diagrams/32-ecosystem-is-a-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Ecosystem is a map HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/32-ecosystem-is-a-map.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
+<img class="thumb" src="downloads/diagrams/39-ecosystem-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Ecosystem map SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/39-ecosystem-map.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
+<img class="thumb" src="downloads/diagrams/39-ecosystem-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Ecosystem map PNG</h3>
+<p>diagram · 27 KB</p>
+<p><a href="downloads/diagrams/39-ecosystem-map.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
+<img class="thumb" src="downloads/diagrams/39-ecosystem-map.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Ecosystem map HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/39-ecosystem-map.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
+<img class="thumb" src="downloads/diagrams/40-room-links.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Room links SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/40-room-links.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
+<img class="thumb" src="downloads/diagrams/40-room-links.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Room links PNG</h3>
+<p>diagram · 26 KB</p>
+<p><a href="downloads/diagrams/40-room-links.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="ecosystem">
+<img class="thumb" src="downloads/diagrams/40-room-links.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Room links HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/40-room-links.html">Download</a></p>
+</article></div></details><details class="dl-room"><summary>Downloads · 34 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
+<img class="thumb" src="downloads/diagrams/26-every-download.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Every download SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/26-every-download.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
+<img class="thumb" src="downloads/diagrams/26-every-download.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Every download PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/26-every-download.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
+<img class="thumb" src="downloads/diagrams/26-every-download.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Every download HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/26-every-download.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
+<img class="thumb" src="downloads/diagrams/56-download-kinds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Download kinds SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/56-download-kinds.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
+<img class="thumb" src="downloads/diagrams/56-download-kinds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Download kinds PNG</h3>
+<p>diagram · 27 KB</p>
+<p><a href="downloads/diagrams/56-download-kinds.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="downloads">
+<img class="thumb" src="downloads/diagrams/56-download-kinds.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Download kinds HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/56-download-kinds.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="sheet" data-room="downloads">
 <img class="thumb" src="downloads/sheets/pratyahara.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>pratyahara html</h3>
-<p>sheet · 10 KB</p>
+<p>sheet · 27 KB</p>
 <p><a href="downloads/sheets/pratyahara.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="sheet" data-room="downloads">
 <img class="thumb" src="downloads/sheets/pratyahara.png" alt="" width="160" height="100" loading="lazy" decoding="async">
@@ -957,7 +898,7 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="sheet" data-room="downloads">
 <img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>counts html</h3>
-<p>sheet · 10 KB</p>
+<p>sheet · 27 KB</p>
 <p><a href="downloads/sheets/counts.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="sheet" data-room="downloads">
 <img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
@@ -972,7 +913,7 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="sheet" data-room="downloads">
 <img class="thumb" src="downloads/sheets/read-a-number.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>read-a-number html</h3>
-<p>sheet · 10 KB</p>
+<p>sheet · 27 KB</p>
 <p><a href="downloads/sheets/read-a-number.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="sheet" data-room="downloads">
 <img class="thumb" src="downloads/sheets/read-a-number.png" alt="" width="160" height="100" loading="lazy" decoding="async">
@@ -987,7 +928,7 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="sheet" data-room="downloads">
 <img class="thumb" src="downloads/sheets/kashmir-notes.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>kashmir-notes html</h3>
-<p>sheet · 10 KB</p>
+<p>sheet · 27 KB</p>
 <p><a href="downloads/sheets/kashmir-notes.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="sheet" data-room="downloads">
 <img class="thumb" src="downloads/sheets/kashmir-notes.png" alt="" width="160" height="100" loading="lazy" decoding="async">
@@ -1002,7 +943,7 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="template" data-room="downloads">
 <img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>study-plan html</h3>
-<p>template · 10 KB</p>
+<p>template · 27 KB</p>
 <p><a href="downloads/templates/study-plan.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="template" data-room="downloads">
 <img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
@@ -1017,7 +958,7 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="template" data-room="downloads">
 <img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>sutra-worksheet html</h3>
-<p>template · 10 KB</p>
+<p>template · 27 KB</p>
 <p><a href="downloads/templates/sutra-worksheet.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="template" data-room="downloads">
 <img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
@@ -1032,7 +973,7 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="template" data-room="downloads">
 <img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>pratyahara-worksheet html</h3>
-<p>template · 10 KB</p>
+<p>template · 27 KB</p>
 <p><a href="downloads/templates/pratyahara-worksheet.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="template" data-room="downloads">
 <img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
@@ -1047,7 +988,7 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </article><article class="dl-card" data-dl data-kind="template" data-room="downloads">
 <img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>glossary-builder html</h3>
-<p>template · 10 KB</p>
+<p>template · 27 KB</p>
 <p><a href="downloads/templates/glossary-builder.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="template" data-room="downloads">
 <img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
@@ -1059,26 +1000,101 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 <h3>glossary-builder pdf</h3>
 <p>template · 43 KB</p>
 <p><a href="downloads/templates/glossary-builder.pdf">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="cards" data-room="play">
-<img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Flashcards JSON</h3>
-<p>cards · 4 KB</p>
-<p><a href="downloads/flashcards.json">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="cards" data-room="play">
-<img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Flashcards HTML</h3>
-<p>cards · 11 KB</p>
-<p><a href="downloads/flashcards.html">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="cards" data-room="play">
-<img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Flashcards PDF</h3>
-<p>cards · 44 KB</p>
-<p><a href="downloads/flashcards.pdf">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="deck" data-room="downloads">
 <img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>Slide deck</h3>
 <p>deck · 43 KB</p>
 <p><a href="downloads/sutra-nexus-deck.pptx">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="app" data-room="downloads">
+<img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Single-file app</h3>
+<p>app · 1.8 MB</p>
+<p><a href="downloads/sutra-nexus-single-file.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="bundle" data-room="downloads">
+<img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Download catalogue</h3>
+<p>bundle · 52 KB</p>
+<p><a href="downloads/catalog.json">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="bundle" data-room="downloads">
+<img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Optional: everything in one ZIP</h3>
+<p>bundle · 2.4 MB</p>
+<p><a href="downloads/sutra-nexus-all.zip">Download</a></p>
+</article></div></details><details class="dl-room"><summary>Credits · 3 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="credits">
+<img class="thumb" src="downloads/diagrams/14-licence-gate.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Licence gate SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/14-licence-gate.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="credits">
+<img class="thumb" src="downloads/diagrams/14-licence-gate.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Licence gate PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/14-licence-gate.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="credits">
+<img class="thumb" src="downloads/diagrams/14-licence-gate.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Licence gate HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/14-licence-gate.html">Download</a></p>
+</article></div></details><details class="dl-room"><summary>About · 18 files</summary><div class="dl-grid"><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/12-no-invented-meaning.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>No invented meaning SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/12-no-invented-meaning.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/12-no-invented-meaning.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>No invented meaning PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/12-no-invented-meaning.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/12-no-invented-meaning.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>No invented meaning HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/12-no-invented-meaning.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/29-cache-skips-contact.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Cache skips contact SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/29-cache-skips-contact.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/29-cache-skips-contact.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Cache skips contact PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/29-cache-skips-contact.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/29-cache-skips-contact.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Cache skips contact HTML</h3>
+<p>diagram · 30 KB</p>
+<p><a href="downloads/diagrams/29-cache-skips-contact.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/30-report-a-correction.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Report a correction SVG</h3>
+<p>diagram · 3 KB</p>
+<p><a href="downloads/diagrams/30-report-a-correction.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/30-report-a-correction.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Report a correction PNG</h3>
+<p>diagram · 14 KB</p>
+<p><a href="downloads/diagrams/30-report-a-correction.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/30-report-a-correction.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Report a correction HTML</h3>
+<p>diagram · 29 KB</p>
+<p><a href="downloads/diagrams/30-report-a-correction.html">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/58-nothing-is-uploaded.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Nothing is uploaded SVG</h3>
+<p>diagram · 2 KB</p>
+<p><a href="downloads/diagrams/58-nothing-is-uploaded.svg">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/58-nothing-is-uploaded.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Nothing is uploaded PNG</h3>
+<p>diagram · 12 KB</p>
+<p><a href="downloads/diagrams/58-nothing-is-uploaded.png">Download</a></p>
+</article><article class="dl-card" data-dl data-kind="diagram" data-room="about">
+<img class="thumb" src="downloads/diagrams/58-nothing-is-uploaded.png" alt="" width="160" height="100" loading="lazy" decoding="async">
+<h3>Nothing is uploaded HTML</h3>
+<p>diagram · 28 KB</p>
+<p><a href="downloads/diagrams/58-nothing-is-uploaded.html">Download</a></p>
 </article><article class="dl-card" data-dl data-kind="model" data-room="about">
 <img class="thumb" src="downloads/models/study-wheel.png" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>study-wheel GLB</h3>
@@ -1109,17 +1125,7 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 <h3>guide-monkey credits</h3>
 <p>model · 1 KB</p>
 <p><a href="downloads/models/guide-monkey-credits.txt">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="bundle" data-room="downloads">
-<img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Download catalogue</h3>
-<p>bundle · 51 KB</p>
-<p><a href="downloads/catalog.json">Download</a></p>
-</article><article class="dl-card" data-dl data-kind="bundle" data-room="downloads">
-<img class="thumb" src="downloads/sheets/counts.png" alt="" width="160" height="100" loading="lazy" decoding="async">
-<h3>Optional: everything in one ZIP</h3>
-<p>bundle · 1.7 MB</p>
-<p><a href="downloads/sutra-nexus-all.zip">Download</a></p>
-</article></div>
+</article></div></details>
 <section class="note"><h2>Optional: everything in one ZIP</h2><p>The card labeled bundle is the only zip. It repeats the same files and includes a readme with this disclaimer and the credits.</p></section>
 </main>
 <footer class="site-footer" data-canon-footer>
@@ -1154,7 +1160,8 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 </svg>
 </a><a class="brand-icon brand-gh" href="https://github.com/CypherMonkeyLabs" aria-label="GitHub organization"><svg class="brand-glyph" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a class="brand-icon brand-lt" href="https://linktr.ee/cyphermonkey" aria-label="Linktree"><svg class="brand-glyph" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Linktree</title><path d="m13.73635 5.85251 4.00467-4.11665 2.3248 2.3808-4.20064 4.00466h5.9085v3.30473h-5.9365l4.22865 4.10766-2.3248 2.3338L12.0005 12.099l-5.74052 5.76852-2.3248-2.3248 4.22864-4.10766h-5.9375V8.12132h5.9085L3.93417 4.11666l2.3248-2.3808 4.00468 4.11665V0h3.4727zm-3.4727 10.30614h3.4727V24h-3.4727z"/></svg></a><a class="brand-icon brand-x" href="https://x.com/Cypher0x9" aria-label="X"><svg class="brand-glyph" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a><a class="brand-icon brand-li" href="https://www.linkedin.com/in/luckylakshmanucwebex" aria-label="LinkedIn"><svg class="brand-glyph" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a class="brand-icon brand-hf" href="https://huggingface.co/Cypher0x9" aria-label="Hugging Face"><svg class="brand-glyph" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Hugging Face</title><path d="M1.4446 11.5059c0 1.1021.1673 2.1585.4847 3.1563-.0378-.0028-.0691-.0058-.1058-.0058-.4209 0-.8015.16-1.0704.4512-.3454.3737-.4984.8335-.4316 1.293a1.576 1.576 0 0 0 .2148.5978c-.2319.1864-.4018.4456-.4844.7578-.0646.2448-.131.7543.2149 1.2794a1.4552 1.4552 0 0 0-.0625.1055c-.208.3923-.2207.8372-.0371 1.25.2783.6258.9696 1.1175 2.3126 1.6467.8356.3292 1.5988.5411 1.6056.543 1.1046.2847 2.104.4277 2.969.4277 1.4173 0 2.4754-.3849 3.1525-1.1446 1.538.2651 2.791.1403 3.592.006.6773.7555 1.7332 1.1387 3.1467 1.1387.8649 0 1.8643-.143 2.969-.4278.0068-.0019.77-.2138 1.6056-.543 1.343-.5292 2.0343-1.0208 2.3126-1.6466.1836-.4129.171-.8577-.037-1.25a1.4685 1.4685 0 0 0-.0626-.1056c.346-.525.2795-1.0346.2149-1.2793-.0826-.3122-.2525-.5714-.4844-.7579.11-.1816.1831-.3788.2148-.5977.0669-.4595-.0862-.9193-.4316-1.293-.2688-.2913-.6495-.4513-1.0704-.4513-.0209 0-.0376.0008-.0588.0018.3162-.9966.4846-2.0518.4846-3.1523 0-5.807-4.7362-10.5144-10.5789-10.5144-5.8426 0-10.5788 4.7073-10.5788 10.5144Zm10.5788-9.4831c5.2727 0 9.5476 4.246 9.5476 9.483a9.4201 9.4201 0 0 1-.2696 2.2365c-.0039-.0047-.0079-.011-.0117-.0156-.274-.3255-.6679-.5059-1.1075-.5059-.352 0-.714.1155-1.0763.3438-.2403.1517-.5058.422-.7793.7598-.2534-.3492-.608-.5832-1.0137-.6465a1.5174 1.5174 0 0 0-.2344-.0176c-.9263 0-1.4828.7993-1.6935 1.5177-.1046.2426-.6065 1.3482-1.3614 2.0978-1.1681 1.1601-1.4458 2.3534-.8396 3.6382-.843.1029-1.5836.0927-2.365-.006.5906-1.212.3626-2.4388-.8426-3.6322-.755-.7496-1.2568-1.8552-1.3614-2.0978-.2107-.7184-.7673-1.5177-1.6935-1.5177-.078 0-.1568.0054-.2344.0176-.4057.0633-.7604.2973-1.0137.6465-.2735-.3379-.539-.6081-.7794-.7598-.3622-.2283-.7243-.3438-1.0762-.3438-.4266 0-.8094.171-1.0821.4786a9.4208 9.4208 0 0 1-.2598-2.1936c0-5.237 4.2749-9.483 9.5475-9.483zM8.6443 7.0036c-.4838.0043-.9503.2667-1.1934.7227-.3536.6633-.1006 1.4873.5645 1.84.351.1862.4883-.5261.836-.6485.3107-.1095.841.399 1.0078.086.3536-.6634.1025-1.4874-.5625-1.84a1.3659 1.3659 0 0 0-.6524-.1602Zm6.8403 0c-.2199-.002-.4426.05-.6504.1602-.665.3526-.9181 1.1766-.5645 1.84.1669.313.6971-.1955 1.0079-.086.3476.1224.4867.8347.838.6485.6649-.3527.916-1.1767.5624-1.84-.243-.456-.7096-.7184-1.1934-.7227Zm-9.7565 1.418a.8768.8768 0 0 0-.877.877c0 .4846.3925.877.877.877a.8768.8768 0 0 0 .877-.877.8768.8768 0 0 0-.877-.877zm12.6434 0c-.4845 0-.879.3925-.879.877 0 .4846.3945.877.879.877a.8768.8768 0 0 0 .877-.877.8768.8768 0 0 0-.877-.877zM8.7927 11.459c-.179-.003-.2793.1107-.2793.416 0 .8097.3874 2.125 1.4279 2.924.207-.7123 1.3453-1.2832 1.5079-1.2012.2315.1167.2191.4417.6074.7266.3884-.285.374-.6098.6056-.7266.1627-.082 1.3009.4889 1.5079 1.2012 1.0404-.799 1.4278-2.1144 1.4278-2.924 0-1.2212-1.583.6402-3.5413.6485-1.4686-.0061-2.7266-1.0558-3.2639-1.0645zM4.312 14.4768c.5792.365 1.6964 2.2751 2.1056 3.0177.1371.2488.371.3536.582.3536.4188 0 .7465-.4138.0391-.9395-1.0636-.791-.6914-2.0846-.1836-2.1642a.4302.4302 0 0 1 .0664-.004c.4616 0 .666.7892.666.7892s.5959 1.4898 1.6213 2.508c.942.9356 1.062 1.703.4961 2.6661-.0164-.004-.0159.0236-.1484.2149-.1853.2673-.4322.4688-.7188.6152-.5062.2269-1.1397.2696-1.7833.2696-1.037 0-2.1017-.1824-2.6975-.336-.0293-.0075-3.6505-.9567-3.1916-1.8224.0771-.1454.2033-.2031.3633-.2031.6463 0 1.823.9551 2.3283.9551.113 0 .196-.0865.2285-.2031.2249-.8045-3.2787-1.0522-2.9846-2.1642.0519-.1967.193-.2757.3907-.2754.854 0 2.7704 1.4923 3.172 1.4923.0307 0 .0525-.0085.0645-.0274.2012-.3227.1096-.5865-1.3087-1.4395-1.4182-.8533-2.4315-1.329-1.8653-1.9416.0651-.0707.1574-.1015.2695-.1015.8611.0002 2.8948 1.84 2.8948 1.84s.5487.5683.8809.5683c.0762 0 .1416-.0315.1855-.1054.2355-.3946-2.1858-2.2183-2.3224-2.971-.0926-.51.0641-.7676.3555-.7676-.0006.008.1701-.0285.4942.1759zm16.2257.5918c-.1366.7526-2.5579 2.5764-2.3224 2.9709.044.074.1092.1055.1855.1055.3321 0 .881-.5684.881-.5684s2.0336-1.8397 2.8947-1.84c.1121 0 .2044.0308.2695.1016.5662.6125-.447 1.0882-1.8653 1.9415-1.4183.853-1.51 1.1168-1.3087 1.4396.012.0188.0337.0273.0644.0273.4016 0 2.3181-1.4923 3.1721-1.4923.1977-.0002.3388.0787.3907.2754.294 1.112-3.2095 1.3597-2.9846 2.1642.0325.1166.1156.2032.2285.2032.5054 0 1.682-.9552 2.3283-.9552.16 0 .2862.0577.3633.2032.459.8656-3.1623 1.8149-3.1916 1.8224-.5958.1535-1.6605.336-2.6975.336-.6351 0-1.261-.0409-1.7638-.2599-.2949-.1472-.5488-.3516-.7383-.625-.0411-.0682-.1026-.1476-.1426-.205-.5726-.9679-.455-1.7371.4903-2.676 1.0254-1.0182 1.6212-2.508 1.6212-2.508s.2044-.7891.666-.7891a.4318.4318 0 0 1 .0665.0039c.5078.0796.88 1.3732-.1836 2.1642-.7074.5257-.3797.9395.039.9395.211 0 .445-.1047.5821-.3535.4092-.7426 1.5264-2.6527 2.1056-3.0178.5588-.3524.99-.1816.8497.5918z"/></svg></a></div>
 </footer>
-<nav class="phone-dock" aria-label="Phone"><button type="button" class="dock-item menu-glow" data-open-menu aria-expanded="false" aria-controls="site-drawer">Menu</button><a class="dock-item" href="foundations.html">Learn</a><a class="dock-item" href="diagrams.html">Diagrams</a><a class="dock-item" href="play.html">Play</a><a class="dock-item" href="listen.html">Listen</a><button type="button" class="dock-item" data-open-guide>Guide</button></nav>
+</div>
+<nav class="phone-dock" aria-label="Phone"><div class="nav-hint" role="note" aria-label="How to open the menu"><span>Tap for menu</span><button type="button">Got it</button></div><button type="button" class="dock-item menu-glow" data-open-menu aria-expanded="false" aria-controls="site-drawer">Menu</button><a class="dock-item" href="foundations.html">Learn</a><a class="dock-item" href="diagrams.html">Diagrams</a><a class="dock-item" href="play.html">Play</a><a class="dock-item" href="listen.html">Listen</a><button type="button" class="dock-item" data-open-guide>Guide</button></nav>
 <div class="guide-root"></div>
 <script src="assets/js/brand.js"></script>
 <script src="assets/js/frame.js"></script>

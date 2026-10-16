@@ -9,16 +9,24 @@
     return null;
   }
   function mountHint() {
-    if (!window.matchMedia("(max-width: 720px)").matches) return;
-    if (ls("sutra-nav-hint") === "1" || document.querySelector(".nav-hint")) return;
-    var hint = document.createElement("div");
-    hint.className = "nav-hint";
-    hint.setAttribute("role", "dialog");
-    hint.setAttribute("aria-label", "How to open the menu");
-    hint.innerHTML = "<b>Tap for menu</b><p>The glowing Menu button lists every section.</p><button type=\"button\">Got it</button>";
-    document.body.appendChild(hint);
+    var hint = document.querySelector(".nav-hint");
+    if (!hint) return;
+    if (!window.matchMedia("(max-width: 720px)").matches || ls("sutra-nav-hint") === "1") {
+      hint.remove();
+      return;
+    }
+    var dock = document.querySelector(".phone-dock");
+    function fit() {
+      if (!dock) return;
+      var next = dock.offsetHeight;
+      var current = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--dock-h")) || 0;
+      if (Math.abs(next - current) > 4) document.documentElement.style.setProperty("--dock-h", next + "px");
+    }
+    window.addEventListener("resize", fit);
     function close() {
       hint.remove();
+      document.documentElement.style.removeProperty("--dock-h");
+      document.documentElement.removeAttribute("data-nav-hint");
       ls("sutra-nav-hint", "1");
     }
     hint.querySelector("button").addEventListener("click", close);
@@ -34,6 +42,8 @@
     }
     park();
     window.addEventListener("scroll", park, { passive: true });
+    var scroller = document.querySelector(".page-scroll");
+    if (scroller) scroller.addEventListener("scroll", park, { passive: true });
   }
   function markDock() {
     var file = (location.pathname.split("/").pop() || "index.html");

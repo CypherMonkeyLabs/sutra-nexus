@@ -221,9 +221,10 @@ def phone_dock(current):
         else:
             current_attr = ' aria-current="page"' if href == current else ""
             parts.append(f'<a class="dock-item" href="{href}"{current_attr}>{E(label)}</a>')
-    return f'<nav class="phone-dock" aria-label="Phone">{''.join(parts)}</nav>'
+    hint = '<div class="nav-hint" role="note" aria-label="How to open the menu"><span>Tap for menu</span><button type="button">Got it</button></div>'
+    return f'<nav class="phone-dock" aria-label="Phone">{hint}{''.join(parts)}</nav>'
 
-HEAD_BOOT = '''<script>try{var t=localStorage.getItem("sutra-theme")||"bloom";if(["bloom","dark","light","contrast"].indexOf(t)<0)t="bloom";document.documentElement.dataset.theme=t;var f=parseFloat(localStorage.getItem("sutra-fscale")||"1");if(f)document.documentElement.style.setProperty("--fscale",String(f));var m=localStorage.getItem("sutra-motion");if(m==="reduce"||m==="full")document.documentElement.dataset.motion=m;var ink=localStorage.getItem("sutra-ink");if(ink&&/^#[0-9a-f]{6}$/i.test(ink))document.documentElement.style.setProperty("--ink",ink);}catch(e){}</script>'''
+HEAD_BOOT = '''<script>try{var t=localStorage.getItem("sutra-theme")||"bloom";if(["bloom","dark","light","contrast"].indexOf(t)<0)t="bloom";document.documentElement.dataset.theme=t;var f=parseFloat(localStorage.getItem("sutra-fscale")||"1");if(f)document.documentElement.style.setProperty("--fscale",String(f));var m=localStorage.getItem("sutra-motion");if(m==="reduce"||m==="full")document.documentElement.dataset.motion=m;var ink=localStorage.getItem("sutra-ink");if(ink&&/^#[0-9a-f]{6}$/i.test(ink))document.documentElement.style.setProperty("--ink",ink);if(matchMedia("(max-width:720px)").matches&&localStorage.getItem("sutra-nav-hint")!=="1"){document.documentElement.dataset.navHint="1";document.documentElement.style.setProperty("--dock-h","120px");}}catch(e){}</script>'''
 
 def page_shell(current, title, description, body, extra=""):
     return f'''<!DOCTYPE html>
@@ -242,10 +243,12 @@ def page_shell(current, title, description, body, extra=""):
 {header()}
 {banner(current)}
 <div id="site-drawer">{drawer(current)}</div>
+<div class="page-scroll">
 <main id="main" class="main-wrap" tabindex="-1">
 {body}
 </main>
 {footer_html_fixed()}
+</div>
 {phone_dock(current)}
 <div class="guide-root"></div>
 <script src="assets/js/brand.js"></script>

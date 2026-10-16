@@ -18,7 +18,7 @@ Read a room, compute a pratyāhāra, take a quiz, and download one file. The gui
 | `data/maheshvara.json` | 14 |
 | `data/shiva_sutras_kashmir.json` | 75 |
 
-Drawings: 58, of which 36 have a moving dot. Downloads are listed one by one, plus one optional zip.
+Drawings: 58, of which 36 have a moving dot. Downloads are listed one by one, plus one optional zip. `downloads/sutra-nexus-single-file.html` is the study app in one file, and that file is inside the zip.
 
 Measured on 2026-10-16 with `node scripts/gzip-static.mjs` (gzip for text responses) at `http://127.0.0.1:8742/`. Mobile Lighthouse on Home, Māheśvara, and Downloads: performance 100, accessibility 100, best practices 100, SEO 100, cumulative layout shift 0. Desktop Home matched those scores.
 

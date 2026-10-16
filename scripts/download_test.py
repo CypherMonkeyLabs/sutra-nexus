@@ -3,6 +3,7 @@
 import glob
 import json
 import os
+import shutil
 import subprocess
 import sys
 import zipfile
@@ -80,17 +81,24 @@ os.makedirs("/tmp/sutra-dom", exist_ok=True)
 
 def dump_one(item):
     index, path = item
-    url = "file://" + os.path.abspath(path)
+    os.makedirs("/tmp/sutra-alone", exist_ok=True)
+    alone = os.path.join("/tmp/sutra-alone", f"{index}{os.path.splitext(path)[1]}")
+    shutil.copy(path, alone)
+    source = open(alone, encoding="utf-8", errors="replace").read()
+    if path.endswith(".html"):
+        if "<style" not in source or "sutra.css" in source or 'href="../../' in source or 'href="../assets/' in source:
+            return path, "not standalone when copied alone"
+    url = "file://" + os.path.abspath(alone)
     proc = subprocess.run(
-        ["timeout", "4", chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
+        ["timeout", "8", chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
          f"--user-data-dir=/tmp/sutra-chrome-{index}", f"--remote-debugging-port={9400 + index}",
-         "--virtual-time-budget=1200",
+         "--virtual-time-budget=1500",
          "--dump-dom", url],
         capture_output=True,
     )
     dumped = proc.stdout.decode("utf-8", "replace")
     if path.endswith(".html") and NEEDLE not in dumped:
-        return path, "headless html missing disclaimer"
+        return path, "headless isolated html missing disclaimer"
     if not dumped.strip():
         return path, "headless dump empty"
     return path, ""

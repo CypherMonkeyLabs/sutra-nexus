@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Content, diagrams, downloads, and pages for Sūtra Nexus v2."""
+import base64
 import json
 import math
 import os
+import re
 import struct
 import zipfile
 
@@ -188,7 +190,9 @@ def visual_block(item):
 def sources_block(rows):
     lis = []
     for row in rows:
-        lis.append(f'<li><a href="{b.E(row["url"])}">{b.E(row["name"])}</a>. {b.E(row["detail"])} Checked {CHECKED}. Licence: {b.E(row["licence"])}.</li>')
+        name = b.E(row["name"])
+        head = f'<a href="{b.E(row["url"])}">{name}</a>' if row.get("url") else name
+        lis.append(f'<li>{head}. {b.E(row["detail"])} Checked {CHECKED}. Licence: {b.E(row["licence"])}.</li>')
     return '<section class="sources" id="sources"><h2>Cited sources</h2><ul>' + "".join(lis) + "</ul></section>"
 
 def eco_block(glossary, sisters, bridges, hooks):
@@ -642,6 +646,37 @@ def builder_html(st):
 def shell_page(spec):
     return b.page_shell(spec["file"], spec["title"] + " · Sūtra Nexus", spec["desc"], spec["html"])
 
+def css_standalone(embed_font=False):
+    css = open("assets/css/sutra.css", encoding="utf-8").read()
+    font_url = 'url("../fonts/NotoSansDevanagari-Regular.woff2")'
+    if embed_font:
+        raw = open("assets/fonts/NotoSansDevanagari-Regular.woff2", "rb").read()
+        data = "url(\"data:font/woff2;base64," + base64.b64encode(raw).decode("ascii") + "\")"
+        css = css.replace(font_url, data)
+    else:
+        css = css.replace(font_url + ' format("woff2")', 'local("Noto Sans Devanagari")')
+    return css
+
+def standalone_html(title, inner):
+    return f'''<!DOCTYPE html>
+<html lang="en" data-theme="bloom">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{b.E(title)}</title>
+<style>
+{css_standalone(False)}
+</style>
+</head>
+<body>
+<main class="main-wrap">
+{inner}
+</main>
+{b.footer_html_fixed()}
+</body>
+</html>
+'''
+
 def write_diagrams(items):
     os.makedirs("downloads/diagrams", exist_ok=True)
     for item in items:
@@ -649,16 +684,9 @@ def write_diagrams(items):
         b.write(svg_path, item["svg"])
         png_path = f'downloads/diagrams/{item["id"]}.png'
         cairosvg.svg2png(url=svg_path, write_to=png_path, output_width=960, output_height=820)
-        page = f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>{b.E(item["title"])}</title>
-<link rel="stylesheet" href="../../assets/css/sutra.css"></head><body>
-<main class="main-wrap"><h1>{b.E(item["title"])}</h1>
-<object data="{item["id"]}.svg" type="image/svg+xml" width="960" height="820" aria-label="{b.E(item["title"])}">Diagram</object>
-<p>{b.E(item["source"])}</p></main>
-{b.footer_html_fixed().replace('href="assets/', 'href="../../assets/').replace('href="https://', 'href="https://')}
-</body></html>'''
-        # Footer icon paths inside standalone pages need to reach assets/icons.
-        page = page.replace('src="assets/', 'src="../../assets/')
-        b.write(f'downloads/diagrams/{item["id"]}.html', page)
+        svg = item["svg"].replace('<?xml version="1.0" encoding="UTF-8"?>', "")
+        inner = f'<h1>{b.E(item["title"])}</h1>{svg}<p>{b.E(item["source"])}</p>'
+        b.write(f'downloads/diagrams/{item["id"]}.html', standalone_html(item["title"], inner))
 
 pdfmetrics.registerFont(TTFont("Deja", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"))
 pdfmetrics.registerFont(TTFont("DejaBold", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"))
@@ -913,9 +941,8 @@ def write_sheets(st):
         ]),
     ]
     for slug, title, paras in sheets:
-        html_page = f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>{b.E(title)}</title><link rel="stylesheet" href="../../assets/css/sutra.css"></head><body><main class="main-wrap"><h1>{b.E(title)}</h1>' + "".join(f"<p>{b.E(p)}</p>" for p in paras) + "</main>" + b.footer_html_fixed() + "</body></html>"
-        html_page = html_page.replace('href="assets/', 'href="../../assets/').replace('src="assets/', 'src="../../assets/')
-        b.write(f"downloads/sheets/{slug}.html", html_page)
+        inner = f'<h1>{b.E(title)}</h1>' + "".join(f"<p>{b.E(p)}</p>" for p in paras)
+        b.write(f"downloads/sheets/{slug}.html", standalone_html(title, inner))
         pdf_text(f"downloads/sheets/{slug}.pdf", title, paras)
         svg = b.svg_doc(title, b.flow_body(paras[0][:40] for paras in [paras] for _ in [0]) if False else b.flow_body([p[:40] for p in paras[:4]]), "Cheat sheet poster. Full text is in the HTML and PDF.", False)
         # fix the botched expression by writing a clean svg
@@ -955,9 +982,8 @@ def write_templates():
         ]),
     ]
     for slug, title, paras in templates:
-        html_page = f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>{b.E(title)}</title><link rel="stylesheet" href="../../assets/css/sutra.css"></head><body><main class="main-wrap"><h1>{b.E(title)}</h1>' + "".join(f"<p>{b.E(p)}</p>" for p in paras) + "</main>" + b.footer_html_fixed() + "</body></html>"
-        html_page = html_page.replace('href="assets/', 'href="../../assets/').replace('src="assets/', 'src="../../assets/')
-        b.write(f"downloads/templates/{slug}.html", html_page)
+        inner = f'<h1>{b.E(title)}</h1>' + "".join(f"<p>{b.E(p)}</p>" for p in paras)
+        b.write(f"downloads/templates/{slug}.html", standalone_html(title, inner))
         docx_text(f"downloads/templates/{slug}.docx", title, paras)
         pdf_text(f"downloads/templates/{slug}.pdf", title, paras)
 
@@ -984,8 +1010,8 @@ def write_cards(st):
         cards.append({"id": f"c{i}", "front": front, "back": back, "source": room + ", this app's notes", "href": href, "room": href.replace(".html", ""), "roomTitle": room})
     payload = {"cards": cards, "disclaimer": DISCLAIMER, "contact": CONTACT}
     b.write("downloads/flashcards.json", json.dumps(payload, ensure_ascii=False, indent=1))
-    html_page = '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Flashcards</title><link rel="stylesheet" href="../assets/css/sutra.css"></head><body><main class="main-wrap"><h1>Flashcards</h1>' + "".join(f'<p><b>{b.E(c["front"])}</b><br>{b.E(c["back"])}</p>' for c in cards) + "</main>" + b.footer_html_fixed().replace('href="assets/', 'href="../assets/').replace('src="assets/', 'src="../assets/') + "</body></html>"
-    b.write("downloads/flashcards.html", html_page)
+    inner = "<h1>Flashcards</h1>" + "".join(f'<p><b>{b.E(c["front"])}</b><br>{b.E(c["back"])}</p>' for c in cards)
+    b.write("downloads/flashcards.html", standalone_html("Flashcards", inner))
     pdf_text("downloads/flashcards.pdf", "Flashcards", [c["front"] + " — " + c["back"] for c in cards])
     return cards
 
@@ -1039,22 +1065,35 @@ def catalogue(items):
         add(f"downloads/models/{name}.glb", "model", "about", name + " GLB", f"downloads/models/{name}.png")
         add(f"downloads/models/{name}.png", "model", "about", name + " poster", f"downloads/models/{name}.png")
         add(f"downloads/models/{name}-credits.txt", "model", "about", name + " credits", f"downloads/models/{name}.png")
+    add("downloads/sutra-nexus-single-file.html", "app", "downloads", "Single-file app", "downloads/sheets/counts.png")
     add("downloads/catalog.json", "bundle", "downloads", "Download catalogue", "downloads/sheets/counts.png")
     add("downloads/sutra-nexus-all.zip", "bundle", "downloads", "Optional: everything in one ZIP", "downloads/sheets/counts.png")
     return rows
 
 def downloads_page(rows, visual=None):
-    cards = []
+    titles = {href.replace(".html", ""): label for href, label, _desc in b.NAV}
+    titles["index"] = "Start here"
+    order = [href.replace(".html", "") for href, _label, _desc in b.NAV]
+    groups = {}
     for row in rows:
-        size = f'{row["bytes"]/1024:.0f} KB' if row["bytes"] < 1048576 else f'{row["bytes"]/1048576:.1f} MB'
-        cards.append(f'''<article class="dl-card" data-dl data-kind="{b.E(row["kind"])}" data-room="{b.E(row["room"])}">
+        groups.setdefault(row["room"], []).append(row)
+    rooms = [room for room in order if room in groups] + [room for room in groups if room not in order]
+    sections = []
+    for index, room in enumerate(rooms):
+        cards = []
+        for row in groups[room]:
+            size = f'{row["bytes"]/1024:.0f} KB' if row["bytes"] < 1048576 else f'{row["bytes"]/1048576:.1f} MB'
+            cards.append(f'''<article class="dl-card" data-dl data-kind="{b.E(row["kind"])}" data-room="{b.E(row["room"])}">
 <img class="thumb" src="{b.E(row["thumb"])}" alt="" width="160" height="100" loading="lazy" decoding="async">
 <h3>{b.E(row["title"])}</h3>
 <p>{b.E(row["kind"])} · {size}</p>
 <p><a href="{b.E(row["path"])}">Download</a></p>
 </article>''')
+        opened = " open" if index == 0 else ""
+        label = titles.get(room, room)
+        sections.append(f'<details class="dl-room"{opened}><summary>{b.E(label)} · {len(groups[room])} files</summary><div class="dl-grid">{"".join(cards)}</div></details>')
     filters = "".join(f'<button type="button" data-filter="{key}">{label}</button>' for key, label in [
-        ("all", "All"), ("diagram", "Diagrams"), ("sheet", "Sheets"), ("cards", "Cards"), ("template", "Templates"), ("deck", "Deck"), ("model", "Models"), ("bundle", "Optional zip")])
+        ("all", "All"), ("diagram", "Diagrams"), ("sheet", "Sheets"), ("cards", "Cards"), ("template", "Templates"), ("deck", "Deck"), ("model", "Models"), ("app", "Single file"), ("bundle", "Optional zip")])
     tail = ""
     if visual:
         tail = five_blocks("downloads.html", "Downloads", "Individual study files and one optional zip.", [
@@ -1072,7 +1111,7 @@ def downloads_page(rows, visual=None):
 <p class="lede">Every file is listed on its own. The zip is optional and is the only archive.</p>
 {tail}
 <div class="filter-bar" data-filters>{filters}</div>
-<div class="dl-grid">{''.join(cards)}</div>
+{''.join(sections)}
 <section class="note"><h2>Optional: everything in one ZIP</h2><p>The card labeled bundle is the only zip. It repeats the same files and includes a readme with this disclaimer and the credits.</p></section>'''
     return b.page_shell("downloads.html", "Downloads · Sūtra Nexus", "Individual study files and one optional zip.", body)
 
@@ -1147,7 +1186,7 @@ def site_json(pages, cards, items):
 
 EXTRA = []
 
-def five_blocks(file, title, desc, paras, example, quizzes, visual, glossary):
+def five_blocks(file, title, desc, paras, example, quizzes, visual, glossary, sources=None):
     EXTRA[:] = [spec for spec in EXTRA if spec["file"] != file]
     EXTRA.append({"file": file, "title": title, "desc": desc, "paras": paras, "glossary": glossary, "quizzes": quizzes})
     qhtml = "".join(quiz(f"{file}-q{i}", q, ch, a, w) for i, (q, ch, a, w) in enumerate(quizzes, 1))
@@ -1156,7 +1195,7 @@ def five_blocks(file, title, desc, paras, example, quizzes, visual, glossary):
         + visual_block(visual)
         + example_block(example[0], example[1])
         + f'<section class="quiz" id="quiz"><h2>Quiz</h2>{qhtml}</section>'
-        + sources_block([DATA_CREDIT, WIKI_ASHTA])
+        + sources_block(sources if sources is not None else [DATA_CREDIT, WIKI_ASHTA])
         + eco_block(glossary, "Sister rooms are the chips in the section banner.", "Learner's note (not a translation): this page explains the app. It does not add a rule of the grammar.", "An open meaning, and a human check of the IAST. Confirm before relying.")
     )
 
@@ -1203,12 +1242,11 @@ def other_pages(st, items, pages):
     resources = [
         DATA_CREDIT, WIKI_ASHTA, WIKI_PANINI, WIKI_SHIKSHA, WIKI_SANDHI, WIKI_IAST, WIKI_DEVA, WIKI_MAHA, WIKI_KASH, GRETIL,
         {"name": "ashtadhyayi.com", "url": "https://ashtadhyayi.com/", "detail": "The site that reads ashtadhyayi-com/data. Opened 2026-10-16. Commentaries on that site are not copied here.", "licence": "site content stays with its owners"},
-        {"name": "Simple Icons", "url": "https://simpleicons.org/", "detail": "Version 13.21.0 icons for GitHub, X, LinkedIn, Hugging Face, and Linktree. Licence file fetched the same day.", "licence": "CC0-1.0"},
-        {"name": "Noto Sans Devanagari OFL", "url": "https://github.com/notofonts/devanagari", "detail": "Subset woff2 shipped for the Devanāgarī block. The font's name table says SIL OFL 1.1.", "licence": "OFL-1.1"},
+        {"name": "Simple Icons 13.21.0", "url": "", "detail": "Icons for GitHub, X, LinkedIn, Hugging Face, and Linktree. Named here without a link. The licence file was fetched the same day.", "licence": "CC0-1.0"},
+        {"name": "Noto Sans Devanagari", "url": "", "detail": "Subset woff2 shipped for the Devanāgarī block. Named here without a link. The font's name table says SIL OFL 1.1.", "licence": "OFL-1.1"},
     ]
-    lis = "".join(f'<li><a href="{b.E(r["url"])}">{b.E(r["name"])}</a>. {b.E(r["detail"])} Licence: {b.E(r["licence"])}.</li>' for r in resources)
     b.write("resources.html", b.page_shell("resources.html", "Resources · Sūtra Nexus", "Pages opened on 2026-10-16.",
-        f'<h1 class="hero-title">Resources</h1><p class="lede">Each link below was opened on {CHECKED}. If a later page changes, confirm before relying.</p>'
+        f'<h1 class="hero-title">Resources</h1><p class="lede">Each citation below was opened on {CHECKED}. If a later page changes, confirm before relying.</p>'
         + five_blocks("resources.html", "Resources", "Pages opened on 2026-10-16.", [
             "A link on this page was opened in October 2026 and the licence line is what that page said then.",
             "Wikipedia text is CC BY-SA. The GRETIL e-text page states CC BY-NC-SA 4.0. The data README asks for credit and states no SPDX.",
@@ -1219,8 +1257,7 @@ def other_pages(st, items, pages):
             ("Why is there no Vasu English?", ["It was rejected as too long", "The licence was not confirmed", "The file already had it", "It is the same as GRETIL"], 1, "Unconfirmed text is not copied."),
             ("What does the data README require?", ["A fee", "Appropriate credit", "A login", "An email"], 1, "The raw README says you are free to use the data if you give credit."),
             ("If a source page changes later, what should you do?", ["Keep the old quote as current", "Confirm before relying", "Delete the Devanāgarī", "Invent the new sentence"], 1, "The page says so."),
-        ], items[0], [("source", "A page that was opened, with the licence written down.")])
-        + f'<ul>{lis}</ul>'))
+        ], items[0], [("source", "A page that was opened, with the licence written down.")], resources)))
     play = '''<h1 class="hero-title">Play</h1>
 <p class="lede">Touch and keyboard both work. Scores stay in this browser.</p>
 <section class="card" data-pratyahara><h2>Build a pratyāhāra</h2>
@@ -1333,8 +1370,8 @@ def other_pages(st, items, pages):
 <tr><td>d3</td><td>7.9.0, vendored, not loaded by the pages</td><td>ISC</td><td><a href="https://d3js.org/">d3js.org</a></td></tr>
 <tr><td>canvas-confetti</td><td>1.9.3, vendored, not loaded by the pages</td><td>ISC</td><td><a href="https://github.com/catdad/canvas-confetti">repository</a></td></tr>
 <tr><td>markmap-view</td><td>0.18.12, vendored, not loaded; mind maps are static SVG</td><td>MIT</td><td><a href="https://markmap.js.org/">markmap.js.org</a></td></tr>
-<tr><td>Simple Icons</td><td>13.21.0</td><td>CC0-1.0</td><td><a href="https://simpleicons.org/">simpleicons.org</a></td></tr>
-<tr><td>Noto Sans Devanagari</td><td>subset of the regular face</td><td>OFL-1.1</td><td><a href="https://github.com/notofonts/devanagari">notofonts/devanagari</a></td></tr>
+<tr><td>Simple Icons</td><td>13.21.0</td><td>CC0-1.0</td><td>simpleicons.org, named without a link</td></tr>
+<tr><td>Noto Sans Devanagari</td><td>subset of the regular face</td><td>OFL-1.1</td><td>notofonts/devanagari, named without a link</td></tr>
 <tr><td>ashtadhyayi-com/data</td><td>the three JSON files' source</td><td>credit required, no SPDX</td><td><a href="https://github.com/ashtadhyayi-com/data">repository</a></td></tr>
 <tr><td>GRETIL e-text</td><td>Śivasūtra with vārttika</td><td>CC BY-NC-SA 4.0</td><td><a href="https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_zivasUtra-with-vArttika.htm">GRETIL page</a></td></tr>
 <tr><td>Study wheel and guide monkey models</td><td>original</td><td>CC0-1.0</td><td>downloads/models/</td></tr>
@@ -1392,6 +1429,85 @@ def glossary_page(gloss, visual):
         ("How many Māheśvara lines does the glossary's app use?", ["10", "14", "75", "77"], 1, "The file has 14 lines."),
     ], visual, [("glossary", "A short note for a term used in these rooms.")])
     b.write("glossary.html", b.page_shell("glossary.html", "Glossary · Sūtra Nexus", "Terms used in these rooms.", f'<h1 class="hero-title">Glossary</h1><table><thead><tr><th>Term</th><th>Note</th><th>Where</th></tr></thead><tbody>{rows}</tbody></table>{tail}'))
+
+def js_embed(value):
+    return json.dumps(value, ensure_ascii=False).replace("<", "\\u003c").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
+
+def scope_ids(html, room):
+    html = re.sub(r'\bid="([^"]+)"', lambda match: f'id="{room}-{match.group(1)}"', html)
+    html = re.sub(r'href="#([^"]+)"', lambda match: f'href="#{room}-{match.group(1)}"', html)
+    return html
+
+def write_single_file():
+    panels = []
+    for href, _label, _desc in b.NAV:
+        text = open(href, encoding="utf-8").read()
+        match = re.search(r'<main id="main"[^>]*>(.*)</main>', text, re.S)
+        if not match:
+            raise SystemExit("single file could not read " + href)
+        room = href.replace(".html", "")
+        hidden = "" if room == "index" else " hidden"
+        panels.append(f'<section data-room-panel="{room}"{hidden}>{scope_ids(match.group(1), room)}</section>')
+    switch = '''<script>
+document.addEventListener("click", function (event) {
+  var link = event.target.closest ? event.target.closest("a[href]") : null;
+  if (!link) return;
+  var href = link.getAttribute("href") || "";
+  var match = href.match(/^([A-Za-z0-9_-]+)\\.html([#?][\\s\\S]*)?$/);
+  if (!match) return;
+  event.preventDefault();
+  var id = match[1];
+  document.querySelectorAll("[data-room-panel]").forEach(function (panel) {
+    panel.hidden = panel.getAttribute("data-room-panel") !== id;
+  });
+  document.body.dataset.room = id;
+  document.querySelectorAll(".section-chip, .drawer a[href], .dock-item[href]").forEach(function (node) {
+    var target = (node.getAttribute("href") || "").split("#")[0];
+    if (target === id + ".html") node.setAttribute("aria-current", "page");
+    else node.removeAttribute("aria-current");
+  });
+  var hash = "";
+  if (match[2] && match[2].charAt(0) === "#") hash = match[2].slice(1);
+  var target = hash ? (document.getElementById(id + "-" + hash) || document.getElementById(hash)) : null;
+  if (target) target.scrollIntoView();
+  else window.scrollTo(0, 0);
+}, true);
+</script>'''
+    body = (
+        '<p class="lede">This file is the study app in one page. Colours, the guide, search, and the sūtra index are inside the file. The optional 3D wheel stays in the multi-file site.</p>'
+        + "".join(panels)
+        + switch
+    )
+    html = b.page_shell("index.html", "Sūtra Nexus — single file", "The study app in one HTML file.", body)
+    html = html.replace('<link rel="stylesheet" href="assets/css/sutra.css">', "<style>\n" + css_standalone(True) + "\n</style>")
+    html = re.sub(r'<link rel="icon"[^>]*>\n?', "", html)
+    html = re.sub(r'<script>if\(location\.protocol[\s\S]*?</script>\n?', "", html)
+    embed = {
+        "search": json.load(open("assets/data/search-index.json", encoding="utf-8")),
+        "cards": json.load(open("downloads/flashcards.json", encoding="utf-8")),
+        "sutras": json.load(open("assets/data/sutra-index.json", encoding="utf-8")),
+        "kb": json.load(open("guide/kb/bundle.json", encoding="utf-8")),
+    }
+    def inline_script(path):
+        return "<script>\n" + open(path, encoding="utf-8").read() + "\n</script>"
+    engine = open("guide/engine.mjs", encoding="utf-8").read().replace("export function", "function")
+    guide = open("assets/js/guide.js", encoding="utf-8").read().replace(
+        'import { createGuide, blankSession } from "../../guide/engine.mjs";\n', ""
+    )
+    html = html.replace(
+        '<script src="assets/js/brand.js"></script>',
+        "<script>window.SUTRA_EMBED=" + js_embed(embed) + ";</script>\n" + inline_script("assets/js/brand.js"),
+    )
+    html = html.replace('<script src="assets/js/frame.js"></script>', inline_script("assets/js/frame.js"))
+    html = html.replace('<script src="assets/js/phone-nav.js"></script>', inline_script("assets/js/phone-nav.js"))
+    html = html.replace('<script src="assets/js/app.js"></script>', inline_script("assets/js/app.js"))
+    html = html.replace(
+        '<script type="module" src="assets/js/guide.js"></script>',
+        "<script type=\"module\">\n" + engine + "\n" + guide + "\n</script>",
+    )
+    if "sutra.css" in html or 'src="assets/' in html:
+        raise SystemExit("single file still points at an external asset")
+    b.write("downloads/sutra-nexus-single-file.html", html)
 
 def favicon():
     b.write("favicon.svg", '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#4c1d95"/><circle cx="16" cy="16" r="8" fill="none" stroke="#fde047" stroke-width="2"/><circle cx="16" cy="16" r="2" fill="#67e8f9"/></svg>''')
@@ -1469,6 +1585,13 @@ def main():
     glossary_page(gloss, visual)
     site_json(pages, cards, items)
     search_index(st, items, gloss)
+    write_single_file()
+    rows = catalogue(items)
+    write_catalog(rows)
+    write_zip([row for row in rows if not row["path"].endswith(".zip")])
+    rows = catalogue(items)
+    write_catalog(rows)
+    b.write("downloads.html", downloads_page(rows, visual))
     print("pages written", len(pages), "library", len(EXTRA), "downloads", len(rows))
 
 if __name__ == "__main__":

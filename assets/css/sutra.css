@@ -340,7 +340,21 @@ h1, h2, h3 { line-height: 1.25; }
 .diagram-card svg, .diagram-card img { width: 100%; height: auto; display: block; }
 .diagram-card figcaption { margin-top: 8px; color: var(--ink-dim); }
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
-.dl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.dl-room {
+  margin: 10px 0;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+}
+.dl-room summary {
+  min-height: 44px;
+  padding: 12px 14px;
+  cursor: pointer;
+  font-weight: 800;
+}
+.dl-room:not([open]) .dl-grid { display: none; }
+.dl-room .dl-grid { padding: 0 12px 12px; }
+.dl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
 .thumb {
   width: 160px;
   height: 100px;
@@ -348,6 +362,7 @@ h1, h2, h3 { line-height: 1.25; }
   border-radius: 10px;
   background: #eef2ff;
   display: block;
+  flex: none;
 }
 .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .phone-dock {
@@ -357,11 +372,12 @@ h1, h2, h3 { line-height: 1.25; }
   right: 0;
   bottom: 0;
   z-index: 40;
-  background: color-mix(in srgb, var(--card) 94%, transparent);
+  background: var(--card);
   border-top: 1px solid var(--line);
   padding: 4px 4px calc(4px + env(safe-area-inset-bottom));
   justify-content: space-around;
   gap: 2px;
+  flex-wrap: wrap;
 }
 .dock-item {
   flex: 1;
@@ -396,18 +412,39 @@ html:not([data-motion="reduce"]) .monkey-idle .blink { animation: monkey-blink 4
   background: color-mix(in srgb, var(--accent) 12%, var(--card));
 }
 .nav-hint {
-  position: fixed;
-  left: 8px;
-  bottom: calc(76px + env(safe-area-inset-bottom));
-  z-index: 42;
-  max-width: min(220px, 70vw);
+  position: static;
+  order: -1;
+  flex: 1 0 100%;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: auto;
+  max-width: none;
+  margin: 0 4px 2px;
+  padding: 4px 6px 4px 12px;
+  border-radius: 999px;
   background: #0f172a;
   color: #f8fafc;
-  border-radius: 14px;
-  padding: 10px 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  font-size: 0.78rem;
+  line-height: 1.2;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
 }
-.nav-hint button { min-height: 44px; width: 100%; margin-top: 8px; font: inherit; border-radius: 10px; }
+.nav-hint span { white-space: nowrap; font-weight: 700; }
+.nav-hint button {
+  min-height: 36px;
+  min-width: 44px;
+  width: auto;
+  margin: 0;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  background: #fde047;
+  color: #1b1340;
+  font: inherit;
+  font-weight: 700;
+}
 .display-panel {
   position: absolute;
   right: 12px;
@@ -489,7 +526,7 @@ html[data-theme="dark"] .contrast-warn, html[data-theme="contrast"] .contrast-wa
   color: #fff;
   text-decoration: none;
 }
-.brand-icon svg { width: 36px; height: 36px; }
+.brand-icon svg { width: 36px; height: 36px; fill: currentColor; }
 .brand-web { background: radial-gradient(circle at 30% 25%, #7c3aed, #312e81 70%); }
 .brand-gh { background: #24292f; }
 .brand-lt { background: #43e55e; color: #052e16; }
@@ -504,8 +541,18 @@ th, td { border-bottom: 1px solid var(--line); text-align: left; padding: 6px 8p
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 html[data-motion="reduce"] * { animation: none !important; transition: none !important; }
 @media (max-width: 720px) {
-  .phone-dock { display: flex; }
-  body { --dock-h: 72px; }
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    overflow: hidden;
+    padding-bottom: 0;
+    --dock-h: 0px;
+  }
+  .site-header, .canon-banner, .phone-dock { flex: none; }
+  .page-scroll { flex: 1 1 auto; min-height: 0; overflow: auto; }
+  .phone-dock { display: flex; position: static; }
+  html[data-nav-hint="1"] .nav-hint { display: flex; }
   .menu-desktop { display: none; }
   .guide-fab { display: none; }
   .guide-root { right: 0; left: 0; bottom: calc(68px + env(safe-area-inset-bottom)); }
@@ -522,6 +569,7 @@ html[data-motion="reduce"] * { animation: none !important; transition: none !imp
 }
 @media (min-width: 721px) {
   .phone-dock, .nav-hint { display: none !important; }
+  body.drawer-open { padding-left: min(420px, 92vw); }
 }
 @media (prefers-reduced-motion: reduce) {
   html:not([data-motion="full"]) * { animation: none !important; transition: none !important; }

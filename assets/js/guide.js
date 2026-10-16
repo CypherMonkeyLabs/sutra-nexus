@@ -65,7 +65,10 @@ function boot() {
   var guideReady = null;
   function ensureGuide() {
     if (guideReady) return guideReady;
-    guideReady = fetch(prefix() + "guide/kb/bundle.json").then(function (res) { return res.json(); }).then(function (kb) {
+    var kbReady = (window.SUTRA_EMBED && window.SUTRA_EMBED.kb)
+      ? Promise.resolve(window.SUTRA_EMBED.kb)
+      : fetch(prefix() + "guide/kb/bundle.json").then(function (res) { return res.json(); });
+    guideReady = kbReady.then(function (kb) {
       guide = createGuide(kb, { rng: Math.random });
       welcome();
       return guide;

@@ -41,10 +41,10 @@ EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 ALLOWED = {
     "cyphermonkeylabs.com", "github.com", "linktr.ee", "x.com", "www.linkedin.com",
     "linkedin.com", "huggingface.co", "ashtadhyayi.com", "gretil.sub.uni-goettingen.de",
-    "en.wikipedia.org", "simpleicons.org", "animejs.com", "roughjs.com", "threejs.org",
+    "en.wikipedia.org", "animejs.com", "roughjs.com", "threejs.org",
     "d3js.org", "markmap.js.org",
 }
-GITHUB_OK = ("/CypherMonkeyLabs", "/ashtadhyayi-com/", "/notofonts/", "/catdad/")
+GITHUB_OK = ("/CypherMonkeyLabs", "/ashtadhyayi-com/", "/catdad/")
 
 mailto, devto, cipher, emails, bad_hosts = [], [], [], [], []
 linktree = set()
@@ -82,9 +82,15 @@ for dirpath, dirnames, filenames in os.walk("."):
                 missing = [bit for bit in BLOCKS if bit not in text]
                 quizzes = text.count('class="quiz-q"')
                 check(rel, not missing and quizzes >= 5, f"missing={missing} quizzes={quizzes}")
+        if ext == ".html" and rel.startswith("downloads/") and rel != "downloads/sutra-nexus-single-file.html":
+            check(rel + " standalone", "<style" in text and "sutra.css" not in text and "assets/" not in text)
+        elif rel == "downloads/sutra-nexus-single-file.html":
+            check("single-file app", "<style" in text and "sutra.css" not in text and 'src="assets/' not in text and "SUTRA_EMBED" in text)
         for url in re.findall(r'(?:href|src)\s*=\s*["\'](https?://[^"\']+)', text):
             host = re.sub(r"^https?://", "", url).split("/")[0]
-            if host == "github.com" and not any(bit in url for bit in GITHUB_OK):
+            if "simpleicons.org" in url or "notofonts" in url:
+                bad_hosts.append(rel + " " + url)
+            elif host == "github.com" and not any(bit in url for bit in GITHUB_OK):
                 bad_hosts.append(rel + " " + url)
             elif host != "github.com" and host not in ALLOWED:
                 bad_hosts.append(rel + " " + url)
