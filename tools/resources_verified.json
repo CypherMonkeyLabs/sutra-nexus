@@ -1,0 +1,106 @@
+[
+ {
+  "label": "Aṣṭādhyāyī online (ashtadhyayi.com)",
+  "url": "https://ashtadhyayi.com/",
+  "desc": "Browse and search the sūtras with commentaries (site's own content; licences vary)",
+  "status": 200,
+  "final": "https://ashtadhyayi.com/",
+  "title": "Ashtadhyayi"
+ },
+ {
+  "label": "ashtadhyayi-com/data on GitHub",
+  "url": "https://github.com/ashtadhyayi-com/data",
+  "desc": "The open data repository this app's sūtra text comes from",
+  "status": 200,
+  "final": "https://github.com/ashtadhyayi-com/data",
+  "title": "GitHub - ashtadhyayi-com/data: Data powering ashtadhyayi.com · GitHub"
+ },
+ {
+  "label": "GRETIL: Śiva Sūtras with Vārttika",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_zivasUtra-with-vArttika.htm",
+  "desc": "Electronic text used for the 75 Śiva Sūtras",
+  "status": 200,
+  "final": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_zivasUtra-with-vArttika.htm",
+  "title": "Śivasūtra with vārttika (GRETIL)"
+ },
+ {
+  "label": "Wikipedia: Pāṇini",
+  "url": "https://en.wikipedia.org/wiki/P%C4%81%E1%B9%87ini",
+  "desc": "Background on the grammarian",
+  "status": 200,
+  "final": "https://en.wikipedia.org/wiki/P%C4%81%E1%B9%87ini",
+  "title": "Pāṇini - Wikipedia"
+ },
+ {
+  "label": "Wikipedia: Shiva Sutras",
+  "url": "https://en.wikipedia.org/wiki/Shiva_Sutras",
+  "desc": "Background on the Kashmir Śiva Sūtras",
+  "status": 200,
+  "final": "https://en.wikipedia.org/wiki/Shiva_Sutras",
+  "title": "Shiva Sutras - Wikipedia"
+ },
+ {
+  "label": "Wikipedia: Shiksha",
+  "url": "https://en.wikipedia.org/wiki/Shiksha",
+  "desc": "Background on Vedic phonetics",
+  "status": 200,
+  "final": "https://en.wikipedia.org/wiki/Shiksha",
+  "title": "Shiksha - Wikipedia"
+ },
+ {
+  "label": "Wikipedia: Sandhi",
+  "url": "https://en.wikipedia.org/wiki/Sandhi",
+  "desc": "Background on sound-joining rules",
+  "status": 200,
+  "final": "https://en.wikipedia.org/wiki/Sandhi",
+  "title": "Sandhi - Wikipedia"
+ },
+ {
+  "label": "Wikipedia: Ashtadhyayi",
+  "url": "https://en.wikipedia.org/wiki/Ashtadhyayi",
+  "desc": "Background on the Aṣṭādhyāyī",
+  "status": 200,
+  "final": "https://en.wikipedia.org/wiki/Ashtadhyayi",
+  "title": "Aṣṭādhyāyī - Wikipedia"
+ },
+ {
+  "label": "Wikipedia: Devanagari",
+  "url": "https://en.wikipedia.org/wiki/Devanagari",
+  "desc": "Background on the script",
+  "status": 200,
+  "final": "https://en.wikipedia.org/wiki/Devanagari",
+  "title": "Devanagari - Wikipedia"
+ },
+ {
+  "label": "Wikipedia: IAST",
+  "url": "https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration",
+  "desc": "Background on the transliteration scheme",
+  "status": 200,
+  "final": "https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration",
+  "title": "International Alphabet of Sanskrit Transliteration - Wikipedia"
+ },
+ {
+  "label": "Wikipedia: Pratyahara",
+  "url": "https://en.wikipedia.org/wiki/Pratyahara_(Sanskrit_grammar)",
+  "desc": "candidate",
+  "status": "HTTP Error 404: Not Found",
+  "final": "",
+  "title": ""
+ },
+ {
+  "label": "Wikipedia: Shiva Sutras of Panini",
+  "url": "https://en.wikipedia.org/wiki/Shiva_Sutras_(Panini)",
+  "desc": "candidate",
+  "status": "HTTP Error 404: Not Found",
+  "final": "",
+  "title": ""
+ },
+ {
+  "label": "Wikipedia: Maheshwara Sutras",
+  "url": "https://en.wikipedia.org/wiki/Maheshvara_Sutras",
+  "desc": "candidate",
+  "status": 200,
+  "final": "https://en.wikipedia.org/wiki/Maheshvara_Sutras",
+  "title": "Shiva Sutras - Wikipedia"
+ }
+]
