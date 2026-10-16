@@ -1,0 +1,33 @@
+/* Nexus Monkey · guide bot styles (separate module). Uses theme variables from the app. */
+#guidebot-root{position:fixed;right:12px;bottom:calc(14px + var(--gb-lift,0px));z-index:50;display:flex;flex-direction:column;align-items:flex-end;gap:10px;transition:bottom .25s;pointer-events:none;max-width:calc(100vw - 24px)}
+#guidebot-root>*{pointer-events:auto}
+#guidebot-root.hidden{display:none}
+.gb-btn{width:60px;height:60px;border-radius:50%;border:2px solid var(--c1);background:var(--surface);cursor:pointer;padding:0;display:grid;place-items:center;box-shadow:0 0 22px var(--glow),0 0 0 4px var(--hl);animation:gbbob 4s ease-in-out infinite}
+.gb-btn svg{width:46px;height:46px}
+@keyframes gbbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+html[data-motion=off] .gb-btn{animation:none}
+.gb-nudge{max-width:240px;background:var(--surface);color:var(--ink);border:2px solid var(--c1);border-radius:16px 16px 4px 16px;padding:10px 12px;font-size:.88rem;box-shadow:0 0 22px -4px var(--glow)}
+.gb-nudge .row{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap}
+.gb-nudge button{min-height:44px;min-width:44px;border-radius:10px;border:1px solid var(--line);background:var(--surface2);color:var(--ink);font:inherit;font-size:.82rem;cursor:pointer;padding:0 10px}
+.gb-panel{width:min(380px,calc(100vw - 24px));height:min(540px,calc(100vh - 150px - var(--gb-lift,0px)));max-height:calc(100dvh - 150px - var(--gb-lift,0px));display:flex;flex-direction:column;background:var(--surface2);color:var(--ink);border:2px solid var(--c1);border-radius:18px;box-shadow:0 0 34px var(--glow);overflow:hidden}
+.gb-panel[hidden]{display:none}
+.gb-head{display:flex;align-items:center;gap:8px;padding:8px 10px;background:linear-gradient(90deg,var(--c1),var(--c2));color:var(--onc)}
+.gb-head .av{width:38px;height:38px;border-radius:50%;background:var(--surface);border:0;padding:0;cursor:pointer;display:grid;place-items:center;flex:none}
+.gb-head .av svg{width:30px;height:30px}
+.gb-head b{display:block;font-size:.98rem}.gb-head small{display:block;font-size:.74rem;opacity:.95}
+.gb-head .sp{flex:1;min-width:0}
+.gb-head button.ic{min-width:44px;min-height:44px;border-radius:10px;border:1px solid #fff8;background:#ffffff22;color:inherit;font:inherit;cursor:pointer;font-size:1rem}
+.gb-head button.ic[aria-pressed=true]{background:var(--surface);color:var(--ink)}
+.gb-msgs{flex:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column;gap:8px;overscroll-behavior:contain}
+.gb-m{max-width:88%;padding:8px 12px;border-radius:14px;font-size:.92rem;line-height:1.45;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:anywhere}
+.gb-m.bot{background:var(--surface);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px}
+.gb-m.me{background:var(--c1);color:var(--onc);align-self:flex-end;border-bottom-right-radius:4px}
+.gb-chips{display:flex;gap:6px;flex-wrap:wrap;padding:4px 10px 6px;max-height:112px;overflow-y:auto;border-top:1px solid var(--line)}
+.gb-chips button{min-height:44px;border-radius:99px;border:1px solid var(--c1);background:var(--surface);color:var(--c1);font:inherit;font-size:.82rem;padding:0 12px;cursor:pointer}
+html[data-theme=neon] .gb-chips button,html[data-theme=sunset] .gb-chips button{color:var(--ink)}
+.gb-chips button:hover{background:var(--hl)}
+.gb-in{display:flex;gap:6px;padding:8px 10px;border-top:1px solid var(--line);background:var(--surface)}
+.gb-in input{flex:1;min-width:0;min-height:44px;border-radius:12px;border:1px solid var(--line);background:var(--surface2);color:var(--ink);padding:0 10px;font:inherit}
+.gb-in button{min-height:44px;min-width:44px;border-radius:12px;border:2px solid var(--c1);background:var(--c1);color:var(--onc);font:inherit;font-weight:600;cursor:pointer}
+.gb-flash{outline:4px solid var(--c3)!important;outline-offset:4px;border-radius:12px;transition:outline .3s}
+@media(max-width:700px){#guidebot-root{right:8px}.gb-btn{width:54px;height:54px}.gb-panel{height:min(480px,calc(100dvh - 190px - var(--gb-lift,0px)))}}
