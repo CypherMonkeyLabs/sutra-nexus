@@ -1,0 +1,7 @@
+Author: original geometry written for Sūtra Nexus v2.
+Licence: CC0-1.0 for these two model files.
+Source: this repository, not a scanned object.
+Sūtra Nexus is an independent, free, learning-only student project. It respects every tradition, scholar, publisher, company and vendor. Trademarks, texts and sources belong to their owners, and nothing here is affiliated with or endorsed by them. If something should be removed or corrected, it will be handled promptly through the contact form. Nothing here is sold. I am happy to volunteer for any organization.
+Contact form: https://cyphermonkeylabs.com/#contact
+Model: guide-monkey.glb
+Poster: guide-monkey.png is a 2D drawing of the same original monkey with glasses, not a photograph and not a copied mascot.

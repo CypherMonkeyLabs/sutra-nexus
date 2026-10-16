@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 820" role="img" aria-label="The fourteen Māheśvara lines">
+<title>The fourteen Māheśvara lines</title>
+<style>
+text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
+
+@media (prefers-reduced-motion: reduce) { .mover { display: none; } }
+
+</style>
+<rect width="960" height="820" rx="24" fill="#f6f3ff"/>
+<rect x="20" y="16" width="920" height="64" rx="16" fill="#1e1b4b"/>
+<text x="40" y="56" font-size="26" fill="#f8fafc">The fourteen Māheśvara lines</text>
+<text class="deva" x="40" y="128" font-size="18" fill="#1b1340">1. अइउण्  ·  a i u  · marker ṇ</text><text class="deva" x="40" y="156" font-size="18" fill="#1b1340">2. ऋऌक्  ·  ṛ ḷ  · marker k</text><text class="deva" x="40" y="184" font-size="18" fill="#1b1340">3. एओङ्  ·  e o  · marker ṅ</text><text class="deva" x="40" y="212" font-size="18" fill="#1b1340">4. ऐऔच्  ·  ai au  · marker c</text><text class="deva" x="40" y="240" font-size="18" fill="#1b1340">5. हयवरट्  ·  h y v r  · marker ṭ</text><text class="deva" x="40" y="268" font-size="18" fill="#1b1340">6. लण्  ·  l  · marker ṇ</text><text class="deva" x="40" y="296" font-size="18" fill="#1b1340">7. ञमङणनम्  ·  ñ m ṅ ṇ n  · marker m</text><text class="deva" x="40" y="324" font-size="18" fill="#1b1340">8. झभञ्  ·  jh bh  · marker ñ</text><text class="deva" x="40" y="352" font-size="18" fill="#1b1340">9. घढधष्  ·  gh ḍh dh  · marker ṣ</text><text class="deva" x="40" y="380" font-size="18" fill="#1b1340">10. जबगडदश्  ·  j b g ḍ d  · marker ś</text><text class="deva" x="40" y="408" font-size="18" fill="#1b1340">11. खफछठथचटतव्  ·  kh ph ch ṭh th c ṭ t  · marker v</text><text class="deva" x="40" y="436" font-size="18" fill="#1b1340">12. कपय्  ·  k p  · marker y</text><text class="deva" x="40" y="464" font-size="18" fill="#1b1340">13. शषसर्  ·  ś ṣ s  · marker r</text><text class="deva" x="40" y="492" font-size="18" fill="#1b1340">14. हल्  ·  h  · marker l</text>
+<rect x="20" y="572" width="920" height="228" rx="16" fill="#d1fae5" stroke="#0f766e" stroke-width="2"/>
+<text x="36" y="600" font-size="13" font-weight="700" fill="#052e2b">Disclaimer</text><text x="36" y="618" font-size="11" fill="#0b1f2a">Sūtra Nexus is an independent, free, learning-only student project. It respects every</text><text x="36" y="633" font-size="11" fill="#0b1f2a">tradition, scholar, publisher, company and vendor. Trademarks, texts and sources belong to</text><text x="36" y="648" font-size="11" fill="#0b1f2a">their owners, and nothing here is affiliated with or endorsed by them. If something should</text><text x="36" y="663" font-size="11" fill="#0b1f2a">be removed or corrected, it will be handled promptly through the contact form. Nothing here</text><text x="36" y="678" font-size="11" fill="#0b1f2a">is sold. I am happy to volunteer for any organization.</text><text x="36" y="699" font-size="11" fill="#134e4a">Devanāgarī and parsed sounds from data/maheshvara.json. The IAST field is script-converted and is not printed in this grid.</text>
+
+</svg>

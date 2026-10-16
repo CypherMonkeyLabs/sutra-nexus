@@ -1,0 +1,141 @@
+{
+ "cards": [
+  {
+   "id": "c1",
+   "front": "How many Aṣṭādhyāyī rows?",
+   "back": "3,983, from data/ashtadhyayi.json.",
+   "source": "Aṣṭādhyāyī, this app's notes",
+   "href": "ashtadhyayi.html",
+   "room": "ashtadhyayi",
+   "roomTitle": "Aṣṭādhyāyī"
+  },
+  {
+   "id": "c2",
+   "front": "How many Māheśvara lines?",
+   "back": "14, from data/maheshvara.json.",
+   "source": "Māheśvara, this app's notes",
+   "href": "maheshvara.html",
+   "room": "maheshvara",
+   "roomTitle": "Māheśvara"
+  },
+  {
+   "id": "c3",
+   "front": "How many Kashmir rows?",
+   "back": "75. The other recension's differences are not listed.",
+   "source": "Śiva Sūtras, this app's notes",
+   "href": "shiva.html",
+   "room": "shiva",
+   "roomTitle": "Śiva Sūtras"
+  },
+  {
+   "id": "c4",
+   "front": "What is hal's length?",
+   "back": "33 sounds.",
+   "source": "Māheśvara, this app's notes",
+   "href": "maheshvara.html",
+   "room": "maheshvara",
+   "roomTitle": "Māheśvara"
+  },
+  {
+   "id": "c5",
+   "front": "What is al's length?",
+   "back": "42 sounds.",
+   "source": "Māheśvara, this app's notes",
+   "href": "maheshvara.html",
+   "room": "maheshvara",
+   "roomTitle": "Māheśvara"
+  },
+  {
+   "id": "c6",
+   "front": "What does the meaning field say?",
+   "back": "meaning: not yet sourced from an open text.",
+   "source": "About, this app's notes",
+   "href": "about.html",
+   "room": "about",
+   "roomTitle": "About"
+  },
+  {
+   "id": "c7",
+   "front": "How is Aṣṭādhyāyī IAST labeled?",
+   "back": "script-converted, not yet human-checked.",
+   "source": "Foundations, this app's notes",
+   "href": "foundations.html",
+   "room": "foundations",
+   "roomTitle": "Foundations"
+  },
+  {
+   "id": "c8",
+   "front": "What does the file meta call S?",
+   "back": "saṃjñā.",
+   "source": "Aṣṭādhyāyī, this app's notes",
+   "href": "ashtadhyayi.html",
+   "room": "ashtadhyayi",
+   "roomTitle": "Aṣṭādhyāyī"
+  },
+  {
+   "id": "c9",
+   "front": "What does the file meta call P?",
+   "back": "paribhāṣā.",
+   "source": "Aṣṭādhyāyī, this app's notes",
+   "href": "ashtadhyayi.html",
+   "room": "ashtadhyayi",
+   "roomTitle": "Aṣṭādhyāyī"
+  },
+  {
+   "id": "c10",
+   "front": "What does the file meta call V?",
+   "back": "vidhi.",
+   "source": "Aṣṭādhyāyī, this app's notes",
+   "href": "ashtadhyayi.html",
+   "room": "ashtadhyayi",
+   "roomTitle": "Aṣṭādhyāyī"
+  },
+  {
+   "id": "c11",
+   "front": "Are AT and AD expanded?",
+   "back": "No. Confirm before relying.",
+   "source": "Aṣṭādhyāyī, this app's notes",
+   "href": "ashtadhyayi.html",
+   "room": "ashtadhyayi",
+   "roomTitle": "Aṣṭādhyāyī"
+  },
+  {
+   "id": "c12",
+   "front": "What licence did the GRETIL page state?",
+   "back": "CC BY-NC-SA 4.0, checked 2026-10-16.",
+   "source": "Śiva Sūtras, this app's notes",
+   "href": "shiva.html",
+   "room": "shiva",
+   "roomTitle": "Śiva Sūtras"
+  },
+  {
+   "id": "c13",
+   "front": "What is a learner's note?",
+   "back": "A labeled teaching line, not a translation.",
+   "source": "Start, this app's notes",
+   "href": "index.html",
+   "room": "index",
+   "roomTitle": "Start"
+  },
+  {
+   "id": "c14",
+   "front": "Where is the contact path?",
+   "back": "https://cyphermonkeylabs.com/#contact",
+   "source": "About, this app's notes",
+   "href": "about.html",
+   "room": "about",
+   "roomTitle": "About"
+  },
+  {
+   "id": "c15",
+   "front": "Does the app include a Gītā verse?",
+   "back": "No.",
+   "source": "About, this app's notes",
+   "href": "about.html",
+   "room": "about",
+   "roomTitle": "About"
+  }
+ ],
+ "disclaimer": "Sūtra Nexus is an independent, free, learning-only student project. It respects every tradition, scholar, publisher, company and vendor. Trademarks, texts and sources belong to their owners, and nothing here is affiliated with or endorsed by them. If something should be removed or corrected, it will be handled promptly through the contact form. Nothing here is sold. I am happy to volunteer for any organization.",
+ "contact": "https://cyphermonkeylabs.com/#contact"
+}

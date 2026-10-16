@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 820" role="img" aria-label="Markers on the fourteen lines">
+<title>Markers on the fourteen lines</title>
+<style>
+text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
+
+@media (prefers-reduced-motion: reduce) { .mover { display: none; } }
+
+</style>
+<rect width="960" height="820" rx="24" fill="#f6f3ff"/>
+<rect x="20" y="16" width="920" height="64" rx="16" fill="#1e1b4b"/>
+<text x="40" y="56" font-size="26" fill="#f8fafc">Markers on the fourteen lines</text>
+<text x="48" y="108" font-size="18" fill="#1b1340">1. marker ṇ · first sound a</text><text x="48" y="138" font-size="18" fill="#1b1340">2. marker k · first sound ṛ</text><text x="48" y="168" font-size="18" fill="#1b1340">3. marker ṅ · first sound e</text><text x="48" y="198" font-size="18" fill="#1b1340">4. marker c · first sound ai</text><text x="48" y="228" font-size="18" fill="#1b1340">5. marker ṭ · first sound h</text><text x="48" y="258" font-size="18" fill="#1b1340">6. marker ṇ · first sound l</text><text x="48" y="288" font-size="18" fill="#1b1340">7. marker m · first sound ñ</text><text x="48" y="318" font-size="18" fill="#1b1340">8. marker ñ · first sound jh</text><text x="48" y="348" font-size="18" fill="#1b1340">9. marker ṣ · first sound gh</text><text x="48" y="378" font-size="18" fill="#1b1340">10. marker ś · first sound j</text><text x="48" y="408" font-size="18" fill="#1b1340">11. marker v · first sound kh</text><text x="48" y="438" font-size="18" fill="#1b1340">12. marker y · first sound k</text><text x="48" y="468" font-size="18" fill="#1b1340">13. marker r · first sound ś</text><text x="48" y="498" font-size="18" fill="#1b1340">14. marker l · first sound h</text>
+<rect x="20" y="572" width="920" height="228" rx="16" fill="#d1fae5" stroke="#0f766e" stroke-width="2"/>
+<text x="36" y="600" font-size="13" font-weight="700" fill="#052e2b">Disclaimer</text><text x="36" y="618" font-size="11" fill="#0b1f2a">Sūtra Nexus is an independent, free, learning-only student project. It respects every</text><text x="36" y="633" font-size="11" fill="#0b1f2a">tradition, scholar, publisher, company and vendor. Trademarks, texts and sources belong to</text><text x="36" y="648" font-size="11" fill="#0b1f2a">their owners, and nothing here is affiliated with or endorsed by them. If something should</text><text x="36" y="663" font-size="11" fill="#0b1f2a">be removed or corrected, it will be handled promptly through the contact form. Nothing here</text><text x="36" y="678" font-size="11" fill="#0b1f2a">is sold. I am happy to volunteer for any organization.</text><text x="36" y="699" font-size="11" fill="#134e4a">Marker and first sound from data/maheshvara.json. The marker is not part of a pratyāhāra set.</text>
+
+</svg>
