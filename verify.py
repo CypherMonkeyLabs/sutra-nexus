@@ -9,6 +9,7 @@ import os
 import re
 import json
 import sys
+import zipfile
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
@@ -39,11 +40,12 @@ DISCLAIMER = "Sūtra Nexus is an independent, free, learning-only student projec
 BLOCKS = ['id="learn"', 'id="visual"', 'id="example"', 'id="quiz"', 'id="sources"', 'id="ecosystem"', "data-canon-footer", DISCLAIMER]
 EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 ALLOWED = {
-    "cyphermonkeylabs.com", "github.com", "linktr.ee", "x.com", "www.linkedin.com",
-    "linkedin.com", "huggingface.co", "ashtadhyayi.com", "gretil.sub.uni-goettingen.de",
+    "cyphermonkeylabs.com", "github.com", "linktr.ee", "huggingface.co",
+    "ashtadhyayi.com", "gretil.sub.uni-goettingen.de",
     "en.wikipedia.org", "animejs.com", "roughjs.com", "threejs.org",
     "d3js.org", "markmap.js.org",
 }
+BANNED_SOCIAL = re.compile(r"https?://(?:www\.)?(?:linkedin\.com|x\.com|twitter\.com)(?:/|\b)", re.I)
 GITHUB_OK = ("/CypherMonkeyLabs", "/ashtadhyayi-com/", "/catdad/")
 
 mailto, devto, cipher, emails, bad_hosts = [], [], [], [], []
@@ -70,6 +72,8 @@ for dirpath, dirnames, filenames in os.walk("."):
             devto.append(rel)
         if "cipher0x9" in text:
             cipher.append(rel)
+        if BANNED_SOCIAL.search(text):
+            bad_hosts.append(rel + " banned social link")
         found = EMAIL.findall(text)
         if found:
             emails.append(rel)
@@ -94,6 +98,14 @@ for dirpath, dirnames, filenames in os.walk("."):
                 bad_hosts.append(rel + " " + url)
             elif host != "github.com" and host not in ALLOWED:
                 bad_hosts.append(rel + " " + url)
+
+zip_path = "downloads/sutra-nexus-all.zip"
+if os.path.exists(zip_path):
+    with zipfile.ZipFile(zip_path) as bundle:
+        for name in bundle.namelist():
+            blob = bundle.read(name).decode("utf-8", "ignore")
+            if BANNED_SOCIAL.search(blob):
+                bad_hosts.append(name + " banned social link in zip")
 
 check("no mailto", not mailto, ", ".join(mailto[:5]))
 check("no dev.to", not devto, ", ".join(devto))

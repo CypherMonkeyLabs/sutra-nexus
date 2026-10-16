@@ -49,6 +49,4 @@ CypherMonkey Labs
 [![CypherMonkey Labs](assets/icons/monkey.svg)](https://cyphermonkeylabs.com)
 [![GitHub](assets/icons/si-github.svg)](https://github.com/CypherMonkeyLabs)
 [![Linktree](assets/icons/si-lt.svg)](https://linktr.ee/cyphermonkey)
-[![X](assets/icons/si-x.svg)](https://x.com/Cypher0x9)
-[![LinkedIn](assets/icons/si-li.svg)](https://www.linkedin.com/in/luckylakshmanucwebex)
 [![Hugging Face](assets/icons/si-hf.svg)](https://huggingface.co/Cypher0x9)

@@ -43,9 +43,6 @@ const allowedHost = [
   "cyphermonkeylabs.com",
   "github.com",
   "linktr.ee",
-  "x.com",
-  "www.linkedin.com",
-  "linkedin.com",
   "huggingface.co",
   "ashtadhyayi.com",
   "www.ashtadhyayi.com",
@@ -81,6 +78,9 @@ for (const full of files) {
   if (/mailto:/i.test(text)) mailto.push(rel);
   if (/(^|[^\w])dev\.to([^\w]|$)/i.test(text)) devto.push(rel);
   if (/cipher0x9/i.test(text)) cipher.push(rel);
+  if (/https?:\/\/(?:www\.)?(?:linkedin\.com|x\.com|twitter\.com)(?:\/|\b)/i.test(text)) {
+    badHosts.push(rel + " banned social link");
+  }
   const found = text.match(email);
   if (found) emails.push(rel + " " + found.slice(0, 2).join(","));
   const trees = text.match(/https?:\/\/linktr\.ee\/[A-Za-z0-9_.-]+/g) || [];
@@ -105,6 +105,13 @@ for (const full of files) {
     }
     if (host !== "github.com" && allowedHost.indexOf(host) === -1) badHosts.push(rel + " " + url);
   }
+}
+
+const zipPath = path.join(root, "downloads/sutra-nexus-all.zip");
+if (fs.existsSync(zipPath)) {
+  const listed = spawnSync("python3", ["-c", "import zipfile,re,sys; z=zipfile.ZipFile(sys.argv[1]); pat=re.compile(r'https?://(?:www\\.)?(?:linkedin\\.com|x\\.com|twitter\\.com)(?:/|\\b)', re.I); bad=[n for n in z.namelist() if pat.search(z.read(n).decode('utf-8','ignore'))]; print('\\n'.join(bad))", zipPath], { encoding: "utf8" });
+  const zipBad = (listed.stdout || "").split("\n").map((line) => line.trim()).filter(Boolean);
+  zipBad.forEach((name) => badHosts.push(name + " banned social link in zip"));
 }
 
 check("no mailto", mailto.length === 0, mailto.slice(0, 5).join(", "));
