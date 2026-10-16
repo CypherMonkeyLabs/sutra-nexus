@@ -1,1674 +1,1679 @@
-[
-  {
-    "path": "downloads/diagrams/01-praty\u0101h\u0101ra-ac.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ac SVG",
-    "bytes": 2940,
-    "thumb": "downloads/diagrams/01-praty\u0101h\u0101ra-ac.png"
-  },
-  {
-    "path": "downloads/diagrams/01-praty\u0101h\u0101ra-ac.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ac PNG",
-    "bytes": 14472,
-    "thumb": "downloads/diagrams/01-praty\u0101h\u0101ra-ac.png"
-  },
-  {
-    "path": "downloads/diagrams/01-praty\u0101h\u0101ra-ac.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ac HTML",
-    "bytes": 10084,
-    "thumb": "downloads/diagrams/01-praty\u0101h\u0101ra-ac.png"
-  },
-  {
-    "path": "downloads/diagrams/02-praty\u0101h\u0101ra-ik.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ik SVG",
-    "bytes": 2928,
-    "thumb": "downloads/diagrams/02-praty\u0101h\u0101ra-ik.png"
-  },
-  {
-    "path": "downloads/diagrams/02-praty\u0101h\u0101ra-ik.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ik PNG",
-    "bytes": 14412,
-    "thumb": "downloads/diagrams/02-praty\u0101h\u0101ra-ik.png"
-  },
-  {
-    "path": "downloads/diagrams/02-praty\u0101h\u0101ra-ik.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ik HTML",
-    "bytes": 10084,
-    "thumb": "downloads/diagrams/02-praty\u0101h\u0101ra-ik.png"
-  },
-  {
-    "path": "downloads/diagrams/03-praty\u0101h\u0101ra-ya\u1e47.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ya\u1e47 SVG",
-    "bytes": 2936,
-    "thumb": "downloads/diagrams/03-praty\u0101h\u0101ra-ya\u1e47.png"
-  },
-  {
-    "path": "downloads/diagrams/03-praty\u0101h\u0101ra-ya\u1e47.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ya\u1e47 PNG",
-    "bytes": 14623,
-    "thumb": "downloads/diagrams/03-praty\u0101h\u0101ra-ya\u1e47.png"
-  },
-  {
-    "path": "downloads/diagrams/03-praty\u0101h\u0101ra-ya\u1e47.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ya\u1e47 HTML",
-    "bytes": 10099,
-    "thumb": "downloads/diagrams/03-praty\u0101h\u0101ra-ya\u1e47.png"
-  },
-  {
-    "path": "downloads/diagrams/04-praty\u0101h\u0101ra-\u015bar.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra \u015bar SVG",
-    "bytes": 2936,
-    "thumb": "downloads/diagrams/04-praty\u0101h\u0101ra-\u015bar.png"
-  },
-  {
-    "path": "downloads/diagrams/04-praty\u0101h\u0101ra-\u015bar.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra \u015bar PNG",
-    "bytes": 14788,
-    "thumb": "downloads/diagrams/04-praty\u0101h\u0101ra-\u015bar.png"
-  },
-  {
-    "path": "downloads/diagrams/04-praty\u0101h\u0101ra-\u015bar.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra \u015bar HTML",
-    "bytes": 10094,
-    "thumb": "downloads/diagrams/04-praty\u0101h\u0101ra-\u015bar.png"
-  },
-  {
-    "path": "downloads/diagrams/05-praty\u0101h\u0101ra-ak.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ak SVG",
-    "bytes": 2930,
-    "thumb": "downloads/diagrams/05-praty\u0101h\u0101ra-ak.png"
-  },
-  {
-    "path": "downloads/diagrams/05-praty\u0101h\u0101ra-ak.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ak PNG",
-    "bytes": 14456,
-    "thumb": "downloads/diagrams/05-praty\u0101h\u0101ra-ak.png"
-  },
-  {
-    "path": "downloads/diagrams/05-praty\u0101h\u0101ra-ak.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ak HTML",
-    "bytes": 10084,
-    "thumb": "downloads/diagrams/05-praty\u0101h\u0101ra-ak.png"
-  },
-  {
-    "path": "downloads/diagrams/06-praty\u0101h\u0101ra-ec.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ec SVG",
-    "bytes": 2926,
-    "thumb": "downloads/diagrams/06-praty\u0101h\u0101ra-ec.png"
-  },
-  {
-    "path": "downloads/diagrams/06-praty\u0101h\u0101ra-ec.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ec PNG",
-    "bytes": 14674,
-    "thumb": "downloads/diagrams/06-praty\u0101h\u0101ra-ec.png"
-  },
-  {
-    "path": "downloads/diagrams/06-praty\u0101h\u0101ra-ec.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra ec HTML",
-    "bytes": 10084,
-    "thumb": "downloads/diagrams/06-praty\u0101h\u0101ra-ec.png"
-  },
-  {
-    "path": "downloads/diagrams/07-praty\u0101h\u0101ra-hal.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra hal SVG",
-    "bytes": 2970,
-    "thumb": "downloads/diagrams/07-praty\u0101h\u0101ra-hal.png"
-  },
-  {
-    "path": "downloads/diagrams/07-praty\u0101h\u0101ra-hal.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra hal PNG",
-    "bytes": 14736,
-    "thumb": "downloads/diagrams/07-praty\u0101h\u0101ra-hal.png"
-  },
-  {
-    "path": "downloads/diagrams/07-praty\u0101h\u0101ra-hal.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra hal HTML",
-    "bytes": 10090,
-    "thumb": "downloads/diagrams/07-praty\u0101h\u0101ra-hal.png"
-  },
-  {
-    "path": "downloads/diagrams/08-praty\u0101h\u0101ra-al.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra al SVG",
-    "bytes": 2968,
-    "thumb": "downloads/diagrams/08-praty\u0101h\u0101ra-al.png"
-  },
-  {
-    "path": "downloads/diagrams/08-praty\u0101h\u0101ra-al.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra al PNG",
-    "bytes": 14641,
-    "thumb": "downloads/diagrams/08-praty\u0101h\u0101ra-al.png"
-  },
-  {
-    "path": "downloads/diagrams/08-praty\u0101h\u0101ra-al.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Praty\u0101h\u0101ra al HTML",
-    "bytes": 10085,
-    "thumb": "downloads/diagrams/08-praty\u0101h\u0101ra-al.png"
-  },
-  {
-    "path": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "It marker is not part of the set SVG",
-    "bytes": 3023,
-    "thumb": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.png"
-  },
-  {
-    "path": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "It marker is not part of the set PNG",
-    "bytes": 14067,
-    "thumb": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.png"
-  },
-  {
-    "path": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "It marker is not part of the set HTML",
-    "bytes": 10197,
-    "thumb": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.png"
-  },
-  {
-    "path": "downloads/diagrams/10-read-a-s\u016btra-number.svg",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Read a s\u016btra number SVG",
-    "bytes": 2946,
-    "thumb": "downloads/diagrams/10-read-a-s\u016btra-number.png"
-  },
-  {
-    "path": "downloads/diagrams/10-read-a-s\u016btra-number.png",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Read a s\u016btra number PNG",
-    "bytes": 14004,
-    "thumb": "downloads/diagrams/10-read-a-s\u016btra-number.png"
-  },
-  {
-    "path": "downloads/diagrams/10-read-a-s\u016btra-number.html",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Read a s\u016btra number HTML",
-    "bytes": 10149,
-    "thumb": "downloads/diagrams/10-read-a-s\u016btra-number.png"
-  },
-  {
-    "path": "downloads/diagrams/11-anuv\u1e5btti-on-1-1-3.svg",
-    "kind": "diagram",
-    "room": "anuvrtti",
-    "title": "Anuv\u1e5btti on 1.1.3 SVG",
-    "bytes": 2991,
-    "thumb": "downloads/diagrams/11-anuv\u1e5btti-on-1-1-3.png"
-  },
-  {
-    "path": "downloads/diagrams/11-anuv\u1e5btti-on-1-1-3.png",
-    "kind": "diagram",
-    "room": "anuvrtti",
-    "title": "Anuv\u1e5btti on 1.1.3 PNG",
-    "bytes": 15427,
-    "thumb": "downloads/diagrams/11-anuv\u1e5btti-on-1-1-3.png"
-  },
-  {
-    "path": "downloads/diagrams/11-anuv\u1e5btti-on-1-1-3.html",
-    "kind": "diagram",
-    "room": "anuvrtti",
-    "title": "Anuv\u1e5btti on 1.1.3 HTML",
-    "bytes": 10145,
-    "thumb": "downloads/diagrams/11-anuv\u1e5btti-on-1-1-3.png"
-  },
-  {
-    "path": "downloads/diagrams/12-no-invented-meaning.svg",
-    "kind": "diagram",
-    "room": "about",
-    "title": "No invented meaning SVG",
-    "bytes": 2980,
-    "thumb": "downloads/diagrams/12-no-invented-meaning.png"
-  },
-  {
-    "path": "downloads/diagrams/12-no-invented-meaning.png",
-    "kind": "diagram",
-    "room": "about",
-    "title": "No invented meaning PNG",
-    "bytes": 14048,
-    "thumb": "downloads/diagrams/12-no-invented-meaning.png"
-  },
-  {
-    "path": "downloads/diagrams/12-no-invented-meaning.html",
-    "kind": "diagram",
-    "room": "about",
-    "title": "No invented meaning HTML",
-    "bytes": 10145,
-    "thumb": "downloads/diagrams/12-no-invented-meaning.png"
-  },
-  {
-    "path": "downloads/diagrams/13-six-step-start-path.svg",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Six-step start path SVG",
-    "bytes": 3468,
-    "thumb": "downloads/diagrams/13-six-step-start-path.png"
-  },
-  {
-    "path": "downloads/diagrams/13-six-step-start-path.png",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Six-step start path PNG",
-    "bytes": 14689,
-    "thumb": "downloads/diagrams/13-six-step-start-path.png"
-  },
-  {
-    "path": "downloads/diagrams/13-six-step-start-path.html",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Six-step start path HTML",
-    "bytes": 10145,
-    "thumb": "downloads/diagrams/13-six-step-start-path.png"
-  },
-  {
-    "path": "downloads/diagrams/14-licence-gate.svg",
-    "kind": "diagram",
-    "room": "credits",
-    "title": "Licence gate SVG",
-    "bytes": 2957,
-    "thumb": "downloads/diagrams/14-licence-gate.png"
-  },
-  {
-    "path": "downloads/diagrams/14-licence-gate.png",
-    "kind": "diagram",
-    "room": "credits",
-    "title": "Licence gate PNG",
-    "bytes": 13883,
-    "thumb": "downloads/diagrams/14-licence-gate.png"
-  },
-  {
-    "path": "downloads/diagrams/14-licence-gate.html",
-    "kind": "diagram",
-    "room": "credits",
-    "title": "Licence gate HTML",
-    "bytes": 10117,
-    "thumb": "downloads/diagrams/14-licence-gate.png"
-  },
-  {
-    "path": "downloads/diagrams/15-offline-search.svg",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Offline search SVG",
-    "bytes": 2971,
-    "thumb": "downloads/diagrams/15-offline-search.png"
-  },
-  {
-    "path": "downloads/diagrams/15-offline-search.png",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Offline search PNG",
-    "bytes": 13896,
-    "thumb": "downloads/diagrams/15-offline-search.png"
-  },
-  {
-    "path": "downloads/diagrams/15-offline-search.html",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Offline search HTML",
-    "bytes": 10125,
-    "thumb": "downloads/diagrams/15-offline-search.png"
-  },
-  {
-    "path": "downloads/diagrams/16-room-quiz.svg",
-    "kind": "diagram",
-    "room": "play",
-    "title": "Room quiz SVG",
-    "bytes": 2942,
-    "thumb": "downloads/diagrams/16-room-quiz.png"
-  },
-  {
-    "path": "downloads/diagrams/16-room-quiz.png",
-    "kind": "diagram",
-    "room": "play",
-    "title": "Room quiz PNG",
-    "bytes": 14000,
-    "thumb": "downloads/diagrams/16-room-quiz.png"
-  },
-  {
-    "path": "downloads/diagrams/16-room-quiz.html",
-    "kind": "diagram",
-    "room": "play",
-    "title": "Room quiz HTML",
-    "bytes": 10105,
-    "thumb": "downloads/diagrams/16-room-quiz.png"
-  },
-  {
-    "path": "downloads/diagrams/17-flashcard-ladder.svg",
-    "kind": "diagram",
-    "room": "play",
-    "title": "Flashcard ladder SVG",
-    "bytes": 2976,
-    "thumb": "downloads/diagrams/17-flashcard-ladder.png"
-  },
-  {
-    "path": "downloads/diagrams/17-flashcard-ladder.png",
-    "kind": "diagram",
-    "room": "play",
-    "title": "Flashcard ladder PNG",
-    "bytes": 14088,
-    "thumb": "downloads/diagrams/17-flashcard-ladder.png"
-  },
-  {
-    "path": "downloads/diagrams/17-flashcard-ladder.html",
-    "kind": "diagram",
-    "room": "play",
-    "title": "Flashcard ladder HTML",
-    "bytes": 10133,
-    "thumb": "downloads/diagrams/17-flashcard-ladder.png"
-  },
-  {
-    "path": "downloads/diagrams/18-eight-chapters.svg",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Eight chapters SVG",
-    "bytes": 2944,
-    "thumb": "downloads/diagrams/18-eight-chapters.png"
-  },
-  {
-    "path": "downloads/diagrams/18-eight-chapters.png",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Eight chapters PNG",
-    "bytes": 14788,
-    "thumb": "downloads/diagrams/18-eight-chapters.png"
-  },
-  {
-    "path": "downloads/diagrams/18-eight-chapters.html",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Eight chapters HTML",
-    "bytes": 10125,
-    "thumb": "downloads/diagrams/18-eight-chapters.png"
-  },
-  {
-    "path": "downloads/diagrams/19-four-p\u0101das.svg",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Four p\u0101das SVG",
-    "bytes": 2965,
-    "thumb": "downloads/diagrams/19-four-p\u0101das.png"
-  },
-  {
-    "path": "downloads/diagrams/19-four-p\u0101das.png",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Four p\u0101das PNG",
-    "bytes": 15481,
-    "thumb": "downloads/diagrams/19-four-p\u0101das.png"
-  },
-  {
-    "path": "downloads/diagrams/19-four-p\u0101das.html",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Four p\u0101das HTML",
-    "bytes": 10113,
-    "thumb": "downloads/diagrams/19-four-p\u0101das.png"
-  },
-  {
-    "path": "downloads/diagrams/20-type-letters-in-the-file.svg",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Type letters in the file SVG",
-    "bytes": 2966,
-    "thumb": "downloads/diagrams/20-type-letters-in-the-file.png"
-  },
-  {
-    "path": "downloads/diagrams/20-type-letters-in-the-file.png",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Type letters in the file PNG",
-    "bytes": 15692,
-    "thumb": "downloads/diagrams/20-type-letters-in-the-file.png"
-  },
-  {
-    "path": "downloads/diagrams/20-type-letters-in-the-file.html",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Type letters in the file HTML",
-    "bytes": 10165,
-    "thumb": "downloads/diagrams/20-type-letters-in-the-file.png"
-  },
-  {
-    "path": "downloads/diagrams/21-dh\u0101tu-gap.svg",
-    "kind": "diagram",
-    "room": "dhatu",
-    "title": "Dh\u0101tu gap SVG",
-    "bytes": 2966,
-    "thumb": "downloads/diagrams/21-dh\u0101tu-gap.png"
-  },
-  {
-    "path": "downloads/diagrams/21-dh\u0101tu-gap.png",
-    "kind": "diagram",
-    "room": "dhatu",
-    "title": "Dh\u0101tu gap PNG",
-    "bytes": 13998,
-    "thumb": "downloads/diagrams/21-dh\u0101tu-gap.png"
-  },
-  {
-    "path": "downloads/diagrams/21-dh\u0101tu-gap.html",
-    "kind": "diagram",
-    "room": "dhatu",
-    "title": "Dh\u0101tu gap HTML",
-    "bytes": 10109,
-    "thumb": "downloads/diagrams/21-dh\u0101tu-gap.png"
-  },
-  {
-    "path": "downloads/diagrams/22-three-unmeshas.svg",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "Three unmeshas SVG",
-    "bytes": 2944,
-    "thumb": "downloads/diagrams/22-three-unmeshas.png"
-  },
-  {
-    "path": "downloads/diagrams/22-three-unmeshas.png",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "Three unmeshas PNG",
-    "bytes": 15006,
-    "thumb": "downloads/diagrams/22-three-unmeshas.png"
-  },
-  {
-    "path": "downloads/diagrams/22-three-unmeshas.html",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "Three unmeshas HTML",
-    "bytes": 10125,
-    "thumb": "downloads/diagrams/22-three-unmeshas.png"
-  },
-  {
-    "path": "downloads/diagrams/23-75-and-the-other-count.svg",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "75 and the other count SVG",
-    "bytes": 3006,
-    "thumb": "downloads/diagrams/23-75-and-the-other-count.png"
-  },
-  {
-    "path": "downloads/diagrams/23-75-and-the-other-count.png",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "75 and the other count PNG",
-    "bytes": 15434,
-    "thumb": "downloads/diagrams/23-75-and-the-other-count.png"
-  },
-  {
-    "path": "downloads/diagrams/23-75-and-the-other-count.html",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "75 and the other count HTML",
-    "bytes": 10157,
-    "thumb": "downloads/diagrams/23-75-and-the-other-count.png"
-  },
-  {
-    "path": "downloads/diagrams/24-guide-choices.svg",
-    "kind": "diagram",
-    "room": "listen",
-    "title": "Guide choices SVG",
-    "bytes": 2951,
-    "thumb": "downloads/diagrams/24-guide-choices.png"
-  },
-  {
-    "path": "downloads/diagrams/24-guide-choices.png",
-    "kind": "diagram",
-    "room": "listen",
-    "title": "Guide choices PNG",
-    "bytes": 13957,
-    "thumb": "downloads/diagrams/24-guide-choices.png"
-  },
-  {
-    "path": "downloads/diagrams/24-guide-choices.html",
-    "kind": "diagram",
-    "room": "listen",
-    "title": "Guide choices HTML",
-    "bytes": 10121,
-    "thumb": "downloads/diagrams/24-guide-choices.png"
-  },
-  {
-    "path": "downloads/diagrams/25-voice-stays-off.svg",
-    "kind": "diagram",
-    "room": "listen",
-    "title": "Voice stays off SVG",
-    "bytes": 2983,
-    "thumb": "downloads/diagrams/25-voice-stays-off.png"
-  },
-  {
-    "path": "downloads/diagrams/25-voice-stays-off.png",
-    "kind": "diagram",
-    "room": "listen",
-    "title": "Voice stays off PNG",
-    "bytes": 14052,
-    "thumb": "downloads/diagrams/25-voice-stays-off.png"
-  },
-  {
-    "path": "downloads/diagrams/25-voice-stays-off.html",
-    "kind": "diagram",
-    "room": "listen",
-    "title": "Voice stays off HTML",
-    "bytes": 10129,
-    "thumb": "downloads/diagrams/25-voice-stays-off.png"
-  },
-  {
-    "path": "downloads/diagrams/26-every-download.svg",
-    "kind": "diagram",
-    "room": "downloads",
-    "title": "Every download SVG",
-    "bytes": 2964,
-    "thumb": "downloads/diagrams/26-every-download.png"
-  },
-  {
-    "path": "downloads/diagrams/26-every-download.png",
-    "kind": "diagram",
-    "room": "downloads",
-    "title": "Every download PNG",
-    "bytes": 13894,
-    "thumb": "downloads/diagrams/26-every-download.png"
-  },
-  {
-    "path": "downloads/diagrams/26-every-download.html",
-    "kind": "diagram",
-    "room": "downloads",
-    "title": "Every download HTML",
-    "bytes": 10125,
-    "thumb": "downloads/diagrams/26-every-download.png"
-  },
-  {
-    "path": "downloads/diagrams/27-phone-menu.svg",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Phone menu SVG",
-    "bytes": 2952,
-    "thumb": "downloads/diagrams/27-phone-menu.png"
-  },
-  {
-    "path": "downloads/diagrams/27-phone-menu.png",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Phone menu PNG",
-    "bytes": 13890,
-    "thumb": "downloads/diagrams/27-phone-menu.png"
-  },
-  {
-    "path": "downloads/diagrams/27-phone-menu.html",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Phone menu HTML",
-    "bytes": 10109,
-    "thumb": "downloads/diagrams/27-phone-menu.png"
-  },
-  {
-    "path": "downloads/diagrams/28-history-stays-disputed.svg",
-    "kind": "diagram",
-    "room": "history",
-    "title": "History stays disputed SVG",
-    "bytes": 2990,
-    "thumb": "downloads/diagrams/28-history-stays-disputed.png"
-  },
-  {
-    "path": "downloads/diagrams/28-history-stays-disputed.png",
-    "kind": "diagram",
-    "room": "history",
-    "title": "History stays disputed PNG",
-    "bytes": 13953,
-    "thumb": "downloads/diagrams/28-history-stays-disputed.png"
-  },
-  {
-    "path": "downloads/diagrams/28-history-stays-disputed.html",
-    "kind": "diagram",
-    "room": "history",
-    "title": "History stays disputed HTML",
-    "bytes": 10157,
-    "thumb": "downloads/diagrams/28-history-stays-disputed.png"
-  },
-  {
-    "path": "downloads/diagrams/29-cache-skips-contact.svg",
-    "kind": "diagram",
-    "room": "about",
-    "title": "Cache skips contact SVG",
-    "bytes": 2990,
-    "thumb": "downloads/diagrams/29-cache-skips-contact.png"
-  },
-  {
-    "path": "downloads/diagrams/29-cache-skips-contact.png",
-    "kind": "diagram",
-    "room": "about",
-    "title": "Cache skips contact PNG",
-    "bytes": 14100,
-    "thumb": "downloads/diagrams/29-cache-skips-contact.png"
-  },
-  {
-    "path": "downloads/diagrams/29-cache-skips-contact.html",
-    "kind": "diagram",
-    "room": "about",
-    "title": "Cache skips contact HTML",
-    "bytes": 10145,
-    "thumb": "downloads/diagrams/29-cache-skips-contact.png"
-  },
-  {
-    "path": "downloads/diagrams/30-report-a-correction.svg",
-    "kind": "diagram",
-    "room": "about",
-    "title": "Report a correction SVG",
-    "bytes": 2984,
-    "thumb": "downloads/diagrams/30-report-a-correction.png"
-  },
-  {
-    "path": "downloads/diagrams/30-report-a-correction.png",
-    "kind": "diagram",
-    "room": "about",
-    "title": "Report a correction PNG",
-    "bytes": 13908,
-    "thumb": "downloads/diagrams/30-report-a-correction.png"
-  },
-  {
-    "path": "downloads/diagrams/30-report-a-correction.html",
-    "kind": "diagram",
-    "room": "about",
-    "title": "Report a correction HTML",
-    "bytes": 10145,
-    "thumb": "downloads/diagrams/30-report-a-correction.png"
-  },
-  {
-    "path": "downloads/diagrams/31-sandhi-without-a-fake-join.svg",
-    "kind": "diagram",
-    "room": "sandhi",
-    "title": "Sandhi without a fake join SVG",
-    "bytes": 3018,
-    "thumb": "downloads/diagrams/31-sandhi-without-a-fake-join.png"
-  },
-  {
-    "path": "downloads/diagrams/31-sandhi-without-a-fake-join.png",
-    "kind": "diagram",
-    "room": "sandhi",
-    "title": "Sandhi without a fake join PNG",
-    "bytes": 14066,
-    "thumb": "downloads/diagrams/31-sandhi-without-a-fake-join.png"
-  },
-  {
-    "path": "downloads/diagrams/31-sandhi-without-a-fake-join.html",
-    "kind": "diagram",
-    "room": "sandhi",
-    "title": "Sandhi without a fake join HTML",
-    "bytes": 10173,
-    "thumb": "downloads/diagrams/31-sandhi-without-a-fake-join.png"
-  },
-  {
-    "path": "downloads/diagrams/32-ecosystem-is-a-map.svg",
-    "kind": "diagram",
-    "room": "ecosystem",
-    "title": "Ecosystem is a map SVG",
-    "bytes": 2963,
-    "thumb": "downloads/diagrams/32-ecosystem-is-a-map.png"
-  },
-  {
-    "path": "downloads/diagrams/32-ecosystem-is-a-map.png",
-    "kind": "diagram",
-    "room": "ecosystem",
-    "title": "Ecosystem is a map PNG",
-    "bytes": 13897,
-    "thumb": "downloads/diagrams/32-ecosystem-is-a-map.png"
-  },
-  {
-    "path": "downloads/diagrams/32-ecosystem-is-a-map.html",
-    "kind": "diagram",
-    "room": "ecosystem",
-    "title": "Ecosystem is a map HTML",
-    "bytes": 10141,
-    "thumb": "downloads/diagrams/32-ecosystem-is-a-map.png"
-  },
-  {
-    "path": "downloads/diagrams/33-s\u016btras-in-each-adhy\u0101ya.svg",
-    "kind": "diagram",
-    "room": "charts",
-    "title": "S\u016btras in each adhy\u0101ya SVG",
-    "bytes": 3216,
-    "thumb": "downloads/diagrams/33-s\u016btras-in-each-adhy\u0101ya.png"
-  },
-  {
-    "path": "downloads/diagrams/33-s\u016btras-in-each-adhy\u0101ya.png",
-    "kind": "diagram",
-    "room": "charts",
-    "title": "S\u016btras in each adhy\u0101ya PNG",
-    "bytes": 21920,
-    "thumb": "downloads/diagrams/33-s\u016btras-in-each-adhy\u0101ya.png"
-  },
-  {
-    "path": "downloads/diagrams/33-s\u016btras-in-each-adhy\u0101ya.html",
-    "kind": "diagram",
-    "room": "charts",
-    "title": "S\u016btras in each adhy\u0101ya HTML",
-    "bytes": 10111,
-    "thumb": "downloads/diagrams/33-s\u016btras-in-each-adhy\u0101ya.png"
-  },
-  {
-    "path": "downloads/diagrams/34-type-letters-in-the-data-file.svg",
-    "kind": "diagram",
-    "room": "charts",
-    "title": "Type letters in the data file SVG",
-    "bytes": 2668,
-    "thumb": "downloads/diagrams/34-type-letters-in-the-data-file.png"
-  },
-  {
-    "path": "downloads/diagrams/34-type-letters-in-the-data-file.png",
-    "kind": "diagram",
-    "room": "charts",
-    "title": "Type letters in the data file PNG",
-    "bytes": 15628,
-    "thumb": "downloads/diagrams/34-type-letters-in-the-data-file.png"
-  },
-  {
-    "path": "downloads/diagrams/34-type-letters-in-the-data-file.html",
-    "kind": "diagram",
-    "room": "charts",
-    "title": "Type letters in the data file HTML",
-    "bytes": 10185,
-    "thumb": "downloads/diagrams/34-type-letters-in-the-data-file.png"
-  },
-  {
-    "path": "downloads/diagrams/35-lines-with-an-anuv\u1e5btti-field.svg",
-    "kind": "diagram",
-    "room": "anuvrtti",
-    "title": "Lines with an anuv\u1e5btti field SVG",
-    "bytes": 2017,
-    "thumb": "downloads/diagrams/35-lines-with-an-anuv\u1e5btti-field.png"
-  },
-  {
-    "path": "downloads/diagrams/35-lines-with-an-anuv\u1e5btti-field.png",
-    "kind": "diagram",
-    "room": "anuvrtti",
-    "title": "Lines with an anuv\u1e5btti field PNG",
-    "bytes": 14459,
-    "thumb": "downloads/diagrams/35-lines-with-an-anuv\u1e5btti-field.png"
-  },
-  {
-    "path": "downloads/diagrams/35-lines-with-an-anuv\u1e5btti-field.html",
-    "kind": "diagram",
-    "room": "anuvrtti",
-    "title": "Lines with an anuv\u1e5btti field HTML",
-    "bytes": 10137,
-    "thumb": "downloads/diagrams/35-lines-with-an-anuv\u1e5btti-field.png"
-  },
-  {
-    "path": "downloads/diagrams/36-start-here-map.svg",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Start here map SVG",
-    "bytes": 3062,
-    "thumb": "downloads/diagrams/36-start-here-map.png"
-  },
-  {
-    "path": "downloads/diagrams/36-start-here-map.png",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Start here map PNG",
-    "bytes": 27648,
-    "thumb": "downloads/diagrams/36-start-here-map.png"
-  },
-  {
-    "path": "downloads/diagrams/36-start-here-map.html",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Start here map HTML",
-    "bytes": 10069,
-    "thumb": "downloads/diagrams/36-start-here-map.png"
-  },
-  {
-    "path": "downloads/diagrams/37-foundations-map.svg",
-    "kind": "diagram",
-    "room": "foundations",
-    "title": "Foundations map SVG",
-    "bytes": 2870,
-    "thumb": "downloads/diagrams/37-foundations-map.png"
-  },
-  {
-    "path": "downloads/diagrams/37-foundations-map.png",
-    "kind": "diagram",
-    "room": "foundations",
-    "title": "Foundations map PNG",
-    "bytes": 28934,
-    "thumb": "downloads/diagrams/37-foundations-map.png"
-  },
-  {
-    "path": "downloads/diagrams/37-foundations-map.html",
-    "kind": "diagram",
-    "room": "foundations",
-    "title": "Foundations map HTML",
-    "bytes": 10092,
-    "thumb": "downloads/diagrams/37-foundations-map.png"
-  },
-  {
-    "path": "downloads/diagrams/38-grammar-map.svg",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Grammar map SVG",
-    "bytes": 2866,
-    "thumb": "downloads/diagrams/38-grammar-map.png"
-  },
-  {
-    "path": "downloads/diagrams/38-grammar-map.png",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Grammar map PNG",
-    "bytes": 28618,
-    "thumb": "downloads/diagrams/38-grammar-map.png"
-  },
-  {
-    "path": "downloads/diagrams/38-grammar-map.html",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Grammar map HTML",
-    "bytes": 10086,
-    "thumb": "downloads/diagrams/38-grammar-map.png"
-  },
-  {
-    "path": "downloads/diagrams/39-ecosystem-map.svg",
-    "kind": "diagram",
-    "room": "ecosystem",
-    "title": "Ecosystem map SVG",
-    "bytes": 2873,
-    "thumb": "downloads/diagrams/39-ecosystem-map.png"
-  },
-  {
-    "path": "downloads/diagrams/39-ecosystem-map.png",
-    "kind": "diagram",
-    "room": "ecosystem",
-    "title": "Ecosystem map PNG",
-    "bytes": 27722,
-    "thumb": "downloads/diagrams/39-ecosystem-map.png"
-  },
-  {
-    "path": "downloads/diagrams/39-ecosystem-map.html",
-    "kind": "diagram",
-    "room": "ecosystem",
-    "title": "Ecosystem map HTML",
-    "bytes": 10086,
-    "thumb": "downloads/diagrams/39-ecosystem-map.png"
-  },
-  {
-    "path": "downloads/diagrams/40-room-links.svg",
-    "kind": "diagram",
-    "room": "ecosystem",
-    "title": "Room links SVG",
-    "bytes": 3009,
-    "thumb": "downloads/diagrams/40-room-links.png"
-  },
-  {
-    "path": "downloads/diagrams/40-room-links.png",
-    "kind": "diagram",
-    "room": "ecosystem",
-    "title": "Room links PNG",
-    "bytes": 27112,
-    "thumb": "downloads/diagrams/40-room-links.png"
-  },
-  {
-    "path": "downloads/diagrams/40-room-links.html",
-    "kind": "diagram",
-    "room": "ecosystem",
-    "title": "Room links HTML",
-    "bytes": 10021,
-    "thumb": "downloads/diagrams/40-room-links.png"
-  },
-  {
-    "path": "downloads/diagrams/41-the-fourteen-m\u0101he\u015bvara-lines.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "The fourteen M\u0101he\u015bvara lines SVG",
-    "bytes": 3296,
-    "thumb": "downloads/diagrams/41-the-fourteen-m\u0101he\u015bvara-lines.png"
-  },
-  {
-    "path": "downloads/diagrams/41-the-fourteen-m\u0101he\u015bvara-lines.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "The fourteen M\u0101he\u015bvara lines PNG",
-    "bytes": 38741,
-    "thumb": "downloads/diagrams/41-the-fourteen-m\u0101he\u015bvara-lines.png"
-  },
-  {
-    "path": "downloads/diagrams/41-the-fourteen-m\u0101he\u015bvara-lines.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "The fourteen M\u0101he\u015bvara lines HTML",
-    "bytes": 10198,
-    "thumb": "downloads/diagrams/41-the-fourteen-m\u0101he\u015bvara-lines.png"
-  },
-  {
-    "path": "downloads/diagrams/42-sounds-on-lines-1-to-4.svg",
-    "kind": "diagram",
-    "room": "foundations",
-    "title": "Sounds on lines 1 to 4 SVG",
-    "bytes": 2788,
-    "thumb": "downloads/diagrams/42-sounds-on-lines-1-to-4.png"
-  },
-  {
-    "path": "downloads/diagrams/42-sounds-on-lines-1-to-4.png",
-    "kind": "diagram",
-    "room": "foundations",
-    "title": "Sounds on lines 1 to 4 PNG",
-    "bytes": 14603,
-    "thumb": "downloads/diagrams/42-sounds-on-lines-1-to-4.png"
-  },
-  {
-    "path": "downloads/diagrams/42-sounds-on-lines-1-to-4.html",
-    "kind": "diagram",
-    "room": "foundations",
-    "title": "Sounds on lines 1 to 4 HTML",
-    "bytes": 10131,
-    "thumb": "downloads/diagrams/42-sounds-on-lines-1-to-4.png"
-  },
-  {
-    "path": "downloads/diagrams/43-sounds-on-lines-5-to-14.svg",
-    "kind": "diagram",
-    "room": "foundations",
-    "title": "Sounds on lines 5 to 14 SVG",
-    "bytes": 4323,
-    "thumb": "downloads/diagrams/43-sounds-on-lines-5-to-14.png"
-  },
-  {
-    "path": "downloads/diagrams/43-sounds-on-lines-5-to-14.png",
-    "kind": "diagram",
-    "room": "foundations",
-    "title": "Sounds on lines 5 to 14 PNG",
-    "bytes": 18811,
-    "thumb": "downloads/diagrams/43-sounds-on-lines-5-to-14.png"
-  },
-  {
-    "path": "downloads/diagrams/43-sounds-on-lines-5-to-14.html",
-    "kind": "diagram",
-    "room": "foundations",
-    "title": "Sounds on lines 5 to 14 HTML",
-    "bytes": 10126,
-    "thumb": "downloads/diagrams/43-sounds-on-lines-5-to-14.png"
-  },
-  {
-    "path": "downloads/diagrams/44-this-file-has-75-kashmir-lines.svg",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "This file has 75 Kashmir lines SVG",
-    "bytes": 2102,
-    "thumb": "downloads/diagrams/44-this-file-has-75-kashmir-lines.png"
-  },
-  {
-    "path": "downloads/diagrams/44-this-file-has-75-kashmir-lines.png",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "This file has 75 Kashmir lines PNG",
-    "bytes": 13531,
-    "thumb": "downloads/diagrams/44-this-file-has-75-kashmir-lines.png"
-  },
-  {
-    "path": "downloads/diagrams/44-this-file-has-75-kashmir-lines.html",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "This file has 75 Kashmir lines HTML",
-    "bytes": 10221,
-    "thumb": "downloads/diagrams/44-this-file-has-75-kashmir-lines.png"
-  },
-  {
-    "path": "downloads/diagrams/45-dating-notes-that-were-actually-opened.svg",
-    "kind": "diagram",
-    "room": "history",
-    "title": "Dating notes that were actually opened SVG",
-    "bytes": 3181,
-    "thumb": "downloads/diagrams/45-dating-notes-that-were-actually-opened.png"
-  },
-  {
-    "path": "downloads/diagrams/45-dating-notes-that-were-actually-opened.png",
-    "kind": "diagram",
-    "room": "history",
-    "title": "Dating notes that were actually opened PNG",
-    "bytes": 16574,
-    "thumb": "downloads/diagrams/45-dating-notes-that-were-actually-opened.png"
-  },
-  {
-    "path": "downloads/diagrams/45-dating-notes-that-were-actually-opened.html",
-    "kind": "diagram",
-    "room": "history",
-    "title": "Dating notes that were actually opened HTML",
-    "bytes": 10205,
-    "thumb": "downloads/diagrams/45-dating-notes-that-were-actually-opened.png"
-  },
-  {
-    "path": "downloads/diagrams/46-what-a-row-in-the-file-holds.svg",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "What a row in the file holds SVG",
-    "bytes": 3068,
-    "thumb": "downloads/diagrams/46-what-a-row-in-the-file-holds.png"
-  },
-  {
-    "path": "downloads/diagrams/46-what-a-row-in-the-file-holds.png",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "What a row in the file holds PNG",
-    "bytes": 13913,
-    "thumb": "downloads/diagrams/46-what-a-row-in-the-file-holds.png"
-  },
-  {
-    "path": "downloads/diagrams/46-what-a-row-in-the-file-holds.html",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "What a row in the file holds HTML",
-    "bytes": 10129,
-    "thumb": "downloads/diagrams/46-what-a-row-in-the-file-holds.png"
-  },
-  {
-    "path": "downloads/diagrams/47-three-counts-you-can-check.svg",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Three counts you can check SVG",
-    "bytes": 2207,
-    "thumb": "downloads/diagrams/47-three-counts-you-can-check.png"
-  },
-  {
-    "path": "downloads/diagrams/47-three-counts-you-can-check.png",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Three counts you can check PNG",
-    "bytes": 14890,
-    "thumb": "downloads/diagrams/47-three-counts-you-can-check.png"
-  },
-  {
-    "path": "downloads/diagrams/47-three-counts-you-can-check.html",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Three counts you can check HTML",
-    "bytes": 10115,
-    "thumb": "downloads/diagrams/47-three-counts-you-can-check.png"
-  },
-  {
-    "path": "downloads/diagrams/48-chapter-1-by-p\u0101da.svg",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Chapter 1 by p\u0101da SVG",
-    "bytes": 2437,
-    "thumb": "downloads/diagrams/48-chapter-1-by-p\u0101da.png"
-  },
-  {
-    "path": "downloads/diagrams/48-chapter-1-by-p\u0101da.png",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Chapter 1 by p\u0101da PNG",
-    "bytes": 15397,
-    "thumb": "downloads/diagrams/48-chapter-1-by-p\u0101da.png"
-  },
-  {
-    "path": "downloads/diagrams/48-chapter-1-by-p\u0101da.html",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Chapter 1 by p\u0101da HTML",
-    "bytes": 10145,
-    "thumb": "downloads/diagrams/48-chapter-1-by-p\u0101da.png"
-  },
-  {
-    "path": "downloads/diagrams/49-kashmir-unme\u1e63a-lengths.svg",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "Kashmir unme\u1e63a lengths SVG",
-    "bytes": 2265,
-    "thumb": "downloads/diagrams/49-kashmir-unme\u1e63a-lengths.png"
-  },
-  {
-    "path": "downloads/diagrams/49-kashmir-unme\u1e63a-lengths.png",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "Kashmir unme\u1e63a lengths PNG",
-    "bytes": 15382,
-    "thumb": "downloads/diagrams/49-kashmir-unme\u1e63a-lengths.png"
-  },
-  {
-    "path": "downloads/diagrams/49-kashmir-unme\u1e63a-lengths.html",
-    "kind": "diagram",
-    "room": "shiva",
-    "title": "Kashmir unme\u1e63a lengths HTML",
-    "bytes": 10186,
-    "thumb": "downloads/diagrams/49-kashmir-unme\u1e63a-lengths.png"
-  },
-  {
-    "path": "downloads/diagrams/50-rows-that-carry-a-word-split.svg",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Rows that carry a word split SVG",
-    "bytes": 2066,
-    "thumb": "downloads/diagrams/50-rows-that-carry-a-word-split.png"
-  },
-  {
-    "path": "downloads/diagrams/50-rows-that-carry-a-word-split.png",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Rows that carry a word split PNG",
-    "bytes": 13773,
-    "thumb": "downloads/diagrams/50-rows-that-carry-a-word-split.png"
-  },
-  {
-    "path": "downloads/diagrams/50-rows-that-carry-a-word-split.html",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "Rows that carry a word split HTML",
-    "bytes": 10183,
-    "thumb": "downloads/diagrams/50-rows-that-carry-a-word-split.png"
-  },
-  {
-    "path": "downloads/diagrams/51-compute-a-set-in-the-builder.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Compute a set in the builder SVG",
-    "bytes": 2965,
-    "thumb": "downloads/diagrams/51-compute-a-set-in-the-builder.png"
-  },
-  {
-    "path": "downloads/diagrams/51-compute-a-set-in-the-builder.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Compute a set in the builder PNG",
-    "bytes": 13943,
-    "thumb": "downloads/diagrams/51-compute-a-set-in-the-builder.png"
-  },
-  {
-    "path": "downloads/diagrams/51-compute-a-set-in-the-builder.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Compute a set in the builder HTML",
-    "bytes": 10142,
-    "thumb": "downloads/diagrams/51-compute-a-set-in-the-builder.png"
-  },
-  {
-    "path": "downloads/diagrams/52-what-a-grammar-row-stores.svg",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "What a grammar row stores SVG",
-    "bytes": 2940,
-    "thumb": "downloads/diagrams/52-what-a-grammar-row-stores.png"
-  },
-  {
-    "path": "downloads/diagrams/52-what-a-grammar-row-stores.png",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "What a grammar row stores PNG",
-    "bytes": 13833,
-    "thumb": "downloads/diagrams/52-what-a-grammar-row-stores.png"
-  },
-  {
-    "path": "downloads/diagrams/52-what-a-grammar-row-stores.html",
-    "kind": "diagram",
-    "room": "ashtadhyayi",
-    "title": "What a grammar row stores HTML",
-    "bytes": 10127,
-    "thumb": "downloads/diagrams/52-what-a-grammar-row-stores.png"
-  },
-  {
-    "path": "downloads/diagrams/53-five-parts-of-a-room.svg",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Five parts of a room SVG",
-    "bytes": 3149,
-    "thumb": "downloads/diagrams/53-five-parts-of-a-room.png"
-  },
-  {
-    "path": "downloads/diagrams/53-five-parts-of-a-room.png",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Five parts of a room PNG",
-    "bytes": 14042,
-    "thumb": "downloads/diagrams/53-five-parts-of-a-room.png"
-  },
-  {
-    "path": "downloads/diagrams/53-five-parts-of-a-room.html",
-    "kind": "diagram",
-    "room": "index",
-    "title": "Five parts of a room HTML",
-    "bytes": 10078,
-    "thumb": "downloads/diagrams/53-five-parts-of-a-room.png"
-  },
-  {
-    "path": "downloads/diagrams/54-leave-the-voice-off.svg",
-    "kind": "diagram",
-    "room": "listen",
-    "title": "Leave the voice off SVG",
-    "bytes": 2928,
-    "thumb": "downloads/diagrams/54-leave-the-voice-off.png"
-  },
-  {
-    "path": "downloads/diagrams/54-leave-the-voice-off.png",
-    "kind": "diagram",
-    "room": "listen",
-    "title": "Leave the voice off PNG",
-    "bytes": 13974,
-    "thumb": "downloads/diagrams/54-leave-the-voice-off.png"
-  },
-  {
-    "path": "downloads/diagrams/54-leave-the-voice-off.html",
-    "kind": "diagram",
-    "room": "listen",
-    "title": "Leave the voice off HTML",
-    "bytes": 10093,
-    "thumb": "downloads/diagrams/54-leave-the-voice-off.png"
-  },
-  {
-    "path": "downloads/diagrams/55-anuv\u1e5btti-map.svg",
-    "kind": "diagram",
-    "room": "anuvrtti",
-    "title": "Anuv\u1e5btti map SVG",
-    "bytes": 2879,
-    "thumb": "downloads/diagrams/55-anuv\u1e5btti-map.png"
-  },
-  {
-    "path": "downloads/diagrams/55-anuv\u1e5btti-map.png",
-    "kind": "diagram",
-    "room": "anuvrtti",
-    "title": "Anuv\u1e5btti map PNG",
-    "bytes": 28155,
-    "thumb": "downloads/diagrams/55-anuv\u1e5btti-map.png"
-  },
-  {
-    "path": "downloads/diagrams/55-anuv\u1e5btti-map.html",
-    "kind": "diagram",
-    "room": "anuvrtti",
-    "title": "Anuv\u1e5btti map HTML",
-    "bytes": 10099,
-    "thumb": "downloads/diagrams/55-anuv\u1e5btti-map.png"
-  },
-  {
-    "path": "downloads/diagrams/56-download-kinds.svg",
-    "kind": "diagram",
-    "room": "downloads",
-    "title": "Download kinds SVG",
-    "bytes": 3043,
-    "thumb": "downloads/diagrams/56-download-kinds.png"
-  },
-  {
-    "path": "downloads/diagrams/56-download-kinds.png",
-    "kind": "diagram",
-    "room": "downloads",
-    "title": "Download kinds PNG",
-    "bytes": 27312,
-    "thumb": "downloads/diagrams/56-download-kinds.png"
-  },
-  {
-    "path": "downloads/diagrams/56-download-kinds.html",
-    "kind": "diagram",
-    "room": "downloads",
-    "title": "Download kinds HTML",
-    "bytes": 10075,
-    "thumb": "downloads/diagrams/56-download-kinds.png"
-  },
-  {
-    "path": "downloads/diagrams/57-markers-on-the-fourteen-lines.svg",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Markers on the fourteen lines SVG",
-    "bytes": 2856,
-    "thumb": "downloads/diagrams/57-markers-on-the-fourteen-lines.png"
-  },
-  {
-    "path": "downloads/diagrams/57-markers-on-the-fourteen-lines.png",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Markers on the fourteen lines PNG",
-    "bytes": 19072,
-    "thumb": "downloads/diagrams/57-markers-on-the-fourteen-lines.png"
-  },
-  {
-    "path": "downloads/diagrams/57-markers-on-the-fourteen-lines.html",
-    "kind": "diagram",
-    "room": "maheshvara",
-    "title": "Markers on the fourteen lines HTML",
-    "bytes": 10164,
-    "thumb": "downloads/diagrams/57-markers-on-the-fourteen-lines.png"
-  },
-  {
-    "path": "downloads/diagrams/58-nothing-is-uploaded.svg",
-    "kind": "diagram",
-    "room": "about",
-    "title": "Nothing is uploaded SVG",
-    "bytes": 2041,
-    "thumb": "downloads/diagrams/58-nothing-is-uploaded.png"
-  },
-  {
-    "path": "downloads/diagrams/58-nothing-is-uploaded.png",
-    "kind": "diagram",
-    "room": "about",
-    "title": "Nothing is uploaded PNG",
-    "bytes": 12228,
-    "thumb": "downloads/diagrams/58-nothing-is-uploaded.png"
-  },
-  {
-    "path": "downloads/diagrams/58-nothing-is-uploaded.html",
-    "kind": "diagram",
-    "room": "about",
-    "title": "Nothing is uploaded HTML",
-    "bytes": 10150,
-    "thumb": "downloads/diagrams/58-nothing-is-uploaded.png"
-  },
-  {
-    "path": "downloads/sheets/pratyahara.html",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "pratyahara html",
-    "bytes": 10160,
-    "thumb": "downloads/sheets/pratyahara.png"
-  },
-  {
-    "path": "downloads/sheets/pratyahara.pdf",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "pratyahara pdf",
-    "bytes": 44764,
-    "thumb": "downloads/sheets/pratyahara.png"
-  },
-  {
-    "path": "downloads/sheets/pratyahara.png",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "pratyahara png",
-    "bytes": 15012,
-    "thumb": "downloads/sheets/pratyahara.png"
-  },
-  {
-    "path": "downloads/sheets/counts.html",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "counts html",
-    "bytes": 10224,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/sheets/counts.pdf",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "counts pdf",
-    "bytes": 45188,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/sheets/counts.png",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "counts png",
-    "bytes": 16292,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/sheets/read-a-number.html",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "read-a-number html",
-    "bytes": 10253,
-    "thumb": "downloads/sheets/read-a-number.png"
-  },
-  {
-    "path": "downloads/sheets/read-a-number.pdf",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "read-a-number pdf",
-    "bytes": 44944,
-    "thumb": "downloads/sheets/read-a-number.png"
-  },
-  {
-    "path": "downloads/sheets/read-a-number.png",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "read-a-number png",
-    "bytes": 14549,
-    "thumb": "downloads/sheets/read-a-number.png"
-  },
-  {
-    "path": "downloads/sheets/kashmir-notes.html",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "kashmir-notes html",
-    "bytes": 10142,
-    "thumb": "downloads/sheets/kashmir-notes.png"
-  },
-  {
-    "path": "downloads/sheets/kashmir-notes.pdf",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "kashmir-notes pdf",
-    "bytes": 44573,
-    "thumb": "downloads/sheets/kashmir-notes.png"
-  },
-  {
-    "path": "downloads/sheets/kashmir-notes.png",
-    "kind": "sheet",
-    "room": "downloads",
-    "title": "kashmir-notes png",
-    "bytes": 17007,
-    "thumb": "downloads/sheets/kashmir-notes.png"
-  },
-  {
-    "path": "downloads/templates/study-plan.html",
-    "kind": "template",
-    "room": "downloads",
-    "title": "study-plan html",
-    "bytes": 10186,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/templates/study-plan.docx",
-    "kind": "template",
-    "room": "downloads",
-    "title": "study-plan docx",
-    "bytes": 37981,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/templates/study-plan.pdf",
-    "kind": "template",
-    "room": "downloads",
-    "title": "study-plan pdf",
-    "bytes": 44883,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/templates/sutra-worksheet.html",
-    "kind": "template",
-    "room": "downloads",
-    "title": "sutra-worksheet html",
-    "bytes": 10152,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/templates/sutra-worksheet.docx",
-    "kind": "template",
-    "room": "downloads",
-    "title": "sutra-worksheet docx",
-    "bytes": 37916,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/templates/sutra-worksheet.pdf",
-    "kind": "template",
-    "room": "downloads",
-    "title": "sutra-worksheet pdf",
-    "bytes": 44771,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/templates/pratyahara-worksheet.html",
-    "kind": "template",
-    "room": "downloads",
-    "title": "pratyahara-worksheet html",
-    "bytes": 10089,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/templates/pratyahara-worksheet.docx",
-    "kind": "template",
-    "room": "downloads",
-    "title": "pratyahara-worksheet docx",
-    "bytes": 37907,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/templates/pratyahara-worksheet.pdf",
-    "kind": "template",
-    "room": "downloads",
-    "title": "pratyahara-worksheet pdf",
-    "bytes": 44712,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/templates/glossary-builder.html",
-    "kind": "template",
-    "room": "downloads",
-    "title": "glossary-builder html",
-    "bytes": 10037,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/templates/glossary-builder.docx",
-    "kind": "template",
-    "room": "downloads",
-    "title": "glossary-builder docx",
-    "bytes": 37867,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/templates/glossary-builder.pdf",
-    "kind": "template",
-    "room": "downloads",
-    "title": "glossary-builder pdf",
-    "bytes": 44475,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/flashcards.json",
-    "kind": "cards",
-    "room": "play",
-    "title": "Flashcards JSON",
-    "bytes": 4103,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/flashcards.html",
-    "kind": "cards",
-    "room": "play",
-    "title": "Flashcards HTML",
-    "bytes": 10979,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/flashcards.pdf",
-    "kind": "cards",
-    "room": "play",
-    "title": "Flashcards PDF",
-    "bytes": 45456,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/sutra-nexus-deck.pptx",
-    "kind": "deck",
-    "room": "downloads",
-    "title": "Slide deck",
-    "bytes": 43618,
-    "thumb": "downloads/sheets/counts.png"
-  },
-  {
-    "path": "downloads/models/study-wheel.glb",
-    "kind": "model",
-    "room": "about",
-    "title": "study-wheel GLB",
-    "bytes": 8700,
-    "thumb": "downloads/models/study-wheel.png"
-  },
-  {
-    "path": "downloads/models/study-wheel.png",
-    "kind": "model",
-    "room": "about",
-    "title": "study-wheel poster",
-    "bytes": 21871,
-    "thumb": "downloads/models/study-wheel.png"
-  },
-  {
-    "path": "downloads/models/study-wheel-credits.txt",
-    "kind": "model",
-    "room": "about",
-    "title": "study-wheel credits",
-    "bytes": 723,
-    "thumb": "downloads/models/study-wheel.png"
-  },
-  {
-    "path": "downloads/models/guide-monkey.glb",
-    "kind": "model",
-    "room": "about",
-    "title": "guide-monkey GLB",
-    "bytes": 5476,
-    "thumb": "downloads/models/guide-monkey.png"
-  },
-  {
-    "path": "downloads/models/guide-monkey.png",
-    "kind": "model",
-    "room": "about",
-    "title": "guide-monkey poster",
-    "bytes": 14273,
-    "thumb": "downloads/models/guide-monkey.png"
-  },
-  {
-    "path": "downloads/models/guide-monkey-credits.txt",
-    "kind": "model",
-    "room": "about",
-    "title": "guide-monkey credits",
-    "bytes": 763,
-    "thumb": "downloads/models/guide-monkey.png"
-  },
-  {
-    "path": "downloads/sutra-nexus-all.zip",
-    "kind": "bundle",
-    "room": "downloads",
-    "title": "Optional: everything in one ZIP",
-    "bytes": 1766285,
-    "thumb": "downloads/sheets/counts.png"
-  }
-]
+{
+  "disclaimer": "Sūtra Nexus is an independent, free, learning-only student project. It respects every tradition, scholar, publisher, company and vendor. Trademarks, texts and sources belong to their owners, and nothing here is affiliated with or endorsed by them. If something should be removed or corrected, it will be handled promptly through the contact form. Nothing here is sold. I am happy to volunteer for any organization.",
+  "contact": "https://cyphermonkeylabs.com/#contact",
+  "copyright": "© 2026 CypherMonkeyLabs",
+  "files": [
+    {
+      "path": "downloads/diagrams/01-pratyāhāra-ac.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ac SVG",
+      "bytes": 3172,
+      "thumb": "downloads/diagrams/01-pratyāhāra-ac.png"
+    },
+    {
+      "path": "downloads/diagrams/01-pratyāhāra-ac.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ac PNG",
+      "bytes": 14976,
+      "thumb": "downloads/diagrams/01-pratyāhāra-ac.png"
+    },
+    {
+      "path": "downloads/diagrams/01-pratyāhāra-ac.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ac HTML",
+      "bytes": 10105,
+      "thumb": "downloads/diagrams/01-pratyāhāra-ac.png"
+    },
+    {
+      "path": "downloads/diagrams/02-pratyāhāra-ik.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ik SVG",
+      "bytes": 3102,
+      "thumb": "downloads/diagrams/02-pratyāhāra-ik.png"
+    },
+    {
+      "path": "downloads/diagrams/02-pratyāhāra-ik.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ik PNG",
+      "bytes": 14941,
+      "thumb": "downloads/diagrams/02-pratyāhāra-ik.png"
+    },
+    {
+      "path": "downloads/diagrams/02-pratyāhāra-ik.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ik HTML",
+      "bytes": 10105,
+      "thumb": "downloads/diagrams/02-pratyāhāra-ik.png"
+    },
+    {
+      "path": "downloads/diagrams/03-pratyāhāra-yaṇ.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra yaṇ SVG",
+      "bytes": 3110,
+      "thumb": "downloads/diagrams/03-pratyāhāra-yaṇ.png"
+    },
+    {
+      "path": "downloads/diagrams/03-pratyāhāra-yaṇ.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra yaṇ PNG",
+      "bytes": 15194,
+      "thumb": "downloads/diagrams/03-pratyāhāra-yaṇ.png"
+    },
+    {
+      "path": "downloads/diagrams/03-pratyāhāra-yaṇ.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra yaṇ HTML",
+      "bytes": 10120,
+      "thumb": "downloads/diagrams/03-pratyāhāra-yaṇ.png"
+    },
+    {
+      "path": "downloads/diagrams/04-pratyāhāra-śar.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra śar SVG",
+      "bytes": 3107,
+      "thumb": "downloads/diagrams/04-pratyāhāra-śar.png"
+    },
+    {
+      "path": "downloads/diagrams/04-pratyāhāra-śar.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra śar PNG",
+      "bytes": 15036,
+      "thumb": "downloads/diagrams/04-pratyāhāra-śar.png"
+    },
+    {
+      "path": "downloads/diagrams/04-pratyāhāra-śar.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra śar HTML",
+      "bytes": 10115,
+      "thumb": "downloads/diagrams/04-pratyāhāra-śar.png"
+    },
+    {
+      "path": "downloads/diagrams/05-pratyāhāra-ak.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ak SVG",
+      "bytes": 3104,
+      "thumb": "downloads/diagrams/05-pratyāhāra-ak.png"
+    },
+    {
+      "path": "downloads/diagrams/05-pratyāhāra-ak.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ak PNG",
+      "bytes": 14988,
+      "thumb": "downloads/diagrams/05-pratyāhāra-ak.png"
+    },
+    {
+      "path": "downloads/diagrams/05-pratyāhāra-ak.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ak HTML",
+      "bytes": 10105,
+      "thumb": "downloads/diagrams/05-pratyāhāra-ak.png"
+    },
+    {
+      "path": "downloads/diagrams/06-pratyāhāra-ec.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ec SVG",
+      "bytes": 3100,
+      "thumb": "downloads/diagrams/06-pratyāhāra-ec.png"
+    },
+    {
+      "path": "downloads/diagrams/06-pratyāhāra-ec.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ec PNG",
+      "bytes": 15128,
+      "thumb": "downloads/diagrams/06-pratyāhāra-ec.png"
+    },
+    {
+      "path": "downloads/diagrams/06-pratyāhāra-ec.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra ec HTML",
+      "bytes": 10105,
+      "thumb": "downloads/diagrams/06-pratyāhāra-ec.png"
+    },
+    {
+      "path": "downloads/diagrams/07-pratyāhāra-hal.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra hal SVG",
+      "bytes": 3257,
+      "thumb": "downloads/diagrams/07-pratyāhāra-hal.png"
+    },
+    {
+      "path": "downloads/diagrams/07-pratyāhāra-hal.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra hal PNG",
+      "bytes": 15018,
+      "thumb": "downloads/diagrams/07-pratyāhāra-hal.png"
+    },
+    {
+      "path": "downloads/diagrams/07-pratyāhāra-hal.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra hal HTML",
+      "bytes": 10111,
+      "thumb": "downloads/diagrams/07-pratyāhāra-hal.png"
+    },
+    {
+      "path": "downloads/diagrams/08-pratyāhāra-al.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra al SVG",
+      "bytes": 3254,
+      "thumb": "downloads/diagrams/08-pratyāhāra-al.png"
+    },
+    {
+      "path": "downloads/diagrams/08-pratyāhāra-al.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra al PNG",
+      "bytes": 14913,
+      "thumb": "downloads/diagrams/08-pratyāhāra-al.png"
+    },
+    {
+      "path": "downloads/diagrams/08-pratyāhāra-al.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Pratyāhāra al HTML",
+      "bytes": 10106,
+      "thumb": "downloads/diagrams/08-pratyāhāra-al.png"
+    },
+    {
+      "path": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "It marker is not part of the set SVG",
+      "bytes": 3139,
+      "thumb": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.png"
+    },
+    {
+      "path": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "It marker is not part of the set PNG",
+      "bytes": 14201,
+      "thumb": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.png"
+    },
+    {
+      "path": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "It marker is not part of the set HTML",
+      "bytes": 10218,
+      "thumb": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.png"
+    },
+    {
+      "path": "downloads/diagrams/10-read-a-sūtra-number.svg",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Read a sūtra number SVG",
+      "bytes": 2946,
+      "thumb": "downloads/diagrams/10-read-a-sūtra-number.png"
+    },
+    {
+      "path": "downloads/diagrams/10-read-a-sūtra-number.png",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Read a sūtra number PNG",
+      "bytes": 14061,
+      "thumb": "downloads/diagrams/10-read-a-sūtra-number.png"
+    },
+    {
+      "path": "downloads/diagrams/10-read-a-sūtra-number.html",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Read a sūtra number HTML",
+      "bytes": 10170,
+      "thumb": "downloads/diagrams/10-read-a-sūtra-number.png"
+    },
+    {
+      "path": "downloads/diagrams/11-anuvṛtti-on-1-1-3.svg",
+      "kind": "diagram",
+      "room": "anuvrtti",
+      "title": "Anuvṛtti on 1.1.3 SVG",
+      "bytes": 3165,
+      "thumb": "downloads/diagrams/11-anuvṛtti-on-1-1-3.png"
+    },
+    {
+      "path": "downloads/diagrams/11-anuvṛtti-on-1-1-3.png",
+      "kind": "diagram",
+      "room": "anuvrtti",
+      "title": "Anuvṛtti on 1.1.3 PNG",
+      "bytes": 15583,
+      "thumb": "downloads/diagrams/11-anuvṛtti-on-1-1-3.png"
+    },
+    {
+      "path": "downloads/diagrams/11-anuvṛtti-on-1-1-3.html",
+      "kind": "diagram",
+      "room": "anuvrtti",
+      "title": "Anuvṛtti on 1.1.3 HTML",
+      "bytes": 10166,
+      "thumb": "downloads/diagrams/11-anuvṛtti-on-1-1-3.png"
+    },
+    {
+      "path": "downloads/diagrams/12-no-invented-meaning.svg",
+      "kind": "diagram",
+      "room": "about",
+      "title": "No invented meaning SVG",
+      "bytes": 3096,
+      "thumb": "downloads/diagrams/12-no-invented-meaning.png"
+    },
+    {
+      "path": "downloads/diagrams/12-no-invented-meaning.png",
+      "kind": "diagram",
+      "room": "about",
+      "title": "No invented meaning PNG",
+      "bytes": 14172,
+      "thumb": "downloads/diagrams/12-no-invented-meaning.png"
+    },
+    {
+      "path": "downloads/diagrams/12-no-invented-meaning.html",
+      "kind": "diagram",
+      "room": "about",
+      "title": "No invented meaning HTML",
+      "bytes": 10166,
+      "thumb": "downloads/diagrams/12-no-invented-meaning.png"
+    },
+    {
+      "path": "downloads/diagrams/13-six-step-start-path.svg",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Six-step start path SVG",
+      "bytes": 3468,
+      "thumb": "downloads/diagrams/13-six-step-start-path.png"
+    },
+    {
+      "path": "downloads/diagrams/13-six-step-start-path.png",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Six-step start path PNG",
+      "bytes": 14767,
+      "thumb": "downloads/diagrams/13-six-step-start-path.png"
+    },
+    {
+      "path": "downloads/diagrams/13-six-step-start-path.html",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Six-step start path HTML",
+      "bytes": 10166,
+      "thumb": "downloads/diagrams/13-six-step-start-path.png"
+    },
+    {
+      "path": "downloads/diagrams/14-licence-gate.svg",
+      "kind": "diagram",
+      "room": "credits",
+      "title": "Licence gate SVG",
+      "bytes": 3014,
+      "thumb": "downloads/diagrams/14-licence-gate.png"
+    },
+    {
+      "path": "downloads/diagrams/14-licence-gate.png",
+      "kind": "diagram",
+      "room": "credits",
+      "title": "Licence gate PNG",
+      "bytes": 14082,
+      "thumb": "downloads/diagrams/14-licence-gate.png"
+    },
+    {
+      "path": "downloads/diagrams/14-licence-gate.html",
+      "kind": "diagram",
+      "room": "credits",
+      "title": "Licence gate HTML",
+      "bytes": 10138,
+      "thumb": "downloads/diagrams/14-licence-gate.png"
+    },
+    {
+      "path": "downloads/diagrams/15-offline-search.svg",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Offline search SVG",
+      "bytes": 3145,
+      "thumb": "downloads/diagrams/15-offline-search.png"
+    },
+    {
+      "path": "downloads/diagrams/15-offline-search.png",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Offline search PNG",
+      "bytes": 14143,
+      "thumb": "downloads/diagrams/15-offline-search.png"
+    },
+    {
+      "path": "downloads/diagrams/15-offline-search.html",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Offline search HTML",
+      "bytes": 10146,
+      "thumb": "downloads/diagrams/15-offline-search.png"
+    },
+    {
+      "path": "downloads/diagrams/16-room-quiz.svg",
+      "kind": "diagram",
+      "room": "play",
+      "title": "Room quiz SVG",
+      "bytes": 3000,
+      "thumb": "downloads/diagrams/16-room-quiz.png"
+    },
+    {
+      "path": "downloads/diagrams/16-room-quiz.png",
+      "kind": "diagram",
+      "room": "play",
+      "title": "Room quiz PNG",
+      "bytes": 14103,
+      "thumb": "downloads/diagrams/16-room-quiz.png"
+    },
+    {
+      "path": "downloads/diagrams/16-room-quiz.html",
+      "kind": "diagram",
+      "room": "play",
+      "title": "Room quiz HTML",
+      "bytes": 10126,
+      "thumb": "downloads/diagrams/16-room-quiz.png"
+    },
+    {
+      "path": "downloads/diagrams/17-flashcard-ladder.svg",
+      "kind": "diagram",
+      "room": "play",
+      "title": "Flashcard ladder SVG",
+      "bytes": 3092,
+      "thumb": "downloads/diagrams/17-flashcard-ladder.png"
+    },
+    {
+      "path": "downloads/diagrams/17-flashcard-ladder.png",
+      "kind": "diagram",
+      "room": "play",
+      "title": "Flashcard ladder PNG",
+      "bytes": 14199,
+      "thumb": "downloads/diagrams/17-flashcard-ladder.png"
+    },
+    {
+      "path": "downloads/diagrams/17-flashcard-ladder.html",
+      "kind": "diagram",
+      "room": "play",
+      "title": "Flashcard ladder HTML",
+      "bytes": 10154,
+      "thumb": "downloads/diagrams/17-flashcard-ladder.png"
+    },
+    {
+      "path": "downloads/diagrams/18-eight-chapters.svg",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Eight chapters SVG",
+      "bytes": 3002,
+      "thumb": "downloads/diagrams/18-eight-chapters.png"
+    },
+    {
+      "path": "downloads/diagrams/18-eight-chapters.png",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Eight chapters PNG",
+      "bytes": 14918,
+      "thumb": "downloads/diagrams/18-eight-chapters.png"
+    },
+    {
+      "path": "downloads/diagrams/18-eight-chapters.html",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Eight chapters HTML",
+      "bytes": 10146,
+      "thumb": "downloads/diagrams/18-eight-chapters.png"
+    },
+    {
+      "path": "downloads/diagrams/19-four-pādas.svg",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Four pādas SVG",
+      "bytes": 3139,
+      "thumb": "downloads/diagrams/19-four-pādas.png"
+    },
+    {
+      "path": "downloads/diagrams/19-four-pādas.png",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Four pādas PNG",
+      "bytes": 15282,
+      "thumb": "downloads/diagrams/19-four-pādas.png"
+    },
+    {
+      "path": "downloads/diagrams/19-four-pādas.html",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Four pādas HTML",
+      "bytes": 10134,
+      "thumb": "downloads/diagrams/19-four-pādas.png"
+    },
+    {
+      "path": "downloads/diagrams/20-type-letters-in-the-file.svg",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Type letters in the file SVG",
+      "bytes": 3024,
+      "thumb": "downloads/diagrams/20-type-letters-in-the-file.png"
+    },
+    {
+      "path": "downloads/diagrams/20-type-letters-in-the-file.png",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Type letters in the file PNG",
+      "bytes": 15668,
+      "thumb": "downloads/diagrams/20-type-letters-in-the-file.png"
+    },
+    {
+      "path": "downloads/diagrams/20-type-letters-in-the-file.html",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Type letters in the file HTML",
+      "bytes": 10186,
+      "thumb": "downloads/diagrams/20-type-letters-in-the-file.png"
+    },
+    {
+      "path": "downloads/diagrams/21-dhātu-gap.svg",
+      "kind": "diagram",
+      "room": "dhatu",
+      "title": "Dhātu gap SVG",
+      "bytes": 3139,
+      "thumb": "downloads/diagrams/21-dhātu-gap.png"
+    },
+    {
+      "path": "downloads/diagrams/21-dhātu-gap.png",
+      "kind": "diagram",
+      "room": "dhatu",
+      "title": "Dhātu gap PNG",
+      "bytes": 14153,
+      "thumb": "downloads/diagrams/21-dhātu-gap.png"
+    },
+    {
+      "path": "downloads/diagrams/21-dhātu-gap.html",
+      "kind": "diagram",
+      "room": "dhatu",
+      "title": "Dhātu gap HTML",
+      "bytes": 10130,
+      "thumb": "downloads/diagrams/21-dhātu-gap.png"
+    },
+    {
+      "path": "downloads/diagrams/22-three-unmeshas.svg",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "Three unmeshas SVG",
+      "bytes": 3002,
+      "thumb": "downloads/diagrams/22-three-unmeshas.png"
+    },
+    {
+      "path": "downloads/diagrams/22-three-unmeshas.png",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "Three unmeshas PNG",
+      "bytes": 15128,
+      "thumb": "downloads/diagrams/22-three-unmeshas.png"
+    },
+    {
+      "path": "downloads/diagrams/22-three-unmeshas.html",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "Three unmeshas HTML",
+      "bytes": 10146,
+      "thumb": "downloads/diagrams/22-three-unmeshas.png"
+    },
+    {
+      "path": "downloads/diagrams/23-75-and-the-other-count.svg",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "75 and the other count SVG",
+      "bytes": 3237,
+      "thumb": "downloads/diagrams/23-75-and-the-other-count.png"
+    },
+    {
+      "path": "downloads/diagrams/23-75-and-the-other-count.png",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "75 and the other count PNG",
+      "bytes": 15669,
+      "thumb": "downloads/diagrams/23-75-and-the-other-count.png"
+    },
+    {
+      "path": "downloads/diagrams/23-75-and-the-other-count.html",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "75 and the other count HTML",
+      "bytes": 10178,
+      "thumb": "downloads/diagrams/23-75-and-the-other-count.png"
+    },
+    {
+      "path": "downloads/diagrams/24-guide-choices.svg",
+      "kind": "diagram",
+      "room": "listen",
+      "title": "Guide choices SVG",
+      "bytes": 2951,
+      "thumb": "downloads/diagrams/24-guide-choices.png"
+    },
+    {
+      "path": "downloads/diagrams/24-guide-choices.png",
+      "kind": "diagram",
+      "room": "listen",
+      "title": "Guide choices PNG",
+      "bytes": 13997,
+      "thumb": "downloads/diagrams/24-guide-choices.png"
+    },
+    {
+      "path": "downloads/diagrams/24-guide-choices.html",
+      "kind": "diagram",
+      "room": "listen",
+      "title": "Guide choices HTML",
+      "bytes": 10142,
+      "thumb": "downloads/diagrams/24-guide-choices.png"
+    },
+    {
+      "path": "downloads/diagrams/25-voice-stays-off.svg",
+      "kind": "diagram",
+      "room": "listen",
+      "title": "Voice stays off SVG",
+      "bytes": 3214,
+      "thumb": "downloads/diagrams/25-voice-stays-off.png"
+    },
+    {
+      "path": "downloads/diagrams/25-voice-stays-off.png",
+      "kind": "diagram",
+      "room": "listen",
+      "title": "Voice stays off PNG",
+      "bytes": 14213,
+      "thumb": "downloads/diagrams/25-voice-stays-off.png"
+    },
+    {
+      "path": "downloads/diagrams/25-voice-stays-off.html",
+      "kind": "diagram",
+      "room": "listen",
+      "title": "Voice stays off HTML",
+      "bytes": 10150,
+      "thumb": "downloads/diagrams/25-voice-stays-off.png"
+    },
+    {
+      "path": "downloads/diagrams/26-every-download.svg",
+      "kind": "diagram",
+      "room": "downloads",
+      "title": "Every download SVG",
+      "bytes": 3079,
+      "thumb": "downloads/diagrams/26-every-download.png"
+    },
+    {
+      "path": "downloads/diagrams/26-every-download.png",
+      "kind": "diagram",
+      "room": "downloads",
+      "title": "Every download PNG",
+      "bytes": 14118,
+      "thumb": "downloads/diagrams/26-every-download.png"
+    },
+    {
+      "path": "downloads/diagrams/26-every-download.html",
+      "kind": "diagram",
+      "room": "downloads",
+      "title": "Every download HTML",
+      "bytes": 10146,
+      "thumb": "downloads/diagrams/26-every-download.png"
+    },
+    {
+      "path": "downloads/diagrams/27-phone-menu.svg",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Phone menu SVG",
+      "bytes": 3068,
+      "thumb": "downloads/diagrams/27-phone-menu.png"
+    },
+    {
+      "path": "downloads/diagrams/27-phone-menu.png",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Phone menu PNG",
+      "bytes": 14115,
+      "thumb": "downloads/diagrams/27-phone-menu.png"
+    },
+    {
+      "path": "downloads/diagrams/27-phone-menu.html",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Phone menu HTML",
+      "bytes": 10130,
+      "thumb": "downloads/diagrams/27-phone-menu.png"
+    },
+    {
+      "path": "downloads/diagrams/28-history-stays-disputed.svg",
+      "kind": "diagram",
+      "room": "history",
+      "title": "History stays disputed SVG",
+      "bytes": 3164,
+      "thumb": "downloads/diagrams/28-history-stays-disputed.png"
+    },
+    {
+      "path": "downloads/diagrams/28-history-stays-disputed.png",
+      "kind": "diagram",
+      "room": "history",
+      "title": "History stays disputed PNG",
+      "bytes": 14162,
+      "thumb": "downloads/diagrams/28-history-stays-disputed.png"
+    },
+    {
+      "path": "downloads/diagrams/28-history-stays-disputed.html",
+      "kind": "diagram",
+      "room": "history",
+      "title": "History stays disputed HTML",
+      "bytes": 10178,
+      "thumb": "downloads/diagrams/28-history-stays-disputed.png"
+    },
+    {
+      "path": "downloads/diagrams/29-cache-skips-contact.svg",
+      "kind": "diagram",
+      "room": "about",
+      "title": "Cache skips contact SVG",
+      "bytes": 3221,
+      "thumb": "downloads/diagrams/29-cache-skips-contact.png"
+    },
+    {
+      "path": "downloads/diagrams/29-cache-skips-contact.png",
+      "kind": "diagram",
+      "room": "about",
+      "title": "Cache skips contact PNG",
+      "bytes": 14267,
+      "thumb": "downloads/diagrams/29-cache-skips-contact.png"
+    },
+    {
+      "path": "downloads/diagrams/29-cache-skips-contact.html",
+      "kind": "diagram",
+      "room": "about",
+      "title": "Cache skips contact HTML",
+      "bytes": 10166,
+      "thumb": "downloads/diagrams/29-cache-skips-contact.png"
+    },
+    {
+      "path": "downloads/diagrams/30-report-a-correction.svg",
+      "kind": "diagram",
+      "room": "about",
+      "title": "Report a correction SVG",
+      "bytes": 3099,
+      "thumb": "downloads/diagrams/30-report-a-correction.png"
+    },
+    {
+      "path": "downloads/diagrams/30-report-a-correction.png",
+      "kind": "diagram",
+      "room": "about",
+      "title": "Report a correction PNG",
+      "bytes": 14138,
+      "thumb": "downloads/diagrams/30-report-a-correction.png"
+    },
+    {
+      "path": "downloads/diagrams/30-report-a-correction.html",
+      "kind": "diagram",
+      "room": "about",
+      "title": "Report a correction HTML",
+      "bytes": 10166,
+      "thumb": "downloads/diagrams/30-report-a-correction.png"
+    },
+    {
+      "path": "downloads/diagrams/31-sandhi-without-a-fake-join.svg",
+      "kind": "diagram",
+      "room": "sandhi",
+      "title": "Sandhi without a fake join SVG",
+      "bytes": 3192,
+      "thumb": "downloads/diagrams/31-sandhi-without-a-fake-join.png"
+    },
+    {
+      "path": "downloads/diagrams/31-sandhi-without-a-fake-join.png",
+      "kind": "diagram",
+      "room": "sandhi",
+      "title": "Sandhi without a fake join PNG",
+      "bytes": 14228,
+      "thumb": "downloads/diagrams/31-sandhi-without-a-fake-join.png"
+    },
+    {
+      "path": "downloads/diagrams/31-sandhi-without-a-fake-join.html",
+      "kind": "diagram",
+      "room": "sandhi",
+      "title": "Sandhi without a fake join HTML",
+      "bytes": 10194,
+      "thumb": "downloads/diagrams/31-sandhi-without-a-fake-join.png"
+    },
+    {
+      "path": "downloads/diagrams/32-ecosystem-is-a-map.svg",
+      "kind": "diagram",
+      "room": "ecosystem",
+      "title": "Ecosystem is a map SVG",
+      "bytes": 3079,
+      "thumb": "downloads/diagrams/32-ecosystem-is-a-map.png"
+    },
+    {
+      "path": "downloads/diagrams/32-ecosystem-is-a-map.png",
+      "kind": "diagram",
+      "room": "ecosystem",
+      "title": "Ecosystem is a map PNG",
+      "bytes": 14113,
+      "thumb": "downloads/diagrams/32-ecosystem-is-a-map.png"
+    },
+    {
+      "path": "downloads/diagrams/32-ecosystem-is-a-map.html",
+      "kind": "diagram",
+      "room": "ecosystem",
+      "title": "Ecosystem is a map HTML",
+      "bytes": 10162,
+      "thumb": "downloads/diagrams/32-ecosystem-is-a-map.png"
+    },
+    {
+      "path": "downloads/diagrams/33-sūtras-in-each-adhyāya.svg",
+      "kind": "diagram",
+      "room": "charts",
+      "title": "Sūtras in each adhyāya SVG",
+      "bytes": 3216,
+      "thumb": "downloads/diagrams/33-sūtras-in-each-adhyāya.png"
+    },
+    {
+      "path": "downloads/diagrams/33-sūtras-in-each-adhyāya.png",
+      "kind": "diagram",
+      "room": "charts",
+      "title": "Sūtras in each adhyāya PNG",
+      "bytes": 21920,
+      "thumb": "downloads/diagrams/33-sūtras-in-each-adhyāya.png"
+    },
+    {
+      "path": "downloads/diagrams/33-sūtras-in-each-adhyāya.html",
+      "kind": "diagram",
+      "room": "charts",
+      "title": "Sūtras in each adhyāya HTML",
+      "bytes": 10132,
+      "thumb": "downloads/diagrams/33-sūtras-in-each-adhyāya.png"
+    },
+    {
+      "path": "downloads/diagrams/34-type-letters-in-the-data-file.svg",
+      "kind": "diagram",
+      "room": "charts",
+      "title": "Type letters in the data file SVG",
+      "bytes": 2668,
+      "thumb": "downloads/diagrams/34-type-letters-in-the-data-file.png"
+    },
+    {
+      "path": "downloads/diagrams/34-type-letters-in-the-data-file.png",
+      "kind": "diagram",
+      "room": "charts",
+      "title": "Type letters in the data file PNG",
+      "bytes": 15628,
+      "thumb": "downloads/diagrams/34-type-letters-in-the-data-file.png"
+    },
+    {
+      "path": "downloads/diagrams/34-type-letters-in-the-data-file.html",
+      "kind": "diagram",
+      "room": "charts",
+      "title": "Type letters in the data file HTML",
+      "bytes": 10206,
+      "thumb": "downloads/diagrams/34-type-letters-in-the-data-file.png"
+    },
+    {
+      "path": "downloads/diagrams/35-lines-with-an-anuvṛtti-field.svg",
+      "kind": "diagram",
+      "room": "anuvrtti",
+      "title": "Lines with an anuvṛtti field SVG",
+      "bytes": 2017,
+      "thumb": "downloads/diagrams/35-lines-with-an-anuvṛtti-field.png"
+    },
+    {
+      "path": "downloads/diagrams/35-lines-with-an-anuvṛtti-field.png",
+      "kind": "diagram",
+      "room": "anuvrtti",
+      "title": "Lines with an anuvṛtti field PNG",
+      "bytes": 14459,
+      "thumb": "downloads/diagrams/35-lines-with-an-anuvṛtti-field.png"
+    },
+    {
+      "path": "downloads/diagrams/35-lines-with-an-anuvṛtti-field.html",
+      "kind": "diagram",
+      "room": "anuvrtti",
+      "title": "Lines with an anuvṛtti field HTML",
+      "bytes": 10158,
+      "thumb": "downloads/diagrams/35-lines-with-an-anuvṛtti-field.png"
+    },
+    {
+      "path": "downloads/diagrams/36-start-here-map.svg",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Start here map SVG",
+      "bytes": 3062,
+      "thumb": "downloads/diagrams/36-start-here-map.png"
+    },
+    {
+      "path": "downloads/diagrams/36-start-here-map.png",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Start here map PNG",
+      "bytes": 27648,
+      "thumb": "downloads/diagrams/36-start-here-map.png"
+    },
+    {
+      "path": "downloads/diagrams/36-start-here-map.html",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Start here map HTML",
+      "bytes": 10090,
+      "thumb": "downloads/diagrams/36-start-here-map.png"
+    },
+    {
+      "path": "downloads/diagrams/37-foundations-map.svg",
+      "kind": "diagram",
+      "room": "foundations",
+      "title": "Foundations map SVG",
+      "bytes": 2870,
+      "thumb": "downloads/diagrams/37-foundations-map.png"
+    },
+    {
+      "path": "downloads/diagrams/37-foundations-map.png",
+      "kind": "diagram",
+      "room": "foundations",
+      "title": "Foundations map PNG",
+      "bytes": 28934,
+      "thumb": "downloads/diagrams/37-foundations-map.png"
+    },
+    {
+      "path": "downloads/diagrams/37-foundations-map.html",
+      "kind": "diagram",
+      "room": "foundations",
+      "title": "Foundations map HTML",
+      "bytes": 10113,
+      "thumb": "downloads/diagrams/37-foundations-map.png"
+    },
+    {
+      "path": "downloads/diagrams/38-grammar-map.svg",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Grammar map SVG",
+      "bytes": 2866,
+      "thumb": "downloads/diagrams/38-grammar-map.png"
+    },
+    {
+      "path": "downloads/diagrams/38-grammar-map.png",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Grammar map PNG",
+      "bytes": 28618,
+      "thumb": "downloads/diagrams/38-grammar-map.png"
+    },
+    {
+      "path": "downloads/diagrams/38-grammar-map.html",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Grammar map HTML",
+      "bytes": 10107,
+      "thumb": "downloads/diagrams/38-grammar-map.png"
+    },
+    {
+      "path": "downloads/diagrams/39-ecosystem-map.svg",
+      "kind": "diagram",
+      "room": "ecosystem",
+      "title": "Ecosystem map SVG",
+      "bytes": 2873,
+      "thumb": "downloads/diagrams/39-ecosystem-map.png"
+    },
+    {
+      "path": "downloads/diagrams/39-ecosystem-map.png",
+      "kind": "diagram",
+      "room": "ecosystem",
+      "title": "Ecosystem map PNG",
+      "bytes": 27722,
+      "thumb": "downloads/diagrams/39-ecosystem-map.png"
+    },
+    {
+      "path": "downloads/diagrams/39-ecosystem-map.html",
+      "kind": "diagram",
+      "room": "ecosystem",
+      "title": "Ecosystem map HTML",
+      "bytes": 10107,
+      "thumb": "downloads/diagrams/39-ecosystem-map.png"
+    },
+    {
+      "path": "downloads/diagrams/40-room-links.svg",
+      "kind": "diagram",
+      "room": "ecosystem",
+      "title": "Room links SVG",
+      "bytes": 3009,
+      "thumb": "downloads/diagrams/40-room-links.png"
+    },
+    {
+      "path": "downloads/diagrams/40-room-links.png",
+      "kind": "diagram",
+      "room": "ecosystem",
+      "title": "Room links PNG",
+      "bytes": 27112,
+      "thumb": "downloads/diagrams/40-room-links.png"
+    },
+    {
+      "path": "downloads/diagrams/40-room-links.html",
+      "kind": "diagram",
+      "room": "ecosystem",
+      "title": "Room links HTML",
+      "bytes": 10042,
+      "thumb": "downloads/diagrams/40-room-links.png"
+    },
+    {
+      "path": "downloads/diagrams/41-the-fourteen-māheśvara-lines.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "The fourteen Māheśvara lines SVG",
+      "bytes": 3296,
+      "thumb": "downloads/diagrams/41-the-fourteen-māheśvara-lines.png"
+    },
+    {
+      "path": "downloads/diagrams/41-the-fourteen-māheśvara-lines.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "The fourteen Māheśvara lines PNG",
+      "bytes": 38741,
+      "thumb": "downloads/diagrams/41-the-fourteen-māheśvara-lines.png"
+    },
+    {
+      "path": "downloads/diagrams/41-the-fourteen-māheśvara-lines.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "The fourteen Māheśvara lines HTML",
+      "bytes": 10219,
+      "thumb": "downloads/diagrams/41-the-fourteen-māheśvara-lines.png"
+    },
+    {
+      "path": "downloads/diagrams/42-sounds-on-lines-1-to-4.svg",
+      "kind": "diagram",
+      "room": "foundations",
+      "title": "Sounds on lines 1 to 4 SVG",
+      "bytes": 2788,
+      "thumb": "downloads/diagrams/42-sounds-on-lines-1-to-4.png"
+    },
+    {
+      "path": "downloads/diagrams/42-sounds-on-lines-1-to-4.png",
+      "kind": "diagram",
+      "room": "foundations",
+      "title": "Sounds on lines 1 to 4 PNG",
+      "bytes": 14647,
+      "thumb": "downloads/diagrams/42-sounds-on-lines-1-to-4.png"
+    },
+    {
+      "path": "downloads/diagrams/42-sounds-on-lines-1-to-4.html",
+      "kind": "diagram",
+      "room": "foundations",
+      "title": "Sounds on lines 1 to 4 HTML",
+      "bytes": 10152,
+      "thumb": "downloads/diagrams/42-sounds-on-lines-1-to-4.png"
+    },
+    {
+      "path": "downloads/diagrams/43-sounds-on-lines-5-to-14.svg",
+      "kind": "diagram",
+      "room": "foundations",
+      "title": "Sounds on lines 5 to 14 SVG",
+      "bytes": 4323,
+      "thumb": "downloads/diagrams/43-sounds-on-lines-5-to-14.png"
+    },
+    {
+      "path": "downloads/diagrams/43-sounds-on-lines-5-to-14.png",
+      "kind": "diagram",
+      "room": "foundations",
+      "title": "Sounds on lines 5 to 14 PNG",
+      "bytes": 18650,
+      "thumb": "downloads/diagrams/43-sounds-on-lines-5-to-14.png"
+    },
+    {
+      "path": "downloads/diagrams/43-sounds-on-lines-5-to-14.html",
+      "kind": "diagram",
+      "room": "foundations",
+      "title": "Sounds on lines 5 to 14 HTML",
+      "bytes": 10147,
+      "thumb": "downloads/diagrams/43-sounds-on-lines-5-to-14.png"
+    },
+    {
+      "path": "downloads/diagrams/44-this-file-has-75-kashmir-lines.svg",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "This file has 75 Kashmir lines SVG",
+      "bytes": 2102,
+      "thumb": "downloads/diagrams/44-this-file-has-75-kashmir-lines.png"
+    },
+    {
+      "path": "downloads/diagrams/44-this-file-has-75-kashmir-lines.png",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "This file has 75 Kashmir lines PNG",
+      "bytes": 13531,
+      "thumb": "downloads/diagrams/44-this-file-has-75-kashmir-lines.png"
+    },
+    {
+      "path": "downloads/diagrams/44-this-file-has-75-kashmir-lines.html",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "This file has 75 Kashmir lines HTML",
+      "bytes": 10242,
+      "thumb": "downloads/diagrams/44-this-file-has-75-kashmir-lines.png"
+    },
+    {
+      "path": "downloads/diagrams/45-dating-notes-that-were-actually-opened.svg",
+      "kind": "diagram",
+      "room": "history",
+      "title": "Dating notes that were actually opened SVG",
+      "bytes": 3412,
+      "thumb": "downloads/diagrams/45-dating-notes-that-were-actually-opened.png"
+    },
+    {
+      "path": "downloads/diagrams/45-dating-notes-that-were-actually-opened.png",
+      "kind": "diagram",
+      "room": "history",
+      "title": "Dating notes that were actually opened PNG",
+      "bytes": 16592,
+      "thumb": "downloads/diagrams/45-dating-notes-that-were-actually-opened.png"
+    },
+    {
+      "path": "downloads/diagrams/45-dating-notes-that-were-actually-opened.html",
+      "kind": "diagram",
+      "room": "history",
+      "title": "Dating notes that were actually opened HTML",
+      "bytes": 10226,
+      "thumb": "downloads/diagrams/45-dating-notes-that-were-actually-opened.png"
+    },
+    {
+      "path": "downloads/diagrams/46-what-a-row-in-the-file-holds.svg",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "What a row in the file holds SVG",
+      "bytes": 3126,
+      "thumb": "downloads/diagrams/46-what-a-row-in-the-file-holds.png"
+    },
+    {
+      "path": "downloads/diagrams/46-what-a-row-in-the-file-holds.png",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "What a row in the file holds PNG",
+      "bytes": 14064,
+      "thumb": "downloads/diagrams/46-what-a-row-in-the-file-holds.png"
+    },
+    {
+      "path": "downloads/diagrams/46-what-a-row-in-the-file-holds.html",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "What a row in the file holds HTML",
+      "bytes": 10150,
+      "thumb": "downloads/diagrams/46-what-a-row-in-the-file-holds.png"
+    },
+    {
+      "path": "downloads/diagrams/47-three-counts-you-can-check.svg",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Three counts you can check SVG",
+      "bytes": 2207,
+      "thumb": "downloads/diagrams/47-three-counts-you-can-check.png"
+    },
+    {
+      "path": "downloads/diagrams/47-three-counts-you-can-check.png",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Three counts you can check PNG",
+      "bytes": 14890,
+      "thumb": "downloads/diagrams/47-three-counts-you-can-check.png"
+    },
+    {
+      "path": "downloads/diagrams/47-three-counts-you-can-check.html",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Three counts you can check HTML",
+      "bytes": 10136,
+      "thumb": "downloads/diagrams/47-three-counts-you-can-check.png"
+    },
+    {
+      "path": "downloads/diagrams/48-chapter-1-by-pāda.svg",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Chapter 1 by pāda SVG",
+      "bytes": 2437,
+      "thumb": "downloads/diagrams/48-chapter-1-by-pāda.png"
+    },
+    {
+      "path": "downloads/diagrams/48-chapter-1-by-pāda.png",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Chapter 1 by pāda PNG",
+      "bytes": 15397,
+      "thumb": "downloads/diagrams/48-chapter-1-by-pāda.png"
+    },
+    {
+      "path": "downloads/diagrams/48-chapter-1-by-pāda.html",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Chapter 1 by pāda HTML",
+      "bytes": 10166,
+      "thumb": "downloads/diagrams/48-chapter-1-by-pāda.png"
+    },
+    {
+      "path": "downloads/diagrams/49-kashmir-unmeṣa-lengths.svg",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "Kashmir unmeṣa lengths SVG",
+      "bytes": 2265,
+      "thumb": "downloads/diagrams/49-kashmir-unmeṣa-lengths.png"
+    },
+    {
+      "path": "downloads/diagrams/49-kashmir-unmeṣa-lengths.png",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "Kashmir unmeṣa lengths PNG",
+      "bytes": 15382,
+      "thumb": "downloads/diagrams/49-kashmir-unmeṣa-lengths.png"
+    },
+    {
+      "path": "downloads/diagrams/49-kashmir-unmeṣa-lengths.html",
+      "kind": "diagram",
+      "room": "shiva",
+      "title": "Kashmir unmeṣa lengths HTML",
+      "bytes": 10207,
+      "thumb": "downloads/diagrams/49-kashmir-unmeṣa-lengths.png"
+    },
+    {
+      "path": "downloads/diagrams/50-rows-that-carry-a-word-split.svg",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Rows that carry a word split SVG",
+      "bytes": 2066,
+      "thumb": "downloads/diagrams/50-rows-that-carry-a-word-split.png"
+    },
+    {
+      "path": "downloads/diagrams/50-rows-that-carry-a-word-split.png",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Rows that carry a word split PNG",
+      "bytes": 13773,
+      "thumb": "downloads/diagrams/50-rows-that-carry-a-word-split.png"
+    },
+    {
+      "path": "downloads/diagrams/50-rows-that-carry-a-word-split.html",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "Rows that carry a word split HTML",
+      "bytes": 10204,
+      "thumb": "downloads/diagrams/50-rows-that-carry-a-word-split.png"
+    },
+    {
+      "path": "downloads/diagrams/51-compute-a-set-in-the-builder.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Compute a set in the builder SVG",
+      "bytes": 3080,
+      "thumb": "downloads/diagrams/51-compute-a-set-in-the-builder.png"
+    },
+    {
+      "path": "downloads/diagrams/51-compute-a-set-in-the-builder.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Compute a set in the builder PNG",
+      "bytes": 14164,
+      "thumb": "downloads/diagrams/51-compute-a-set-in-the-builder.png"
+    },
+    {
+      "path": "downloads/diagrams/51-compute-a-set-in-the-builder.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Compute a set in the builder HTML",
+      "bytes": 10163,
+      "thumb": "downloads/diagrams/51-compute-a-set-in-the-builder.png"
+    },
+    {
+      "path": "downloads/diagrams/52-what-a-grammar-row-stores.svg",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "What a grammar row stores SVG",
+      "bytes": 2940,
+      "thumb": "downloads/diagrams/52-what-a-grammar-row-stores.png"
+    },
+    {
+      "path": "downloads/diagrams/52-what-a-grammar-row-stores.png",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "What a grammar row stores PNG",
+      "bytes": 13890,
+      "thumb": "downloads/diagrams/52-what-a-grammar-row-stores.png"
+    },
+    {
+      "path": "downloads/diagrams/52-what-a-grammar-row-stores.html",
+      "kind": "diagram",
+      "room": "ashtadhyayi",
+      "title": "What a grammar row stores HTML",
+      "bytes": 10148,
+      "thumb": "downloads/diagrams/52-what-a-grammar-row-stores.png"
+    },
+    {
+      "path": "downloads/diagrams/53-five-parts-of-a-room.svg",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Five parts of a room SVG",
+      "bytes": 3149,
+      "thumb": "downloads/diagrams/53-five-parts-of-a-room.png"
+    },
+    {
+      "path": "downloads/diagrams/53-five-parts-of-a-room.png",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Five parts of a room PNG",
+      "bytes": 14099,
+      "thumb": "downloads/diagrams/53-five-parts-of-a-room.png"
+    },
+    {
+      "path": "downloads/diagrams/53-five-parts-of-a-room.html",
+      "kind": "diagram",
+      "room": "index",
+      "title": "Five parts of a room HTML",
+      "bytes": 10099,
+      "thumb": "downloads/diagrams/53-five-parts-of-a-room.png"
+    },
+    {
+      "path": "downloads/diagrams/54-leave-the-voice-off.svg",
+      "kind": "diagram",
+      "room": "listen",
+      "title": "Leave the voice off SVG",
+      "bytes": 2986,
+      "thumb": "downloads/diagrams/54-leave-the-voice-off.png"
+    },
+    {
+      "path": "downloads/diagrams/54-leave-the-voice-off.png",
+      "kind": "diagram",
+      "room": "listen",
+      "title": "Leave the voice off PNG",
+      "bytes": 14096,
+      "thumb": "downloads/diagrams/54-leave-the-voice-off.png"
+    },
+    {
+      "path": "downloads/diagrams/54-leave-the-voice-off.html",
+      "kind": "diagram",
+      "room": "listen",
+      "title": "Leave the voice off HTML",
+      "bytes": 10114,
+      "thumb": "downloads/diagrams/54-leave-the-voice-off.png"
+    },
+    {
+      "path": "downloads/diagrams/55-anuvṛtti-map.svg",
+      "kind": "diagram",
+      "room": "anuvrtti",
+      "title": "Anuvṛtti map SVG",
+      "bytes": 2879,
+      "thumb": "downloads/diagrams/55-anuvṛtti-map.png"
+    },
+    {
+      "path": "downloads/diagrams/55-anuvṛtti-map.png",
+      "kind": "diagram",
+      "room": "anuvrtti",
+      "title": "Anuvṛtti map PNG",
+      "bytes": 28155,
+      "thumb": "downloads/diagrams/55-anuvṛtti-map.png"
+    },
+    {
+      "path": "downloads/diagrams/55-anuvṛtti-map.html",
+      "kind": "diagram",
+      "room": "anuvrtti",
+      "title": "Anuvṛtti map HTML",
+      "bytes": 10120,
+      "thumb": "downloads/diagrams/55-anuvṛtti-map.png"
+    },
+    {
+      "path": "downloads/diagrams/56-download-kinds.svg",
+      "kind": "diagram",
+      "room": "downloads",
+      "title": "Download kinds SVG",
+      "bytes": 3043,
+      "thumb": "downloads/diagrams/56-download-kinds.png"
+    },
+    {
+      "path": "downloads/diagrams/56-download-kinds.png",
+      "kind": "diagram",
+      "room": "downloads",
+      "title": "Download kinds PNG",
+      "bytes": 27312,
+      "thumb": "downloads/diagrams/56-download-kinds.png"
+    },
+    {
+      "path": "downloads/diagrams/56-download-kinds.html",
+      "kind": "diagram",
+      "room": "downloads",
+      "title": "Download kinds HTML",
+      "bytes": 10096,
+      "thumb": "downloads/diagrams/56-download-kinds.png"
+    },
+    {
+      "path": "downloads/diagrams/57-markers-on-the-fourteen-lines.svg",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Markers on the fourteen lines SVG",
+      "bytes": 2856,
+      "thumb": "downloads/diagrams/57-markers-on-the-fourteen-lines.png"
+    },
+    {
+      "path": "downloads/diagrams/57-markers-on-the-fourteen-lines.png",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Markers on the fourteen lines PNG",
+      "bytes": 19072,
+      "thumb": "downloads/diagrams/57-markers-on-the-fourteen-lines.png"
+    },
+    {
+      "path": "downloads/diagrams/57-markers-on-the-fourteen-lines.html",
+      "kind": "diagram",
+      "room": "maheshvara",
+      "title": "Markers on the fourteen lines HTML",
+      "bytes": 10185,
+      "thumb": "downloads/diagrams/57-markers-on-the-fourteen-lines.png"
+    },
+    {
+      "path": "downloads/diagrams/58-nothing-is-uploaded.svg",
+      "kind": "diagram",
+      "room": "about",
+      "title": "Nothing is uploaded SVG",
+      "bytes": 2041,
+      "thumb": "downloads/diagrams/58-nothing-is-uploaded.png"
+    },
+    {
+      "path": "downloads/diagrams/58-nothing-is-uploaded.png",
+      "kind": "diagram",
+      "room": "about",
+      "title": "Nothing is uploaded PNG",
+      "bytes": 12228,
+      "thumb": "downloads/diagrams/58-nothing-is-uploaded.png"
+    },
+    {
+      "path": "downloads/diagrams/58-nothing-is-uploaded.html",
+      "kind": "diagram",
+      "room": "about",
+      "title": "Nothing is uploaded HTML",
+      "bytes": 10171,
+      "thumb": "downloads/diagrams/58-nothing-is-uploaded.png"
+    },
+    {
+      "path": "downloads/sheets/pratyahara.html",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "pratyahara html",
+      "bytes": 10181,
+      "thumb": "downloads/sheets/pratyahara.png"
+    },
+    {
+      "path": "downloads/sheets/pratyahara.pdf",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "pratyahara pdf",
+      "bytes": 44764,
+      "thumb": "downloads/sheets/pratyahara.png"
+    },
+    {
+      "path": "downloads/sheets/pratyahara.png",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "pratyahara png",
+      "bytes": 15327,
+      "thumb": "downloads/sheets/pratyahara.png"
+    },
+    {
+      "path": "downloads/sheets/counts.html",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "counts html",
+      "bytes": 10245,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/sheets/counts.pdf",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "counts pdf",
+      "bytes": 45188,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/sheets/counts.png",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "counts png",
+      "bytes": 17392,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/sheets/read-a-number.html",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "read-a-number html",
+      "bytes": 10274,
+      "thumb": "downloads/sheets/read-a-number.png"
+    },
+    {
+      "path": "downloads/sheets/read-a-number.pdf",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "read-a-number pdf",
+      "bytes": 44944,
+      "thumb": "downloads/sheets/read-a-number.png"
+    },
+    {
+      "path": "downloads/sheets/read-a-number.png",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "read-a-number png",
+      "bytes": 15138,
+      "thumb": "downloads/sheets/read-a-number.png"
+    },
+    {
+      "path": "downloads/sheets/kashmir-notes.html",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "kashmir-notes html",
+      "bytes": 10163,
+      "thumb": "downloads/sheets/kashmir-notes.png"
+    },
+    {
+      "path": "downloads/sheets/kashmir-notes.pdf",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "kashmir-notes pdf",
+      "bytes": 44573,
+      "thumb": "downloads/sheets/kashmir-notes.png"
+    },
+    {
+      "path": "downloads/sheets/kashmir-notes.png",
+      "kind": "sheet",
+      "room": "downloads",
+      "title": "kashmir-notes png",
+      "bytes": 17655,
+      "thumb": "downloads/sheets/kashmir-notes.png"
+    },
+    {
+      "path": "downloads/templates/study-plan.html",
+      "kind": "template",
+      "room": "downloads",
+      "title": "study-plan html",
+      "bytes": 10207,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/templates/study-plan.docx",
+      "kind": "template",
+      "room": "downloads",
+      "title": "study-plan docx",
+      "bytes": 37981,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/templates/study-plan.pdf",
+      "kind": "template",
+      "room": "downloads",
+      "title": "study-plan pdf",
+      "bytes": 44883,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/templates/sutra-worksheet.html",
+      "kind": "template",
+      "room": "downloads",
+      "title": "sutra-worksheet html",
+      "bytes": 10173,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/templates/sutra-worksheet.docx",
+      "kind": "template",
+      "room": "downloads",
+      "title": "sutra-worksheet docx",
+      "bytes": 37916,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/templates/sutra-worksheet.pdf",
+      "kind": "template",
+      "room": "downloads",
+      "title": "sutra-worksheet pdf",
+      "bytes": 44771,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/templates/pratyahara-worksheet.html",
+      "kind": "template",
+      "room": "downloads",
+      "title": "pratyahara-worksheet html",
+      "bytes": 10110,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/templates/pratyahara-worksheet.docx",
+      "kind": "template",
+      "room": "downloads",
+      "title": "pratyahara-worksheet docx",
+      "bytes": 37907,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/templates/pratyahara-worksheet.pdf",
+      "kind": "template",
+      "room": "downloads",
+      "title": "pratyahara-worksheet pdf",
+      "bytes": 44712,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/templates/glossary-builder.html",
+      "kind": "template",
+      "room": "downloads",
+      "title": "glossary-builder html",
+      "bytes": 10058,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/templates/glossary-builder.docx",
+      "kind": "template",
+      "room": "downloads",
+      "title": "glossary-builder docx",
+      "bytes": 37867,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/templates/glossary-builder.pdf",
+      "kind": "template",
+      "room": "downloads",
+      "title": "glossary-builder pdf",
+      "bytes": 44475,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/flashcards.json",
+      "kind": "cards",
+      "room": "play",
+      "title": "Flashcards JSON",
+      "bytes": 4103,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/flashcards.html",
+      "kind": "cards",
+      "room": "play",
+      "title": "Flashcards HTML",
+      "bytes": 11000,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/flashcards.pdf",
+      "kind": "cards",
+      "room": "play",
+      "title": "Flashcards PDF",
+      "bytes": 45456,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/sutra-nexus-deck.pptx",
+      "kind": "deck",
+      "room": "downloads",
+      "title": "Slide deck",
+      "bytes": 43618,
+      "thumb": "downloads/sheets/counts.png"
+    },
+    {
+      "path": "downloads/models/study-wheel.glb",
+      "kind": "model",
+      "room": "about",
+      "title": "study-wheel GLB",
+      "bytes": 8692,
+      "thumb": "downloads/models/study-wheel.png"
+    },
+    {
+      "path": "downloads/models/study-wheel.png",
+      "kind": "model",
+      "room": "about",
+      "title": "study-wheel poster",
+      "bytes": 21871,
+      "thumb": "downloads/models/study-wheel.png"
+    },
+    {
+      "path": "downloads/models/study-wheel-credits.txt",
+      "kind": "model",
+      "room": "about",
+      "title": "study-wheel credits",
+      "bytes": 723,
+      "thumb": "downloads/models/study-wheel.png"
+    },
+    {
+      "path": "downloads/models/guide-monkey.glb",
+      "kind": "model",
+      "room": "about",
+      "title": "guide-monkey GLB",
+      "bytes": 5468,
+      "thumb": "downloads/models/guide-monkey.png"
+    },
+    {
+      "path": "downloads/models/guide-monkey.png",
+      "kind": "model",
+      "room": "about",
+      "title": "guide-monkey poster",
+      "bytes": 14446,
+      "thumb": "downloads/models/guide-monkey.png"
+    },
+    {
+      "path": "downloads/models/guide-monkey-credits.txt",
+      "kind": "model",
+      "room": "about",
+      "title": "guide-monkey credits",
+      "bytes": 763,
+      "thumb": "downloads/models/guide-monkey.png"
+    },
+    {
+      "path": "downloads/sutra-nexus-all.zip",
+      "kind": "bundle",
+      "room": "downloads",
+      "title": "Optional: everything in one ZIP",
+      "bytes": 1782517,
+      "thumb": "downloads/sheets/counts.png"
+    }
+  ]
+}

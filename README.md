@@ -20,6 +20,8 @@ Read a room, compute a pratyāhāra, take a quiz, and download one file. The gui
 
 Drawings: 58, of which 36 have a moving dot. Downloads are listed one by one, plus one optional zip.
 
+Measured on 2026-10-16 with `node scripts/gzip-static.mjs` (gzip for text responses) at `http://127.0.0.1:8742/`. Mobile Lighthouse on Home, Māheśvara, and Downloads: performance 100, accessibility 100, best practices 100, SEO 100, cumulative layout shift 0. Desktop Home matched those scores.
+
 ## Chrome
 
 The banner, drawer, phone dock, and footer behavior are adapted from Webex Lab commit `7631b317cbf2cad236403df960b5d5fac353a6de`. Webex and Cisco product copy is not used.

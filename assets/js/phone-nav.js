@@ -15,7 +15,7 @@
     hint.className = "nav-hint";
     hint.setAttribute("role", "dialog");
     hint.setAttribute("aria-label", "How to open the menu");
-    hint.innerHTML = "<b>Tap for menu</b><p>The glowing Menu button is at the bottom left. It lists every section.</p><button type=\"button\">Got it</button>";
+    hint.innerHTML = "<b>Tap for menu</b><p>The glowing Menu button lists every section.</p><button type=\"button\">Got it</button>";
     document.body.appendChild(hint);
     function close() {
       hint.remove();
@@ -24,6 +24,16 @@
     hint.querySelector("button").addEventListener("click", close);
     var menu = document.querySelector(".phone-dock [data-open-menu]");
     if (menu) menu.addEventListener("click", close);
+    function park() {
+      var disclaimer = document.querySelector(".site-footer");
+      if (!disclaimer || !hint.isConnected) return;
+      var box = disclaimer.getBoundingClientRect();
+      var tip = hint.getBoundingClientRect();
+      var overlap = box.top < tip.bottom && box.bottom > tip.top;
+      hint.style.visibility = overlap ? "hidden" : "visible";
+    }
+    park();
+    window.addEventListener("scroll", park, { passive: true });
   }
   function markDock() {
     var file = (location.pathname.split("/").pop() || "index.html");

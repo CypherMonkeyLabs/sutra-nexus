@@ -224,4 +224,5 @@ function boot() {
 
   welcome();
   if (ls("sutra-guide-open") === "1" && window.matchMedia("(min-width: 721px)").matches) ensureGuide();
+  if (/[?&]guide=1(?:&|$)/.test(location.search)) open(true);
 }

@@ -204,5 +204,6 @@
   bindDrawer();
   bindBanner();
   bindDisplay();
+  if (/[?&]menu=1(?:&|$)/.test(location.search)) setDrawer(true);
   window.SutraFrame = { setDrawer: setDrawer, setInk: setInk };
 })();

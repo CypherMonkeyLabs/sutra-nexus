@@ -101,7 +101,7 @@ def footer_html_fixed():
         f'<a href="{CONTACT}">contact form</a>',
     )
     return f'''<footer class="site-footer" data-canon-footer>
-<div class="disclaimer-panel" role="note">
+<div class="disclaimer-panel" id="site-disclaimer" role="note">
 <svg class="disclaimer-ico" viewBox="0 0 48 48" aria-hidden="true"><path fill="#0f766e" d="M24 4 8 10v12c0 9.5 6.4 16.8 16 20 9.6-3.2 16-10.5 16-20V10z"/><path d="m16 24 5 5 12-13" fill="none" stroke="#ecfdf5" stroke-width="2.4" stroke-linecap="round"/></svg>
 <div>
 <h2>Disclaimer</h2>
@@ -114,7 +114,7 @@ def footer_html_fixed():
 </footer>'''
 
 NAV = [
-    ("index.html", "Start", "A six-step path and what this app will not invent."),
+    ("index.html", "Start here", "A six-step path and what this app will not invent."),
     ("foundations.html", "Foundations", "Script, sounds, and the phonetic terms still unsourced."),
     ("maheshvara.html", "Māheśvara", "The 14 lines and a pratyāhāra you can compute."),
     ("sandhi.html", "Sandhi", "Sound-joining, without a fake rule walk."),
@@ -136,7 +136,7 @@ NAV = [
 ]
 
 GROUPS = [
-    ("Start", ["index.html"]),
+    ("Start here", ["index.html"]),
     ("Learn", ["foundations.html", "maheshvara.html", "sandhi.html", "ashtadhyayi.html", "anuvrtti.html", "dhatu.html", "shiva.html", "history.html"]),
     ("Practice", ["diagrams.html", "charts.html", "play.html", "listen.html"]),
     ("Library", ["ecosystem.html", "resources.html", "downloads.html", "glossary.html"]),
@@ -310,13 +310,27 @@ def flow_body(steps):
     parts = []
     count = len(steps)
     gap = 860 / max(count, 1)
+    box_w = max(70, gap - 24)
     for index, step in enumerate(steps):
         x = 40 + index * gap
-        parts.append(f'<rect x="{x:.0f}" y="140" width="{max(70, gap-24):.0f}" height="120" rx="16" fill="#fff" stroke="#7c3aed" stroke-width="2"/>')
-        parts.append(f'<text x="{x+12:.0f}" y="176" font-size="14" fill="#1b1340">{E(step[:42])}</text>')
+        words = step.split()
+        lines, cur = [], ""
+        for word in words:
+            trial = (cur + " " + word).strip()
+            if len(trial) > 16 and cur:
+                lines.append(cur)
+                cur = word
+            else:
+                cur = trial
+        if cur:
+            lines.append(cur)
+        lines = lines[:3]
+        parts.append(f'<rect x="{x:.0f}" y="140" width="{box_w:.0f}" height="140" rx="16" fill="#fff" stroke="#7c3aed" stroke-width="2"/>')
+        for line_index, line in enumerate(lines):
+            parts.append(f'<text x="{x+10:.0f}" y="{178 + line_index * 18:.0f}" font-size="13" fill="#1b1340">{E(line)}</text>')
         if index < count - 1:
-            parts.append(f'<path d="M {x+gap-28:.0f} 200 H {x+gap-8:.0f}" stroke="#0891b2" stroke-width="3" marker-end="url(#arrow)"/>')
-    return '<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#0891b2"/></marker></defs>' + "".join(parts) + '<text x="40" y="320" font-size="15" fill="#3b3560">A moving dot shows the reading order. Reduced motion hides it.</text>'
+            parts.append(f'<path d="M {x+gap-28:.0f} 210 H {x+gap-8:.0f}" stroke="#0891b2" stroke-width="3" marker-end="url(#arrow)"/>')
+    return '<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#0891b2"/></marker></defs>' + "".join(parts) + '<text x="40" y="340" font-size="15" fill="#3b3560">A moving dot shows the reading order. Reduced motion hides it.</text>'
 
 def bars_body(pairs):
     top = max(value for _, value in pairs) or 1

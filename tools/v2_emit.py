@@ -816,7 +816,7 @@ def glb_bytes(positions, colors, indices):
         "buffers": [{"byteLength": len(blob)}],
         "extras": {"disclaimer": DISCLAIMER, "contact": CONTACT},
     }
-    js = json.dumps(gltf, separators=(",", ":")).encode("utf-8")
+    js = json.dumps(gltf, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
     while len(js) % 4:
         js += b" "
     out = b"glTF" + struct.pack("<II", 2, 12 + 8 + len(js) + 8 + len(blob))
@@ -1006,6 +1006,15 @@ def write_deck(st):
     ]
     write_pptx("downloads/sutra-nexus-deck.pptx", slides)
 
+def write_catalog(rows):
+    payload = {
+        "disclaimer": DISCLAIMER,
+        "contact": CONTACT,
+        "copyright": "© 2026 CypherMonkeyLabs",
+        "files": [row for row in rows if row["path"] != "downloads/catalog.json"],
+    }
+    b.write("downloads/catalog.json", json.dumps(payload, ensure_ascii=False, indent=2))
+
 def catalogue(items):
     rows = []
     def add(path, kind, room, title, thumb):
@@ -1030,6 +1039,7 @@ def catalogue(items):
         add(f"downloads/models/{name}.glb", "model", "about", name + " GLB", f"downloads/models/{name}.png")
         add(f"downloads/models/{name}.png", "model", "about", name + " poster", f"downloads/models/{name}.png")
         add(f"downloads/models/{name}-credits.txt", "model", "about", name + " credits", f"downloads/models/{name}.png")
+    add("downloads/catalog.json", "bundle", "downloads", "Download catalogue", "downloads/sheets/counts.png")
     add("downloads/sutra-nexus-all.zip", "bundle", "downloads", "Optional: everything in one ZIP", "downloads/sheets/counts.png")
     return rows
 
@@ -1081,9 +1091,11 @@ def write_zip(rows):
     with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as zf:
         zf.writestr("README.txt", readme)
         for row in rows:
-            if row["path"].endswith(".zip"):
+            if row["path"].endswith(".zip") or row["path"] == "downloads/catalog.json":
                 continue
             zf.write(row["path"], row["path"])
+        if os.path.exists("downloads/catalog.json"):
+            zf.write("downloads/catalog.json", "downloads/catalog.json")
     return path
 
 def search_index(st, items, glossary):
@@ -1440,12 +1452,14 @@ def main():
     offline()
     rows = catalogue(items)
     visual = items[0]
+    write_catalog(rows)
     b.write("downloads.html", downloads_page([r for r in rows if r["kind"] != "bundle"], visual))
     rows = catalogue(items)
+    write_catalog(rows)
     write_zip([r for r in rows if not r["path"].endswith(".zip")])
     rows = catalogue(items)
+    write_catalog(rows)
     b.write("downloads.html", downloads_page(rows, visual))
-    b.write("downloads/catalog.json", json.dumps(rows, indent=2))
     gloss = []
     for spec in list(pages) + EXTRA:
         if spec["file"] == "glossary.html":

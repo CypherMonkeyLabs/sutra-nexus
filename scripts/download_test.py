@@ -83,7 +83,8 @@ def dump_one(item):
     url = "file://" + os.path.abspath(path)
     proc = subprocess.run(
         ["timeout", "4", chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
-         f"--user-data-dir=/tmp/sutra-chrome-{index}", "--virtual-time-budget=1200",
+         f"--user-data-dir=/tmp/sutra-chrome-{index}", f"--remote-debugging-port={9400 + index}",
+         "--virtual-time-budget=1200",
          "--dump-dom", url],
         capture_output=True,
     )

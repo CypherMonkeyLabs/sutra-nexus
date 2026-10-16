@@ -66,7 +66,7 @@ html[data-theme="contrast"] {
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
-html { font-size: calc(18px * var(--fscale)); scroll-behavior: smooth; }
+html { font-size: calc(18px * var(--fscale)); scroll-behavior: smooth; background: var(--bg); }
 html[data-motion="reduce"] { scroll-behavior: auto; }
 body {
   margin: 0;
@@ -397,14 +397,14 @@ html:not([data-motion="reduce"]) .monkey-idle .blink { animation: monkey-blink 4
 }
 .nav-hint {
   position: fixed;
-  left: 10px;
-  bottom: calc(72px + env(safe-area-inset-bottom));
-  z-index: 45;
-  max-width: min(280px, 80vw);
+  left: 8px;
+  bottom: calc(76px + env(safe-area-inset-bottom));
+  z-index: 42;
+  max-width: min(220px, 70vw);
   background: #0f172a;
   color: #f8fafc;
   border-radius: 14px;
-  padding: 12px;
+  padding: 10px 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 .nav-hint button { min-height: 44px; width: 100%; margin-top: 8px; font: inherit; border-radius: 10px; }
@@ -425,7 +425,8 @@ html:not([data-motion="reduce"]) .monkey-idle .blink { animation: monkey-blink 4
 .swatch { width: 44px; height: 44px; border-radius: 10px; border: 2px solid var(--line); }
 .contrast-warn { color: #9a3412; font-weight: 700; }
 html[data-theme="dark"] .contrast-warn, html[data-theme="contrast"] .contrast-warn { color: #fdba74; }
-.guide-root { position: fixed; z-index: 35; right: 16px; bottom: 16px; }
+.guide-root { position: fixed; z-index: 46; right: 16px; bottom: 16px; pointer-events: none; }
+.guide-fab, .guide-panel { pointer-events: auto; }
 .guide-fab, .guide-root button.guide-fab {
   width: 56px;
   height: 56px;
@@ -506,14 +507,15 @@ html[data-motion="reduce"] * { animation: none !important; transition: none !imp
   .phone-dock { display: flex; }
   body { --dock-h: 72px; }
   .menu-desktop { display: none; }
-  .guide-root { right: 10px; bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .guide-fab { display: none; }
+  .guide-root { right: 0; left: 0; bottom: calc(68px + env(safe-area-inset-bottom)); }
   .guide-panel {
     position: fixed;
     left: 0;
     right: 0;
     bottom: calc(68px + env(safe-area-inset-bottom));
     width: auto;
-    max-height: 62dvh;
+    max-height: min(46dvh, 420px);
     border-radius: 18px 18px 0 0;
   }
   .brand small { display: none; }
