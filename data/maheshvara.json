@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "title": "Māheśvara / Śiva (pratyāhāra) Sūtras",
+  "count": 14,
+  "source": "ashtadhyayi-com/data (shivasutra/data.txt)",
+  "licence": "Free to use with credit; ancient text public domain",
+  "confidence": "high; matches standard 14-line list; IAST machine-converted"
+ },
+ "sutras": [
+  {
+   "n": 1,
+   "devanagari": "अइउण्",
+   "iast": "aiuṇ",
+   "sounds": [
+    "a",
+    "i",
+    "u"
+   ],
+   "marker": "ṇ"
+  },
+  {
+   "n": 2,
+   "devanagari": "ऋऌक्",
+   "iast": "ṛḷk",
+   "sounds": [
+    "ṛ",
+    "ḷ"
+   ],
+   "marker": "k"
+  },
+  {
+   "n": 3,
+   "devanagari": "एओङ्",
+   "iast": "eoṅ",
+   "sounds": [
+    "e",
+    "o"
+   ],
+   "marker": "ṅ"
+  },
+  {
+   "n": 4,
+   "devanagari": "ऐऔच्",
+   "iast": "aiauc",
+   "sounds": [
+    "ai",
+    "au"
+   ],
+   "marker": "c"
+  },
+  {
+   "n": 5,
+   "devanagari": "हयवरट्",
+   "iast": "hayavaraṭ",
+   "sounds": [
+    "h",
+    "y",
+    "v",
+    "r"
+   ],
+   "marker": "ṭ"
+  },
+  {
+   "n": 6,
+   "devanagari": "लण्",
+   "iast": "laṇ",
+   "sounds": [
+    "l"
+   ],
+   "marker": "ṇ"
+  },
+  {
+   "n": 7,
+   "devanagari": "ञमङणनम्",
+   "iast": "ñamaṅaṇanam",
+   "sounds": [
+    "ñ",
+    "m",
+    "ṅ",
+    "ṇ",
+    "n"
+   ],
+   "marker": "m"
+  },
+  {
+   "n": 8,
+   "devanagari": "झभञ्",
+   "iast": "jhabhañ",
+   "sounds": [
+    "jh",
+    "bh"
+   ],
+   "marker": "ñ"
+  },
+  {
+   "n": 9,
+   "devanagari": "घढधष्",
+   "iast": "ghaḍhadhaṣ",
+   "sounds": [
+    "gh",
+    "ḍh",
+    "dh"
+   ],
+   "marker": "ṣ"
+  },
+  {
+   "n": 10,
+   "devanagari": "जबगडदश्",
+   "iast": "jabagaḍadaś",
+   "sounds": [
+    "j",
+    "b",
+    "g",
+    "ḍ",
+    "d"
+   ],
+   "marker": "ś"
+  },
+  {
+   "n": 11,
+   "devanagari": "खफछठथचटतव्",
+   "iast": "khaphachaṭhathacaṭatav",
+   "sounds": [
+    "kh",
+    "ph",
+    "ch",
+    "ṭh",
+    "th",
+    "c",
+    "ṭ",
+    "t"
+   ],
+   "marker": "v"
+  },
+  {
+   "n": 12,
+   "devanagari": "कपय्",
+   "iast": "kapay",
+   "sounds": [
+    "k",
+    "p"
+   ],
+   "marker": "y"
+  },
+  {
+   "n": 13,
+   "devanagari": "शषसर्",
+   "iast": "śaṣasar",
+   "sounds": [
+    "ś",
+    "ṣ",
+    "s"
+   ],
+   "marker": "r"
+  },
+  {
+   "n": 14,
+   "devanagari": "हल्",
+   "iast": "hal",
+   "sounds": [
+    "h"
+   ],
+   "marker": "l"
+  }
+ ]
+}

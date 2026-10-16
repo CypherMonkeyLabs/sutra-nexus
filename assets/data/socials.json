@@ -1,0 +1,50 @@
+{
+  "disclaimer": "Sūtra Nexus is an independent, free, learning-only student project. It respects every tradition, scholar, publisher, company and vendor. Trademarks, texts and sources belong to their owners, and nothing here is affiliated with or endorsed by them. If something should be removed or corrected, it will be handled promptly through the contact form. Nothing here is sold. I am happy to volunteer for any organization.",
+  "contact": "https://cyphermonkeylabs.com/#contact",
+  "copyright": "© 2026 CypherMonkeyLabs 🐒",
+  "labs": "CypherMonkey Labs",
+  "icons": [
+    {
+      "id": "web",
+      "icon": "monkey",
+      "class": "brand-web",
+      "label": "CypherMonkey Labs",
+      "href": "https://cyphermonkeylabs.com"
+    },
+    {
+      "id": "github",
+      "icon": "github",
+      "class": "brand-gh",
+      "label": "GitHub organization",
+      "href": "https://github.com/CypherMonkeyLabs"
+    },
+    {
+      "id": "linktree",
+      "icon": "linktree",
+      "class": "brand-lt",
+      "label": "Linktree",
+      "href": "https://linktr.ee/cyphermonkey"
+    },
+    {
+      "id": "x",
+      "icon": "x",
+      "class": "brand-x",
+      "label": "X",
+      "href": "https://x.com/Cypher0x9"
+    },
+    {
+      "id": "linkedin",
+      "icon": "linkedin",
+      "class": "brand-li",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/luckylakshmanucwebex"
+    },
+    {
+      "id": "huggingface",
+      "icon": "huggingface",
+      "class": "brand-hf",
+      "label": "Hugging Face",
+      "href": "https://huggingface.co/Cypher0x9"
+    }
+  ]
+}

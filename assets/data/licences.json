@@ -1,0 +1,45 @@
+{
+  "checked": "2026-10-16",
+  "texts": [
+    {
+      "text": "Aṣṭādhyāyī rows and Māheśvara lines",
+      "author": "ashtadhyayi-com/data",
+      "year": "repository README opened 2026",
+      "url": "https://github.com/ashtadhyayi-com/data",
+      "licence": "Free to use with appropriate credit. No SPDX identifier in the README.",
+      "status": "confirmed",
+      "date": "2026-10-16",
+      "words": "Devanāgarī source text only. English meanings not included."
+    },
+    {
+      "text": "Kashmir Śiva Sūtras e-text",
+      "author": "GRETIL, input as stated on the page",
+      "year": "page opened 2026",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_zivasUtra-with-vArttika.htm",
+      "licence": "CC BY-NC-SA 4.0",
+      "status": "confirmed",
+      "date": "2026-10-16",
+      "words": "Source text only. No English translation copied."
+    },
+    {
+      "text": "Vasu Aṣṭādhyāyī English",
+      "author": "not confirmed",
+      "year": "",
+      "url": "",
+      "licence": "not confirmed",
+      "status": "unconfirmed",
+      "date": "2026-10-16",
+      "words": "not included"
+    },
+    {
+      "text": "Any Bhagavad Gītā verse",
+      "author": "",
+      "year": "",
+      "url": "",
+      "licence": "none in hand",
+      "status": "not used",
+      "date": "2026-10-16",
+      "words": "none"
+    }
+  ]
+}

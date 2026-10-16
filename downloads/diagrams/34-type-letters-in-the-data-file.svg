@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 820" role="img" aria-label="Type letters in the data file">
+<title>Type letters in the data file</title>
+<style>
+text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
+
+@media (prefers-reduced-motion: reduce) { .mover { display: none; } }
+
+</style>
+<rect width="960" height="820" rx="24" fill="#f6f3ff"/>
+<rect x="20" y="16" width="920" height="64" rx="16" fill="#1e1b4b"/>
+<text x="40" y="56" font-size="26" fill="#f8fafc">Type letters in the data file</text>
+<rect x="50.0" y="475.1" width="142.0" height="4.9" rx="8" fill="#818cf8"/><text x="50.0" y="506" font-size="13" fill="#1b1340">AD</text><text x="50.0" y="467.1" font-size="13" fill="#1b1340">64</text><rect x="210.0" y="474.8" width="142.0" height="5.2" rx="8" fill="#818cf8"/><text x="210.0" y="506" font-size="13" fill="#1b1340">AT</text><text x="210.0" y="466.8" font-size="13" fill="#1b1340">67</text><rect x="370.0" y="478.2" width="142.0" height="1.8" rx="8" fill="#818cf8"/><text x="370.0" y="506" font-size="13" fill="#1b1340">P</text><text x="370.0" y="470.2" font-size="13" fill="#1b1340">23</text><rect x="530.0" y="464.6" width="142.0" height="15.4" rx="8" fill="#818cf8"/><text x="530.0" y="506" font-size="13" fill="#1b1340">S</text><text x="530.0" y="456.6" font-size="13" fill="#1b1340">200</text><rect x="690.0" y="200.0" width="142.0" height="280.0" rx="8" fill="#818cf8"/><text x="690.0" y="506" font-size="13" fill="#1b1340">V</text><text x="690.0" y="192.0" font-size="13" fill="#1b1340">3629</text>
+<rect x="20" y="572" width="920" height="228" rx="16" fill="#d1fae5" stroke="#0f766e" stroke-width="2"/>
+<text x="36" y="600" font-size="13" font-weight="700" fill="#052e2b">Disclaimer</text><text x="36" y="618" font-size="11" fill="#0b1f2a">Sūtra Nexus is an independent, free, learning-only student project. It respects every</text><text x="36" y="633" font-size="11" fill="#0b1f2a">tradition, scholar, publisher, company and vendor. Trademarks, texts and sources belong to</text><text x="36" y="648" font-size="11" fill="#0b1f2a">their owners, and nothing here is affiliated with or endorsed by them. If something should</text><text x="36" y="663" font-size="11" fill="#0b1f2a">be removed or corrected, it will be handled promptly through the contact form. Nothing here</text><text x="36" y="678" font-size="11" fill="#0b1f2a">is sold. I am happy to volunteer for any organization.</text><text x="36" y="699" font-size="11" fill="#134e4a">S, P, V, AT, AD are the file&#x27;s own letters. The meta glosses only S, P, and V. AT and AD are not expanded here.</text>
+
+</svg>

@@ -1,0 +1,1401 @@
+{
+  "checked": [
+    {
+      "path": "downloads/flashcards.pdf",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sutra-nexus-single-file.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/flashcards.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/flashcards.json",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/catalog.json",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sutra-nexus-deck.pptx",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/models/study-wheel.glb",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/models/guide-monkey-credits.txt",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/models/guide-monkey.glb",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/models/study-wheel-credits.txt",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/models/guide-monkey.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/models/guide-monkey.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/models/study-wheel.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/models/study-wheel.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/read-a-number.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/sheets/counts.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/pratyahara.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/read-a-number.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/pratyahara.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/sheets/read-a-number.pdf",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/pratyahara.pdf",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/kashmir-notes.pdf",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/read-a-number.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/pratyahara.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/kashmir-notes.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/kashmir-notes.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/sheets/counts.pdf",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/counts.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/sheets/kashmir-notes.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sheets/counts.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/56-download-kinds.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/27-phone-menu.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/33-s\u016btras-in-each-adhy\u0101ya.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/34-type-letters-in-the-data-file.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/44-this-file-has-75-kashmir-lines.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/55-anuv\u1e5btti-map.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/49-kashmir-unme\u1e63a-lengths.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/17-flashcard-ladder.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/02-praty\u0101h\u0101ra-ik.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/18-eight-chapters.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/10-read-a-s\u016btra-number.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/46-what-a-row-in-the-file-holds.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/21-dh\u0101tu-gap.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/15-offline-search.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/50-rows-that-carry-a-word-split.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/41-the-fourteen-m\u0101he\u015bvara-lines.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/29-cache-skips-contact.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/53-five-parts-of-a-room.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/02-praty\u0101h\u0101ra-ik.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/46-what-a-row-in-the-file-holds.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/28-history-stays-disputed.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/28-history-stays-disputed.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/14-licence-gate.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/03-praty\u0101h\u0101ra-ya\u1e47.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/08-praty\u0101h\u0101ra-al.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/47-three-counts-you-can-check.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/19-four-p\u0101das.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/13-six-step-start-path.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/29-cache-skips-contact.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/27-phone-menu.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/04-praty\u0101h\u0101ra-\u015bar.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/24-guide-choices.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/45-dating-notes-that-were-actually-opened.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/13-six-step-start-path.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/27-phone-menu.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/26-every-download.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/10-read-a-s\u016btra-number.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/23-75-and-the-other-count.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/30-report-a-correction.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/11-anuv\u1e5btti-on-1-1-3.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/53-five-parts-of-a-room.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/31-sandhi-without-a-fake-join.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/35-lines-with-an-anuv\u1e5btti-field.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/14-licence-gate.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/39-ecosystem-map.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/31-sandhi-without-a-fake-join.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/40-room-links.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/01-praty\u0101h\u0101ra-ac.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/52-what-a-grammar-row-stores.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/26-every-download.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/56-download-kinds.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/30-report-a-correction.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/24-guide-choices.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/38-grammar-map.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/56-download-kinds.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/23-75-and-the-other-count.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/19-four-p\u0101das.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/45-dating-notes-that-were-actually-opened.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/02-praty\u0101h\u0101ra-ik.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/20-type-letters-in-the-file.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/37-foundations-map.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/51-compute-a-set-in-the-builder.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/18-eight-chapters.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/43-sounds-on-lines-5-to-14.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/52-what-a-grammar-row-stores.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/07-praty\u0101h\u0101ra-hal.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/42-sounds-on-lines-1-to-4.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/16-room-quiz.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/08-praty\u0101h\u0101ra-al.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/04-praty\u0101h\u0101ra-\u015bar.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/17-flashcard-ladder.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/22-three-unmeshas.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/31-sandhi-without-a-fake-join.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/16-room-quiz.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/33-s\u016btras-in-each-adhy\u0101ya.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/25-voice-stays-off.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/34-type-letters-in-the-data-file.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/37-foundations-map.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/58-nothing-is-uploaded.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/48-chapter-1-by-p\u0101da.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/42-sounds-on-lines-1-to-4.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/07-praty\u0101h\u0101ra-hal.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/52-what-a-grammar-row-stores.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/49-kashmir-unme\u1e63a-lengths.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/38-grammar-map.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/40-room-links.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/17-flashcard-ladder.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/32-ecosystem-is-a-map.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/01-praty\u0101h\u0101ra-ac.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/42-sounds-on-lines-1-to-4.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/39-ecosystem-map.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/54-leave-the-voice-off.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/21-dh\u0101tu-gap.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/50-rows-that-carry-a-word-split.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/21-dh\u0101tu-gap.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/25-voice-stays-off.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/39-ecosystem-map.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/15-offline-search.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/44-this-file-has-75-kashmir-lines.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/34-type-letters-in-the-data-file.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/23-75-and-the-other-count.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/10-read-a-s\u016btra-number.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/11-anuv\u1e5btti-on-1-1-3.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/35-lines-with-an-anuv\u1e5btti-field.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/12-no-invented-meaning.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/25-voice-stays-off.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/35-lines-with-an-anuv\u1e5btti-field.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/22-three-unmeshas.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/58-nothing-is-uploaded.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/53-five-parts-of-a-room.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/06-praty\u0101h\u0101ra-ec.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/22-three-unmeshas.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/46-what-a-row-in-the-file-holds.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/05-praty\u0101h\u0101ra-ak.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/47-three-counts-you-can-check.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/03-praty\u0101h\u0101ra-ya\u1e47.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/51-compute-a-set-in-the-builder.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/55-anuv\u1e5btti-map.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/01-praty\u0101h\u0101ra-ac.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/43-sounds-on-lines-5-to-14.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/20-type-letters-in-the-file.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/18-eight-chapters.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/07-praty\u0101h\u0101ra-hal.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/36-start-here-map.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/13-six-step-start-path.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/47-three-counts-you-can-check.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/12-no-invented-meaning.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/48-chapter-1-by-p\u0101da.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/11-anuv\u1e5btti-on-1-1-3.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/45-dating-notes-that-were-actually-opened.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/54-leave-the-voice-off.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/20-type-letters-in-the-file.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/14-licence-gate.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/36-start-here-map.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/30-report-a-correction.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/50-rows-that-carry-a-word-split.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/32-ecosystem-is-a-map.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/48-chapter-1-by-p\u0101da.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/51-compute-a-set-in-the-builder.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/32-ecosystem-is-a-map.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/06-praty\u0101h\u0101ra-ec.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/57-markers-on-the-fourteen-lines.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/57-markers-on-the-fourteen-lines.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/29-cache-skips-contact.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/58-nothing-is-uploaded.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/54-leave-the-voice-off.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/15-offline-search.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/19-four-p\u0101das.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/38-grammar-map.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/16-room-quiz.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/24-guide-choices.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/55-anuv\u1e5btti-map.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/44-this-file-has-75-kashmir-lines.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/37-foundations-map.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/57-markers-on-the-fourteen-lines.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/41-the-fourteen-m\u0101he\u015bvara-lines.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/33-s\u016btras-in-each-adhy\u0101ya.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/05-praty\u0101h\u0101ra-ak.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/43-sounds-on-lines-5-to-14.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/40-room-links.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/05-praty\u0101h\u0101ra-ak.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/06-praty\u0101h\u0101ra-ec.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/08-praty\u0101h\u0101ra-al.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/41-the-fourteen-m\u0101he\u015bvara-lines.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/28-history-stays-disputed.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/12-no-invented-meaning.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/04-praty\u0101h\u0101ra-\u015bar.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/diagrams/26-every-download.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/03-praty\u0101h\u0101ra-ya\u1e47.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/49-kashmir-unme\u1e63a-lengths.svg",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/36-start-here-map.png",
+      "kind": "png-bytes"
+    },
+    {
+      "path": "downloads/templates/glossary-builder.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/templates/pratyahara-worksheet.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/templates/sutra-worksheet.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/templates/glossary-builder.pdf",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/templates/glossary-builder.docx",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/templates/study-plan.docx",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/templates/sutra-worksheet.docx",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/templates/study-plan.html",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/templates/pratyahara-worksheet.pdf",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/templates/sutra-worksheet.pdf",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/templates/study-plan.pdf",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/templates/pratyahara-worksheet.docx",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/sutra-nexus-all.zip#README.txt",
+      "kind": "text"
+    },
+    {
+      "path": "downloads/diagrams/01-praty\u0101h\u0101ra-ac.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/01-praty\u0101h\u0101ra-ac.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/02-praty\u0101h\u0101ra-ik.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/02-praty\u0101h\u0101ra-ik.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/03-praty\u0101h\u0101ra-ya\u1e47.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/03-praty\u0101h\u0101ra-ya\u1e47.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/04-praty\u0101h\u0101ra-\u015bar.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/04-praty\u0101h\u0101ra-\u015bar.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/05-praty\u0101h\u0101ra-ak.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/05-praty\u0101h\u0101ra-ak.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/06-praty\u0101h\u0101ra-ec.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/06-praty\u0101h\u0101ra-ec.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/07-praty\u0101h\u0101ra-hal.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/07-praty\u0101h\u0101ra-hal.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/08-praty\u0101h\u0101ra-al.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/08-praty\u0101h\u0101ra-al.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/09-it-marker-is-not-part-of-the-set.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/10-read-a-s\u016btra-number.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/10-read-a-s\u016btra-number.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/11-anuv\u1e5btti-on-1-1-3.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/11-anuv\u1e5btti-on-1-1-3.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/12-no-invented-meaning.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/12-no-invented-meaning.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/13-six-step-start-path.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/13-six-step-start-path.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/14-licence-gate.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/14-licence-gate.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/15-offline-search.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/15-offline-search.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/16-room-quiz.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/16-room-quiz.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/17-flashcard-ladder.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/17-flashcard-ladder.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/18-eight-chapters.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/18-eight-chapters.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/19-four-p\u0101das.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/19-four-p\u0101das.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/20-type-letters-in-the-file.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/20-type-letters-in-the-file.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/21-dh\u0101tu-gap.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/21-dh\u0101tu-gap.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/22-three-unmeshas.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/22-three-unmeshas.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/23-75-and-the-other-count.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/23-75-and-the-other-count.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/24-guide-choices.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/24-guide-choices.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/25-voice-stays-off.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/25-voice-stays-off.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/26-every-download.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/26-every-download.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/27-phone-menu.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/27-phone-menu.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/28-history-stays-disputed.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/28-history-stays-disputed.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/29-cache-skips-contact.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/29-cache-skips-contact.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/30-report-a-correction.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/30-report-a-correction.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/31-sandhi-without-a-fake-join.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/31-sandhi-without-a-fake-join.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/32-ecosystem-is-a-map.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/32-ecosystem-is-a-map.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/33-s\u016btras-in-each-adhy\u0101ya.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/33-s\u016btras-in-each-adhy\u0101ya.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/34-type-letters-in-the-data-file.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/34-type-letters-in-the-data-file.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/35-lines-with-an-anuv\u1e5btti-field.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/35-lines-with-an-anuv\u1e5btti-field.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/36-start-here-map.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/36-start-here-map.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/37-foundations-map.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/37-foundations-map.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/38-grammar-map.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/38-grammar-map.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/39-ecosystem-map.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/39-ecosystem-map.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/40-room-links.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/40-room-links.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/41-the-fourteen-m\u0101he\u015bvara-lines.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/41-the-fourteen-m\u0101he\u015bvara-lines.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/42-sounds-on-lines-1-to-4.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/42-sounds-on-lines-1-to-4.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/43-sounds-on-lines-5-to-14.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/43-sounds-on-lines-5-to-14.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/44-this-file-has-75-kashmir-lines.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/44-this-file-has-75-kashmir-lines.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/45-dating-notes-that-were-actually-opened.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/45-dating-notes-that-were-actually-opened.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/46-what-a-row-in-the-file-holds.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/46-what-a-row-in-the-file-holds.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/47-three-counts-you-can-check.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/47-three-counts-you-can-check.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/48-chapter-1-by-p\u0101da.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/48-chapter-1-by-p\u0101da.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/49-kashmir-unme\u1e63a-lengths.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/49-kashmir-unme\u1e63a-lengths.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/50-rows-that-carry-a-word-split.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/50-rows-that-carry-a-word-split.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/51-compute-a-set-in-the-builder.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/51-compute-a-set-in-the-builder.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/52-what-a-grammar-row-stores.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/52-what-a-grammar-row-stores.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/53-five-parts-of-a-room.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/53-five-parts-of-a-room.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/54-leave-the-voice-off.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/54-leave-the-voice-off.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/55-anuv\u1e5btti-map.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/55-anuv\u1e5btti-map.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/56-download-kinds.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/56-download-kinds.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/57-markers-on-the-fourteen-lines.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/57-markers-on-the-fourteen-lines.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/58-nothing-is-uploaded.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/diagrams/58-nothing-is-uploaded.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/flashcards.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/models/guide-monkey.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/models/study-wheel.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/sheets/counts.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/sheets/counts.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/sheets/kashmir-notes.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/sheets/kashmir-notes.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/sheets/pratyahara.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/sheets/pratyahara.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/sheets/read-a-number.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/sheets/read-a-number.svg",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/sutra-nexus-single-file.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/templates/glossary-builder.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/templates/pratyahara-worksheet.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/templates/study-plan.html",
+      "kind": "headless"
+    },
+    {
+      "path": "downloads/templates/sutra-worksheet.html",
+      "kind": "headless"
+    }
+  ],
+  "failed": []
+}
