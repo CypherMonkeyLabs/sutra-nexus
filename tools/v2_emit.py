@@ -685,6 +685,9 @@ def standalone_html(title, inner):
 </html>
 '''
 
+from diagram_chrome import add_chrome
+
+
 def write_diagrams(items):
     os.makedirs("downloads/diagrams", exist_ok=True)
     for item in items:
@@ -694,7 +697,10 @@ def write_diagrams(items):
         cairosvg.svg2png(url=svg_path, write_to=png_path, output_width=960, output_height=820)
         svg = item["svg"].replace('<?xml version="1.0" encoding="UTF-8"?>', "")
         inner = f'<h1>{b.E(item["title"])}</h1>{svg}<p>{b.E(item["source"])}</p>'
-        b.write(f'downloads/diagrams/{item["id"]}.html', standalone_html(item["title"], inner))
+        page = standalone_html(item["title"], inner)
+        page = add_chrome(page, b.header() + b.banner("diagrams.html") + '<div id="site-drawer">' + b.drawer("diagrams.html") + "</div>",
+                          b.phone_dock("diagrams.html") + '<div class="guide-root"></div>', b.HEAD_BOOT)
+        b.write(f'downloads/diagrams/{item["id"]}.html', page)
 
 pdfmetrics.registerFont(TTFont("Deja", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"))
 pdfmetrics.registerFont(TTFont("DejaBold", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"))

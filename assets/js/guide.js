@@ -82,7 +82,7 @@ function boot(root) {
     monkeySvg() + "</button>" +
     '<section class="sb-panel" id="sb-panel" hidden role="dialog" aria-modal="false" aria-labelledby="sb-title">' +
     '<header class="sb-bar"><div class="sb-who"><span class="sb-avatar" aria-hidden="true"></span>' +
-    '<div><h2 id="sb-title">Sūtra guide</h2><p class="sb-status">In the notes. Voice is off.</p></div></div>' +
+    '<div><h2 id="sb-title">Sūtra guide</h2><p class="sb-status">In the notes. Voice is on.</p></div></div>' +
     '<button type="button" data-guide-close>Close</button></header>' +
     '<div class="sb-along" role="group" aria-label="Read along">' +
     '<button type="button" data-along-start>Read along</button>' +
@@ -93,7 +93,7 @@ function boot(root) {
     '<div class="sb-chips" role="group" aria-label="Commands"></div>' +
     '<p class="sb-note"></p>' +
     '<div class="sb-voice">' +
-    '<button type="button" data-voice aria-pressed="false">Voice off</button>' +
+    '<button type="button" data-voice aria-pressed="true">Voice on</button>' +
     '<label>Voice <select data-voice-pick aria-label="Speaking voice"><option value="">Browser default</option></select></label>' +
     '<button type="button" data-voice-stop>Stop voice</button></div>' +
     '<form class="sb-form"><input type="text" aria-label="Ask about this page" placeholder="Ask, or say quiz me" autocomplete="off">' +
@@ -109,8 +109,8 @@ function boot(root) {
   var session = blankSession();
   var guide = null;
   var guideReady = null;
-  var voiceOn = false;
-  var along = { items: [], index: 0, timer: 0, paused: false };
+  var voiceOn = ls("sutra-voice-on") !== "0";
+  var along = { items: [], index: 0, timer: 0, paused: false, token: 0 };
   var page = (location.pathname.split("/").pop() || "index.html");
 
   function pose(name) {
@@ -227,7 +227,7 @@ function boot(root) {
     chips.innerHTML = items.map(function (item) {
       return '<button type="button" data-chip="' + esc(item[1]) + '">' + esc(item[0]) + "</button>";
     }).join("");
-    note.textContent = "Voice is off. Browser voices may mispronounce Sanskrit. This is a reading aid, not a recitation.";
+    note.textContent = (voiceOn ? "Voice is on. " : "Voice is off. ") + "Browser voices may mispronounce Sanskrit. This is a reading aid, not a recitation.";
   }
 
   function ask(text) {
@@ -243,8 +243,26 @@ function boot(root) {
     paint(out.reply);
   }
 
+  var hasHighlights = !!(window.CSS && CSS.highlights && window.Highlight);
+
   function clearSpoken() {
     document.querySelectorAll(".is-reading").forEach(function (node) { node.classList.remove("is-reading"); });
+    if (hasHighlights) CSS.highlights.delete("sb-sentence");
+  }
+
+  function textRange(node, from, to) {
+    var walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
+    var range = document.createRange();
+    var seen = 0;
+    var started = false;
+    var cur;
+    while ((cur = walker.nextNode())) {
+      var len = cur.nodeValue.length;
+      if (!started && from < seen + len) { range.setStart(cur, from - seen); started = true; }
+      if (started && to <= seen + len) { range.setEnd(cur, to - seen); return range; }
+      seen += len;
+    }
+    return started ? range : null;
   }
 
   function alongItems() {
@@ -252,10 +270,23 @@ function boot(root) {
     var nodes = scope.querySelectorAll("h1, h2, h3, p, li");
     var items = [];
     nodes.forEach(function (node) {
-      if (node.closest(".sb-panel, .ob-card, .sb-log")) return;
-      var text = (node.textContent || "").replace(/\s+/g, " ").trim();
-      if (text.length < 2) return;
-      items.push({ node: node, text: text });
+      if (node.closest(".sb-panel, .ob-card, .sb-log, .drawer, .site-header, .phone-dock, .disclaimer-panel, svg")) return;
+      if (node.querySelector("h1, h2, h3, p, li")) return;
+      var raw = node.textContent || "";
+      var found = false;
+      var re = /[\s\S]+?[.!?\u0964\u0965](?=\s|$)|[\s\S]+$/g;
+      var m;
+      while ((m = re.exec(raw))) {
+        var lead = m[0].length - m[0].replace(/^\s+/, "").length;
+        var text = m[0].replace(/\s+/g, " ").trim();
+        if (text.length < 2) continue;
+        found = true;
+        items.push({ node: node, text: text, from: m.index + lead, to: m.index + m[0].replace(/\s+$/, "").length });
+      }
+      if (!found) {
+        var whole = raw.replace(/\s+/g, " ").trim();
+        if (whole.length >= 2) items.push({ node: node, text: whole, from: 0, to: raw.length });
+      }
     });
     return items;
   }
@@ -265,28 +296,34 @@ function boot(root) {
     var item = along.items[along.index];
     if (!item) return;
     item.node.classList.add("is-reading");
+    var range = hasHighlights ? textRange(item.node, item.from, item.to) : null;
+    if (range) CSS.highlights.set("sb-sentence", new Highlight(range));
+    var target = range ? range.getBoundingClientRect() : item.node.getBoundingClientRect();
     var scroller = document.querySelector(".page-scroll");
-    if (scroller) {
-      var nodeTop = item.node.getBoundingClientRect().top;
-      var boxTop = scroller.getBoundingClientRect().top;
-      scroller.scrollBy({ top: nodeTop - boxTop - 12, behavior: motionOff() ? "auto" : "smooth" });
-    } else {
-      item.node.scrollIntoView({ block: "center", behavior: motionOff() ? "auto" : "smooth" });
+    var box = scroller ? scroller.getBoundingClientRect() : { top: 0, bottom: window.innerHeight };
+    var low = Math.min(box.bottom, window.innerHeight) - (phone() ? 230 : 120);
+    if (target.top < box.top + 70 || target.bottom > low) {
+      var delta = target.top - box.top - 90;
+      if (scroller) scroller.scrollBy({ top: delta, behavior: motionOff() ? "auto" : "smooth" });
+      else window.scrollBy({ top: delta, behavior: motionOff() ? "auto" : "smooth" });
+    }
+    window.clearTimeout(along.timer);
+    var token = ++along.token;
+    function advance() {
+      if (token !== along.token || along.paused || !along.items.length) return;
+      stepAlong(1);
     }
     if (voiceOn && window.speechSynthesis) {
       window.speechSynthesis.cancel();
       var utter = new SpeechSynthesisUtterance(item.text);
       utter.rate = 0.92;
-      utter.onend = function () {
-        if (!along.paused && along.items.length) stepAlong(1);
-      };
+      utter.onend = advance;
+      utter.onerror = advance;
       window.speechSynthesis.speak(utter);
+      along.timer = window.setTimeout(advance, 3000 + item.text.length * 95);
       return;
     }
-    window.clearTimeout(along.timer);
-    along.timer = window.setTimeout(function () {
-      if (!along.paused && along.items.length) stepAlong(1);
-    }, Math.min(4200, 900 + item.text.length * 28));
+    along.timer = window.setTimeout(advance, Math.min(4200, 900 + item.text.length * 28));
   }
 
   function stepAlong(dir) {
@@ -316,6 +353,7 @@ function boot(root) {
 
   function stopAlong(done) {
     along.paused = true;
+    along.token += 1;
     along.items = [];
     window.clearTimeout(along.timer);
     if (window.speechSynthesis) window.speechSynthesis.cancel();
@@ -376,6 +414,8 @@ function boot(root) {
   }
   root.querySelector("[data-voice]").addEventListener("click", function () {
     voiceOn = !voiceOn;
+    ls("sutra-voice-on", voiceOn ? "1" : "0");
+    if (!voiceOn && window.speechSynthesis) window.speechSynthesis.cancel();
     this.textContent = voiceOn ? "Voice on" : "Voice off";
     this.setAttribute("aria-pressed", voiceOn ? "true" : "false");
     note.textContent = voiceOn
@@ -416,6 +456,12 @@ function boot(root) {
     }
   }, true);
 
+  function speakTour(event) {
+    var d = event.detail || {};
+    if (d.text && voiceOn) say(d.text);
+    pose(d.last ? "wave" : "talk");
+  }
+  document.addEventListener("sutra-tour-step", speakTour);
   welcome();
   if (ls("sutra-guide-open") === "1" && !phone()) open(true);
   if (/[?&]guide=1(?:&|$)/.test(location.search)) open(true);

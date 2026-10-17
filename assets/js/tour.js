@@ -134,6 +134,8 @@
     if (window.matchMedia("(max-width: 720px)").matches) {
       var bar = document.querySelector(".phone-dock");
       dock = (bar ? bar.offsetHeight : 72) + 8;
+      var bot = document.querySelector(".sb-monkey");
+      if (bot && !bot.hidden) dock += bot.offsetHeight + 8;
     }
     var top = 8;
     if (h1) {
@@ -170,6 +172,7 @@
     card.querySelector("[data-ob-back]").hidden = step === 0;
     placeCard();
     paintSpots(targets());
+    document.dispatchEvent(new CustomEvent("sutra-tour-step", { detail: { text: item.title + ". " + item.body, last: step === STEPS.length - 1 } }));
   }
 
   function close(finished) {
