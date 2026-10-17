@@ -225,14 +225,14 @@
   };
 
   function iconSvg(name) {
-    var d = ICONS[name] || ICONS.book;
+    var d = ICONS[name] || ICONS.menu;
     return '<svg class="menu-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="' + d + '"/></svg>';
   }
 
   function mountMenuIcons() {
     document.querySelectorAll(".drawer-list a[href]").forEach(function (link) {
       if (link.querySelector(".menu-ico")) return;
-      var file = (link.getAttribute("href") || "").split("#")[0];
+      var file = (link.getAttribute("href") || "").split("#")[0].split("/").pop();
       link.classList.add("menu-link");
       link.insertAdjacentHTML("afterbegin", iconSvg(file));
     });
