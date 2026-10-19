@@ -639,13 +639,14 @@ def builder_html(st):
             options.append(f'<option value="{b.E(sound)}|{line["n"]}">{b.E(sound)} on line {line["n"]}</option>')
     markers = "".join(f'<option value="{n}">{n}</option>' for n in range(1, 15))
     lines_json = json.dumps([{"n": row["n"], "sounds": row["sounds"], "marker": row["marker"]} for row in st["maha"]["sutras"]], ensure_ascii=False)
+    b.write("assets/js/sutra-lines.js", "window.SUTRA_LINES=" + lines_json + ";\n")
     return f'''<section class="card" data-pratyahara><h2>Builder</h2>
 <label>Start <select data-start>{''.join(options)}</select></label>
 <label>Marker line <select data-marker>{markers}</select></label>
 <p data-pr-out></p>
 <p class="note">The set is computed in the browser from the 14 lines. It is not a translation.</p>
 </section>
-<script>window.SUTRA_LINES={lines_json};</script>'''
+<script src="assets/js/sutra-lines.js"></script>'''
 
 def shell_page(spec):
     return b.page_shell(spec["file"], spec["title"] + " · Sūtra Nexus", spec["desc"], spec["html"])
@@ -666,6 +667,7 @@ def standalone_html(title, inner):
 <html lang="en" data-theme="bloom">
 <head>
 <meta charset="utf-8">
+{b.csp_meta()}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{b.E(title)}</title>
 <style>
@@ -699,7 +701,7 @@ def write_diagrams(items):
         inner = f'<h1>{b.E(item["title"])}</h1>{svg}<p>{b.E(item["source"])}</p>'
         page = standalone_html(item["title"], inner)
         page = add_chrome(page, b.header() + b.banner("diagrams.html") + '<div id="site-drawer">' + b.drawer("diagrams.html") + "</div>",
-                          b.phone_dock("diagrams.html") + '<div class="guide-root"></div>', b.HEAD_BOOT)
+                          b.phone_dock("diagrams.html") + '<div class="guide-root"></div>', b.head_boot("../../"))
         b.write(f'downloads/diagrams/{item["id"]}.html', page)
 
 pdfmetrics.registerFont(TTFont("Deja", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"))
@@ -1495,7 +1497,12 @@ document.addEventListener("click", function (event) {
     html = b.page_shell("index.html", "Sūtra Nexus — single file", "The study app in one HTML file.", body)
     html = html.replace('<link rel="stylesheet" href="assets/css/sutra.css">', "<style>\n" + css_standalone(True) + "\n</style>")
     html = re.sub(r'<link rel="icon"[^>]*>\n?', "", html)
-    html = re.sub(r'<script>if\(location\.protocol[\s\S]*?</script>\n?', "", html)
+    html = re.sub(r'<script src="assets/js/sw-register\.js"></script>\n?', "", html)
+    html = html.replace(b.csp_meta(), b.csp_meta(True, "https://cyphermonkeylabs.com"))
+    html = html.replace(b.HEAD_BOOT, "<script>\n" + open("assets/js/boot.js", encoding="utf-8").read().strip() + "\n</script>")
+    if os.path.exists("assets/js/sutra-lines.js"):
+        lines = open("assets/js/sutra-lines.js", encoding="utf-8").read().strip()
+        html = html.replace('<script src="assets/js/sutra-lines.js"></script>', "<script>" + lines + "</script>")
     embed = {
         "search": json.load(open("assets/data/search-index.json", encoding="utf-8")),
         "cards": json.load(open("downloads/flashcards.json", encoding="utf-8")),

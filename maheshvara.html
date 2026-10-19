@@ -2,11 +2,12 @@
 <html lang="en" data-theme="bloom">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob: data:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Māheśvara lines and pratyāhāra · Sūtra Nexus</title>
 <meta name="description" content="Fourteen lines, markers, and sets you can recompute.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<script>try{var t=localStorage.getItem("sutra-theme")||"bloom";if(["bloom","dark","light","contrast"].indexOf(t)<0)t="bloom";document.documentElement.dataset.theme=t;var f=parseFloat(localStorage.getItem("sutra-fscale")||"1");if(f)document.documentElement.style.setProperty("--fscale",String(f));var m=localStorage.getItem("sutra-motion");if(m==="reduce"||m==="full")document.documentElement.dataset.motion=m;var ink=localStorage.getItem("sutra-ink");if(ink&&/^#[0-9a-f]{6}$/i.test(ink))document.documentElement.style.setProperty("--ink",ink);if(matchMedia("(max-width:720px)").matches&&localStorage.getItem("sutra-nav-hint")!=="1"){document.documentElement.dataset.navHint="1";document.documentElement.style.setProperty("--dock-h","120px");}}catch(e){}</script>
+<script src="assets/js/boot.js"></script>
 <link rel="stylesheet" href="assets/css/sutra.css">
 </head>
 <body data-room="maheshvara">
@@ -72,7 +73,7 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 <p data-pr-out></p>
 <p class="note">The set is computed in the browser from the 14 lines. It is not a translation.</p>
 </section>
-<script>window.SUTRA_LINES=[{"n": 1, "sounds": ["a", "i", "u"], "marker": "ṇ"}, {"n": 2, "sounds": ["ṛ", "ḷ"], "marker": "k"}, {"n": 3, "sounds": ["e", "o"], "marker": "ṅ"}, {"n": 4, "sounds": ["ai", "au"], "marker": "c"}, {"n": 5, "sounds": ["h", "y", "v", "r"], "marker": "ṭ"}, {"n": 6, "sounds": ["l"], "marker": "ṇ"}, {"n": 7, "sounds": ["ñ", "m", "ṅ", "ṇ", "n"], "marker": "m"}, {"n": 8, "sounds": ["jh", "bh"], "marker": "ñ"}, {"n": 9, "sounds": ["gh", "ḍh", "dh"], "marker": "ṣ"}, {"n": 10, "sounds": ["j", "b", "g", "ḍ", "d"], "marker": "ś"}, {"n": 11, "sounds": ["kh", "ph", "ch", "ṭh", "th", "c", "ṭ", "t"], "marker": "v"}, {"n": 12, "sounds": ["k", "p"], "marker": "y"}, {"n": 13, "sounds": ["ś", "ṣ", "s"], "marker": "r"}, {"n": 14, "sounds": ["h"], "marker": "l"}];</script>
+<script src="assets/js/sutra-lines.js"></script>
 <section class="quiz" id="quiz"><h2>Quiz</h2><div class="quiz-q" id="maheshvara.html-q1" data-answer="1" data-why="hal is h on line 5 through the marker on line 14, and the length is 33."><p>How many sounds does the self-test expect for hal?</p><button type="button">14</button><button type="button">33</button><button type="button">42</button><button type="button">75</button><p class="why"></p></div><div class="quiz-q" id="maheshvara.html-q2" data-answer="2" data-why="al starts at a on line 1 and runs through line 14. Length 42."><p>How many sounds does al contain in the self-test?</p><button type="button">14</button><button type="button">33</button><button type="button">42</button><button type="button">8</button><p class="why"></p></div><div class="quiz-q" id="maheshvara.html-q3" data-answer="1" data-why="The builder drops the it marker."><p>Is the marker kept inside the set?</p><button type="button">Yes</button><button type="button">No</button><button type="button">Only on line 14</button><button type="button">Only for vowels</button><p class="why"></p></div><div class="quiz-q" id="maheshvara.html-q4" data-answer="1" data-why="ac starts at a on line 1 and ends at the marker on line 4."><p>What does ac start with?</p><button type="button">h</button><button type="button">a on line 1</button><button type="button">ś</button><button type="button">k</button><p class="why"></p></div><div class="quiz-q" id="maheshvara.html-q5" data-answer="1" data-why="The Kashmir file is a different work and a different page."><p>Which text is this page not?</p><button type="button">The 14-line file</button><button type="button">The Kashmir Śiva Sūtras</button><button type="button">A computed set</button><button type="button">A self-test</button><p class="why"></p></div></section>
 
 <section class="eco" id="ecosystem"><h2>Ecosystem</h2>
@@ -124,7 +125,7 @@ text { font-family: "Noto Sans Devanagari", "Segoe UI", sans-serif; }
 <script src="assets/js/phone-nav.js"></script>
 <script src="assets/js/app.js"></script>
 <script type="module" src="assets/js/guide.js"></script>
-<script>if(location.protocol.indexOf("http")===0&&"serviceWorker"in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js");});}</script>
+<script src="assets/js/sw-register.js"></script>
 
 </body>
 </html>
