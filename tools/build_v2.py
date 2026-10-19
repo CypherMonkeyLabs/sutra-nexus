@@ -232,13 +232,38 @@ def phone_dock(current):
     hint = '<div class="nav-hint" role="note" aria-label="How to open the menu"><span>Tap for menu</span><button type="button">Got it</button></div>'
     return f'<nav class="phone-dock" aria-label="Phone">{hint}{''.join(parts)}</nav>'
 
-HEAD_BOOT = '''<script>try{var t=localStorage.getItem("sutra-theme")||"bloom";if(["bloom","dark","light","contrast"].indexOf(t)<0)t="bloom";document.documentElement.dataset.theme=t;var f=parseFloat(localStorage.getItem("sutra-fscale")||"1");if(f)document.documentElement.style.setProperty("--fscale",String(f));var m=localStorage.getItem("sutra-motion");if(m==="reduce"||m==="full")document.documentElement.dataset.motion=m;var ink=localStorage.getItem("sutra-ink");if(ink&&/^#[0-9a-f]{6}$/i.test(ink))document.documentElement.style.setProperty("--ink",ink);if(matchMedia("(max-width:720px)").matches&&localStorage.getItem("sutra-nav-hint")!=="1"){document.documentElement.dataset.navHint="1";document.documentElement.style.setProperty("--dock-h","120px");}}catch(e){}</script>'''
+def csp_meta(unsafe_inline=False, img_origins=""):
+    script = "script-src 'self' 'unsafe-inline'" if unsafe_inline else "script-src 'self'"
+    img = "img-src 'self' data: blob:"
+    if img_origins:
+        img += " " + img_origins
+    content = (
+        "default-src 'self'; "
+        + script + "; "
+        "style-src 'self' 'unsafe-inline'; "
+        + img + "; "
+        "media-src 'self' blob: data:; "
+        "font-src 'self' data:; "
+        "connect-src 'self'; "
+        "worker-src 'self' blob:; "
+        "object-src 'none'; "
+        "base-uri 'self'; "
+        "form-action 'self'"
+    )
+    return f'<meta http-equiv="Content-Security-Policy" content="{content}">'
+
+def head_boot(prefix=""):
+    return f'<script src="{prefix}assets/js/boot.js"></script>'
+
+HEAD_BOOT = head_boot()
+SW_REGISTER = '<script src="assets/js/sw-register.js"></script>'
 
 def page_shell(current, title, description, body, extra=""):
     return f'''<!DOCTYPE html>
 <html lang="en" data-theme="bloom">
 <head>
 <meta charset="utf-8">
+{csp_meta()}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{E(title)}</title>
 <meta name="description" content="{E(description)}">
@@ -265,7 +290,7 @@ def page_shell(current, title, description, body, extra=""):
 <script src="assets/js/phone-nav.js"></script>
 <script src="assets/js/app.js"></script>
 <script type="module" src="assets/js/guide.js"></script>
-<script>if(location.protocol.indexOf("http")===0&&"serviceWorker"in navigator){{window.addEventListener("load",function(){{navigator.serviceWorker.register("sw.js");}});}}</script>
+{SW_REGISTER}
 {extra}
 </body>
 </html>

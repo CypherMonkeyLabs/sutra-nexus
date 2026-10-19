@@ -1,7 +1,7 @@
 /* Offline shell adapted from Webex Lab sw.js at commit
    7631b317cbf2cad236403df960b5d5fac353a6de.
    Same-origin GET only. The contact page is never in this list. */
-var CACHE = "sutra-nexus-v2-4";
+var CACHE = "sutra-nexus-v2-5";
 var SHELL = [
   "./",
   "./index.html",
@@ -25,6 +25,9 @@ var SHELL = [
   "./credits.html",
   "./about.html",
   "./assets/css/sutra.css",
+  "./assets/js/boot.js",
+  "./assets/js/sw-register.js",
+  "./assets/js/sutra-lines.js",
   "./assets/js/brand.js",
   "./assets/js/frame.js",
   "./assets/js/phone-nav.js",

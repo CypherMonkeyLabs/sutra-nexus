@@ -24,7 +24,10 @@ def chrome_from_page(page_html):
     """Cut the top and bottom chrome out of a built room page such as diagrams.html."""
     top = page_html[page_html.index('<a class="skip"'):page_html.index('<div class="page-scroll">')]
     bottom = page_html[page_html.index('<nav class="phone-dock"'):page_html.index('<div class="guide-root"></div>') + len('<div class="guide-root"></div>')]
-    boot = re.search(r"<script>try\{var t=localStorage.*?</script>", page_html, re.S).group(0)
+    match = re.search(r'<script src="((?:\.\./)*)assets/js/boot\.js"></script>', page_html)
+    if not match:
+        raise SystemExit("room page is missing assets/js/boot.js")
+    boot = '<script src="../../assets/js/boot.js"></script>'
     return top, bottom, boot
 
 
